@@ -126,6 +126,19 @@ section .event-name {
 	padding: 8rem;
 	box-sizing: content-box;
 }
+.section--img-800x1040 a.button {
+	display: inline-block;
+	width: 32rem;
+	margin-left: auto;
+	font-size: 2.4rem;
+	font-weight: 300;
+	line-height: 8rem;
+	color: #fff;
+	background: #FB4040;
+	border-radius: 8rem;
+	text-align: center;
+	text-decoration: none;
+}
 .section--img-800x1040::after {
 	content: '✦';
 	position: absolute;
@@ -300,20 +313,14 @@ section .event-name {
 .section-19 {
 	background: #FCFECE;
 }
-.section-19 a.button {
-	display: inline-block;
-	width: 32rem;
-	margin-left: auto;
-	font-size: 2.4rem;
-	font-weight: 300;
-	line-height: 8rem;
-	color: #fff;
-	background: #FB4040;
-	border-radius: 8rem;
-	text-align: center;
-	text-decoration: none;
+.section-19 h2::first-letter {
+	margin-left: 0.3rem;
 }
-.section-19 .text-content {
+.section-19 .event-name {
+	top: 15rem;
+}
+.section-19 .text-content,
+.section-23 .text-content {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
@@ -391,8 +398,8 @@ section .flex-row {
 	width: 130rem;
 	height: 180rem;
 	position: absolute;
-	top: -59rem;
-	right: -0.8rem;
+	top: -63rem;
+	right: 0;
 	background: url(images/sections/section-22/bg.svg) center/contain no-repeat;
 	z-index: -1;
 }
@@ -411,5 +418,12 @@ section .flex-row {
 	margin-top: 4rem;
 }
 
-
+.section-23 {
+	background: #FECEE7;
+}
+.section-23 .text-with-padding {
+	box-sizing: content-box;
+	width: 72rem;
+	padding: 14rem 0 10rem 16rem;
+}
 
