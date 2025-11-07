@@ -438,7 +438,7 @@ section .event-name {
 	position: absolute;
 	top: -25.5rem;
 	left: 0;
-	width: 192rem;
+	width: 178.8rem;
 	height: 80rem;
 	background: url(images/sections/section-24/bg.svg) 0/contain no-repeat;
 	pointer-events: none;
@@ -559,17 +559,39 @@ section .event-name {
 }
 /* ~~~ */
 .section-28 {
-	/*background: url(images/sections/section-27/bg-decor.svg) 54rem 61rem/6.6rem no-repeat, url(images/sections/section-27/san-francisco-hub.svg) top 21.5rem left 0/11.5rem no-repeat, url(images/sections/section-27/bg.jpg) 0 0/100vw no-repeat;*/
+	position: relative;
+	padding-bottom: 15rem;
+	background: url(images/sections/section-28/bg-decor.svg) left 64rem bottom 50rem/8rem no-repeat, url(images/sections/section-28/bg-net.png) 0 bottom/125.5rem no-repeat, url(images/sections/section-28/bg-grey.jpg) 56rem bottom/119.8rem no-repeat;
+}
+.section-28 .content {
+	width: 72rem;
+	margin-left: 72rem;
 }
 .section-28 h2 {
 	width: 50rem;
-	margin-top: -15.9rem;
+	top: -8.1rem;
+	position: relative;
+}
+.section-28 h4 {
+	width: 55rem;
+	margin: 8rem 0 12rem 48rem;
 }
 .section-28 img.NEClub-logo {
+	position: absolute;
+	top: 12.5rem;
+	right: 31rem;
 	width: 23.4rem;
 	height: auto;
 }
 .section-28 img.NEClub-photo {
 	width: 72rem;
 	height: auto;
+	margin: 3rem 0 5rem;
+}
+.section-28 .event-name {
+	text-align: right;
+	top: auto;
+	left: auto;
+	bottom: 8rem;
+	right: 24rem;
 }
