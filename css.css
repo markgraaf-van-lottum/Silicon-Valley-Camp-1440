@@ -107,7 +107,7 @@ section:not(.section--img-800x1040) {
 }
 section .event-name {
 	position: absolute;
-	top: 13rem;
+	top: 8rem;
 	left: 8rem;
 	width: 15rem;
 	color: #fff;
@@ -320,7 +320,8 @@ section .event-name {
 	top: 15rem;
 }
 .section-19 .text-content,
-.section-23 .text-content {
+.section-23 .text-content,
+.section-25 .text-content {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
@@ -336,7 +337,7 @@ section .event-name {
 	padding-bottom: 3rem;
 	background: url(images/sections/section-20/planet.jpg) 0 100%/30.3rem no-repeat, url(images/sections/section-20/bg.jpg) 16rem 40rem/160rem no-repeat;
 }
-section .flex-row {
+.flex-row {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -400,7 +401,7 @@ section .flex-row {
 	position: absolute;
 	top: -63rem;
 	right: 0;
-	background: url(images/sections/section-22/bg.svg) center/contain no-repeat;
+	background: url(images/sections/section-22/bg.svg) 100% 0/contain no-repeat;
 	z-index: -1;
 }
 .section-22 .flex-row {
@@ -417,7 +418,7 @@ section .flex-row {
 .section-22 .h-320 h4 {
 	margin-top: 4rem;
 }
-
+/* ~~~ */
 .section-23 {
 	background: #FECEE7;
 }
@@ -426,4 +427,149 @@ section .flex-row {
 	width: 72rem;
 	padding: 14rem 0 10rem 16rem;
 }
-
+/* ~~~ */
+.section-24 {
+	position: relative;
+	padding: 15.6rem 8rem 12rem 44rem !important;
+	background: url(images/sections/section-24/mars.png) right 38rem/25.1rem no-repeat, url(images/sections/section-24/bg-grey.jpg) 0 0/100vw no-repeat;
+}
+.section-24::before {
+	content: '';
+	position: absolute;
+	top: -25.5rem;
+	left: 0;
+	width: 192rem;
+	height: 80rem;
+	background: url(images/sections/section-24/bg.svg) 0/contain no-repeat;
+	pointer-events: none;
+}
+.section-24 h4 {
+	width: 35rem;
+}
+.section-24 ul {
+	margin-top: 15.5rem;
+	margin-left: 37rem;
+}
+.section-24 li {
+	width: 50rem;
+	margin-bottom: 8rem;
+}
+.section-24 li:first-child {
+	margin-bottom: 4rem;
+}
+.section-24 li:nth-child(even) {
+	margin-left: 36rem;
+}
+.section-24 li::before {
+	position: relative;
+	left: -13.4rem;
+	top: 8.2rem;
+	display: inline-block;
+	width: 8.8rem;
+	text-align: right;
+	font-size: 16rem;
+	font-weight: 200;
+	color: #D9D9D9;
+	content: counter(list-item);
+}
+/* ~~~ */
+.section-25 {
+	background: #CEFFC7 top 21rem right 15rem/21rem url(images/sections/section-25/lift-leaders.svg) no-repeat;
+}
+.section-25::before {
+	content: '';
+	position: absolute;
+	top: -25.5rem;
+	left: 0;
+	width: 80rem;
+	height: 166.8rem;
+	background: 0 0/contain url(images/sections/section-25/bg.svg) no-repeat;
+	pointer-events: none;
+}
+.section-25 h2 {
+	width: 65rem;
+}
+.section-25 .text-with-padding {
+	padding: 13rem 8rem 7rem 15.5rem;
+}
+/* ~~~ */
+.section-26 {
+	position: relative;
+	padding: 16rem 8rem 18rem;
+}
+.section-26::after {
+	content: '✦';
+	position: absolute;
+	bottom: 12rem;
+	right: 11rem;
+	font-size: 5rem;
+}
+.section-26 .flex-row {
+	height: 64rem;
+}
+.section-26 img {
+	width: 64rem;
+	height: 64rem;
+}
+.section-26 figure {
+	margin-right: 8rem;
+}
+.section-26 h4 {
+	width: 104rem;
+	margin: 4rem 0 8rem;
+}
+.section-26 p.default {
+	width: 76rem;
+}
+/* ~~~ */
+.section-27 {
+	position: relative;
+	height: 120rem;
+	padding-top: 6rem;
+	padding-bottom: 7rem;
+	background: url(images/sections/section-27/bg-decor.svg) 54rem 61rem/6.6rem no-repeat, url(images/sections/section-27/san-francisco-hub.svg) top 21.5rem left 0/11.5rem no-repeat, url(images/sections/section-27/bg.jpg) 0 0/100vw no-repeat;
+}
+.section-27::before {
+	content: '';
+	position: absolute;
+	top: -7.3rem;
+	right: 9rem;
+	width: 14.6rem;
+	height: 14.6rem;
+	background: url(images/sections/section-27/planet.png) 0 0/contain no-repeat;
+}
+.section-27 ul {
+	width: 68rem;
+	margin-left: 72rem;
+	list-style: unset;
+}
+.section-27 li {
+	padding-left: 0.6rem;
+}
+.section-27 li:not(:last-child) {
+	padding-bottom: 4rem;
+}
+.section-27 h2 {
+	width: 46rem;
+	margin: 14rem 0 20rem;
+}
+.section-27 h2 + p {
+	width: 82.5rem;
+	margin-left: 72rem;
+}
+/* ~~~ */
+.section-28 {
+	/*background: url(images/sections/section-27/bg-decor.svg) 54rem 61rem/6.6rem no-repeat, url(images/sections/section-27/san-francisco-hub.svg) top 21.5rem left 0/11.5rem no-repeat, url(images/sections/section-27/bg.jpg) 0 0/100vw no-repeat;*/
+}
+.section-28 h2 {
+	width: 50rem;
+	margin-top: -15.9rem;
+}
+.section-28 img.NEClub-logo {
+	width: 23.4rem;
+	height: auto;
+}
+.section-28 img.NEClub-photo {
+	width: 72rem;
+	height: auto;
+}
