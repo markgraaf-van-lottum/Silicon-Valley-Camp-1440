@@ -100,6 +100,37 @@ figure {
 	line-height: 0;
 }
 
+/* Блок "Оставить заявку" */
+.request {
+	display: grid;
+	grid-template-columns: 1fr 32rem 68rem;
+	grid-template-rows: 1fr auto;
+	gap: 1.8rem 4rem;
+	align-items: center;
+	margin: 16rem 0;
+	padding: 0 8rem;
+}
+.request__text {
+	font-size: 2.8rem;
+}
+.request__divider {
+	height: .3rem;
+	width: 32rem;
+	background: #000;
+}
+.button {
+	line-height: 16rem;
+	font-size: 2.6rem;
+	background: var(--primary-color);
+	transition: background-color .2s;
+	cursor: pointer;
+}
+.request__button-hint {
+	grid-area: 2/3;
+	font-size: 2rem;
+	text-align: center;
+}
+
 /* COMMON */
 section:not(.section--img-800x1040) {
 	padding-left: 8rem;
@@ -139,7 +170,8 @@ section .event-name {
 	text-align: center;
 	text-decoration: none;
 }
-.section--img-800x1040::after {
+.section--img-800x1040::after,
+.blot::after {
 	content: '✦';
 	position: absolute;
 	top: 9rem;
@@ -273,7 +305,6 @@ section .event-name {
 /* ~~~ */
 .section-18 {
 	padding-top: 9rem;
-	padding-bottom: 9rem;
 }
 .section-18 .person {
 	columns: 2;
@@ -430,7 +461,7 @@ section .event-name {
 /* ~~~ */
 .section-24 {
 	position: relative;
-	padding: 15.6rem 8rem 12rem 44rem !important;
+	padding: 15.6rem 8rem 1rem 44rem !important;
 	background: url(images/sections/section-24/mars.png) right 38rem/25.1rem no-repeat, url(images/sections/section-24/bg-grey.jpg) 0 0/100vw no-repeat;
 }
 .section-24::before {
@@ -474,6 +505,7 @@ section .event-name {
 }
 /* ~~~ */
 .section-25 {
+	margin-top: 24rem;
 	background: #CEFFC7 top 21rem right 15rem/21rem url(images/sections/section-25/lift-leaders.svg) no-repeat;
 }
 .section-25::before {
@@ -595,3 +627,144 @@ section .event-name {
 	bottom: 8rem;
 	right: 24rem;
 }
+/* ~~~ */
+.section-29 {
+	display: flex;
+	position: relative;
+	color: #fff;
+	background: url(images/sections/section-29/arrow.svg) 52rem 27rem/68.7rem no-repeat, url(images/sections/section-29/icon-deer.svg) left 8rem bottom 8rem/8rem no-repeat, url(images/sections/section-29/bg.jpg) 0 0/192rem no-repeat;
+}
+.section-29 h2 {
+	width: 85rem;
+	padding: 24rem 0 48rem;
+	margin-right: auto;
+}
+.section-29 ul {
+	width: 55rem;
+	margin-top: 25.6rem;
+	list-style: unset;
+}
+/* ~~~ */
+.section-30 {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 !important;
+	background: url(images/sections/section-30/bg.svg) 0 48rem/100% no-repeat;
+}
+.section-30 .half-screen-square {
+	width: 50vw;
+	height: 50vw;
+}
+.section-30 .half-screen-square img {
+	width: 96rem;
+	height: auto;
+}
+.section-30 .people-9 {}
+.section-30 .build-community-since-2010 {
+	position: relative;
+	background: url(images/sections/section-30/bg-4-people-in-a-circle.svg) top 9rem right 8rem/7.9rem no-repeat;
+}
+.section-30 .build-community-since-2010::before {
+	content: '';
+	width: 40.7rem;
+	height: 24.2rem;
+	position: absolute;
+	top: -21.5rem;
+	right: 10rem;
+	border-radius: 2.6rem;
+	transform: rotate(15deg);
+	backdrop-filter: blur(14px);
+	background: url(images/sections/section-30/card.svg) 0 0/contain no-repeat;
+}
+.section-30 .build-community-since-2010 h2 {
+	padding-bottom: 13rem;
+}
+.section-30 .half-screen-square h2 ~ p {
+	padding-left: 8rem;
+}
+.section-30 .half-screen-square:has(p) {
+	padding: 8rem;
+}
+.section-30 .people-on-bikes {
+	position: relative;
+}
+.section-30 .people-on-bikes::after {
+	color: #fff;
+	top: auto;
+	bottom: 8rem;
+}
+.section-30 .people-on-bikes img {
+	position: relative;
+	z-index: -1;
+}
+.section-30 .H4-font-size {
+	margin-right: 4rem;
+	font-size: 10.4rem;
+	line-height: 8rem;
+	text-align: right;
+}
+.section-30 .H4-font-size,
+.section-30 .text-2-lines {
+	display: inline-block;
+	width: 42%;
+}
+.section-30 p.flex {
+	height: 20rem;
+	display: flex;
+	align-items: center;
+}
+.section-30 p.flex:first-child {
+	margin-top: 2rem;
+}
+/* ~~~ */
+.section-31 {
+	position: relative;
+}
+.section-31 header {
+	height: 32rem;
+	padding: 8rem;
+	margin: 0 -8rem;
+	background: url(images/sections/section-31/bg.jpg) 0 0/contain no-repeat;
+}
+.section-31 h2 {
+	width: 88rem;
+}
+.section-31 .event-name {
+	color: #000;
+	left: auto;
+	right: 8rem;
+	text-align: right;
+}
+.section-31 .media {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 -2rem;
+	padding: 13rem 0;
+}
+.section-31 .media a {
+	padding: 0 2rem;
+}
+.section-31 .media img {
+	height: auto;
+}
+.section-31 img[src*='logo-forbes'] {
+	width: 7.9rem;
+}
+.section-31 img[src*='logo-digital-journal'] {
+	width: 20.8rem;
+}
+.section-31 img[src*='logo-ted'] {
+	width: 6.2rem;
+}
+.section-31 img[src*='logo-ny-weekly'] {
+	width: 23.7rem;
+}
+.section-31 img[src*='logo-tech-bullion'] {
+	width: 11.1rem;
+}
+.section-31 img[src*='logo-theamericanreporter'] {
+	width: 29.4rem;
+}
+/* ~~~ */
+/* ~~~ */
+/* ~~~ */
