@@ -644,6 +644,9 @@ section .event-name {
 	margin-top: 25.6rem;
 	list-style: unset;
 }
+.section-29 ul li {
+	padding-left: 0.4rem;
+}
 /* ~~~ */
 .section-30 {
 	display: flex;
@@ -652,11 +655,14 @@ section .event-name {
 	background: url(images/sections/section-30/bg.svg) 0 48rem/100% no-repeat;
 }
 .section-30 .half-screen-square {
-	width: 50vw;
-	height: 50vw;
+	width: calc((100vw - 15px)/2);
+	height: calc((100vw - 15px)/2);
+	/*width: 50vw;*/
+	/*height: 50vw;*/
 }
 .section-30 .half-screen-square img {
-	width: 96rem;
+	/*width: 50vw;*/
+	width: calc((100vw - 15px)/2);
 	height: auto;
 }
 .section-30 .people-9 {}
