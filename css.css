@@ -112,6 +112,7 @@ figure {
 }
 .request__text {
 	font-size: 2.8rem;
+	line-height: 4rem;
 }
 .request__divider {
 	height: .3rem;
@@ -143,6 +144,7 @@ section .event-name {
 	width: 15rem;
 	color: #fff;
 	font-size: 3rem;
+	font-weight: 300;
 	line-height: 3rem;
 }
 .section--img-800x1040 {
@@ -771,6 +773,131 @@ section .event-name {
 .section-31 img[src*='logo-theamericanreporter'] {
 	width: 29.4rem;
 }
+/* ~~~ */
+.section-32 {
+	position: relative;
+	padding-top: 12.9rem;
+	background: url(images/sections/section-30/bg-4-people-in-a-circle.svg) 8rem 110.3rem/7.9rem no-repeat, url(images/sections/section-32/bg-1.jpg) 0 0/192rem no-repeat, url(images/sections/section-32/bg-2.jpg) 0 68.9rem/192rem no-repeat;
+}
+.section-32 .event-name {
+	top: 21rem;
+	z-index: 1;
+}
+.section-32 .blot::after {
+	top: auto;
+	bottom: 12rem;
+}
+.section-32 figure {
+	position: relative;
+	margin: 0 -8rem;
+}
+.section-32 figure img {
+	width: 192rem;
+	height: auto;
+}
+.section-32 .blot {
+	color: #fff;
+}
+.section-32 h4 {
+	width: 95rem;
+	margin-top: 4rem;
+}
+.section-32 h4 + p {
+	width: 87rem;
+	margin: 12rem 0 0 72rem;
+	padding-bottom: 12.5rem;
+}
+
+/* ~~~ */
+.section-33 {
+	height: 96rem;
+	padding: 8rem;
+	box-sizing: content-box;
+	align-content: flex-start;
+}
+.section-33 img {
+	width: 96rem;
+	height: auto;
+}
+.section-33 figure {
+	position: relative;
+	margin-right: 12rem;
+	z-index: -1;
+}
+.section-33 figure::after {
+	content: '';
+	width: 126.6rem;
+	height: 60rem;
+	position: absolute;
+	top: 28rem;
+	left: -8rem;
+	background: url(images/sections/section-33/bg.svg) 0 0 / contain no-repeat;
+	z-index: 1;
+}
+.section-33 .event-name {
+	top: auto;
+	left: auto;
+	bottom: 2.5rem;
+	right: 2.5rem;
+	text-align: right;
+}
+.section-33 h4 ~ p {
+	width: 60rem;
+}
+.section-33 h4 {
+	width: 40rem;
+	margin: 8rem 0 5rem;
+}
+/* ~~~ */
+.section-34 {
+	padding: 8rem;
+	padding-left: 44rem !important;
+}
+.section-34 h2 {
+	width: 72rem;
+	margin-bottom: 13rem;
+}
+.section-34 ul {
+	list-style: unset;
+	margin: 4rem 0 4rem 5rem;
+}
+.section-34 li,
+.section-35 li {
+	padding-left: 0.5rem;
+}
+.section-35 {
+	display: flex;
+	padding-top: 24rem;
+	padding-bottom: 4rem;
+}
+.section-35 h2 {
+	position: relative;
+	width: 46rem;
+}
+.section-35 h2::after {
+	content: '';
+	position: absolute;
+	top: 11.8rem;
+	left: 107%;
+	width: 55.1rem;
+	height: 12rem;
+	background: url(images/sections/section-35/arrow.svg) 0 0 / contain no-repeat;
+}
+.section-35 ul {
+	width: 50rem;
+	margin-top: 12.7rem;
+	margin-left: 68rem;
+	list-style: unset;
+}
+.section-35 li {
+	padding-left: 0.5rem;
+	padding-bottom: 4rem;
+}
+/* ~~~ */
+.section-36
+
+
+
 /* ~~~ */
 /* ~~~ */
 /* ~~~ */
