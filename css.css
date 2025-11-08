@@ -64,8 +64,19 @@ html {
 	color: #000;
 	font-family: var(--font-hauora-sans);
 	font-size: calc((100vw - var(--scrollbar-width, 0))/1920*10);
-	scroll-behavior: smooth
+	scroll-behavior: smooth;
 }
+@media screen and (max-width: 960px) {
+	html {
+		--scrollbar-width: 0px;
+	}
+}
+@media screen and (min-width: 961px) {
+	html {
+		--scrollbar-width: 15px;
+	}
+}
+
 body {
 	position: relative
 }
@@ -657,14 +668,11 @@ section .event-name {
 	background: url(images/sections/section-30/bg.svg) 0 48rem/100% no-repeat;
 }
 .section-30 .half-screen-square {
-	width: calc((100vw - 15px)/2);
-	height: calc((100vw - 15px)/2);
-	/*width: 50vw;*/
-	/*height: 50vw;*/
+	width: 96rem;
+	height: 96rem;
 }
 .section-30 .half-screen-square img {
-	/*width: 50vw;*/
-	width: calc((100vw - 15px)/2);
+	width: 96rem;
 	height: auto;
 }
 .section-30 .people-9 {}
