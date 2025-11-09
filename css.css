@@ -66,12 +66,12 @@ html {
 	font-size: calc((100vw - var(--scrollbar-width, 0))/1920*10);
 	scroll-behavior: smooth;
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 768px) {
 	html {
 		--scrollbar-width: 0px;
 	}
 }
-@media screen and (min-width: 961px) {
+@media screen and (min-width: 769px) {
 	html {
 		--scrollbar-width: 15px;
 	}
@@ -144,6 +144,9 @@ figure {
 }
 
 /* COMMON */
+section {
+	position: relative;
+}
 section:not(.section--img-800x1040) {
 	padding-left: 8rem;
 	padding-right: 8rem;
@@ -159,7 +162,6 @@ section .event-name {
 	line-height: 3rem;
 }
 .section--img-800x1040 {
-	position: relative;
 	display: flex;	
 }
 .section--img-800x1040 img {
@@ -195,6 +197,51 @@ section .event-name {
 /*            */
 /*  SECTIONs  */
 /*            */
+.section-11 {
+	padding-bottom: 8rem;
+}
+.section-11 figure {
+	float: right;
+}
+.section-11 img {
+	width: 68rem;
+	height: auto;
+}
+.section-11 h2 {
+	padding: 8rem 0 16rem;
+}
+.section-11 ul {
+	margin-left: 37rem;
+}
+.section-11 p {
+	font-size: 3.6rem;
+	line-height: 8rem;
+}
+.section-11 li::before {
+	top: 10rem !important;
+}
+.section-11 li:nth-child(2) {
+	margin-top: 17rem;
+	margin-left: 70.8rem;
+	margin-bottom: 7rem;
+}
+.section-11 li:nth-child(4) {
+	margin-top: 16rem;
+	margin-left: 70.8rem;
+}
+/* ~~~ */
+.section-14 {
+	background: #E1F0A3;
+}
+.section-14::after {
+	display: none;
+}
+.section-14 .text-with-padding {
+	box-sizing: content-box;
+	width: 74rem;
+	padding: 17rem 0 11rem 14rem;
+}
+/* ~~~ */
 .section-16 {
 	background: #E1F0A3;
 }
@@ -221,7 +268,6 @@ section .event-name {
 }
 /* ~~~ */
 .section-17 {
-	position: relative;
 	padding-top: 8rem;
 	padding-bottom: 8rem;
 }
@@ -363,6 +409,7 @@ section .event-name {
 .section-19 .event-name {
 	top: 15rem;
 }
+.section-14 .text-content,
 .section-19 .text-content,
 .section-23 .text-content,
 .section-25 .text-content {
@@ -434,7 +481,6 @@ section .event-name {
 }
 /* ~~~ */
 .section-22 {
-	position: relative;
 	padding-top: 12rem;
 	padding-bottom: 2rem;
 }
@@ -473,7 +519,6 @@ section .event-name {
 }
 /* ~~~ */
 .section-24 {
-	position: relative;
 	padding: 15.6rem 8rem 1rem 44rem !important;
 	background: url(images/sections/section-24/mars.png) right 38rem/25.1rem no-repeat, url(images/sections/section-24/bg-grey.jpg) 0 0/100vw no-repeat;
 }
@@ -504,6 +549,7 @@ section .event-name {
 .section-24 li:nth-child(even) {
 	margin-left: 36rem;
 }
+.section-11 li::before,
 .section-24 li::before {
 	position: relative;
 	left: -13.4rem;
@@ -539,7 +585,6 @@ section .event-name {
 }
 /* ~~~ */
 .section-26 {
-	position: relative;
 	padding: 16rem 8rem 18rem;
 }
 .section-26::after {
@@ -568,7 +613,6 @@ section .event-name {
 }
 /* ~~~ */
 .section-27 {
-	position: relative;
 	height: 120rem;
 	padding-top: 6rem;
 	padding-bottom: 7rem;
@@ -604,7 +648,6 @@ section .event-name {
 }
 /* ~~~ */
 .section-28 {
-	position: relative;
 	padding-bottom: 15rem;
 	background: url(images/sections/section-28/bg-decor.svg) left 64rem bottom 50rem/8rem no-repeat, url(images/sections/section-28/bg-net.png) 0 bottom/125.5rem no-repeat, url(images/sections/section-28/bg-grey.jpg) 56rem bottom/119.8rem no-repeat;
 }
@@ -643,7 +686,6 @@ section .event-name {
 /* ~~~ */
 .section-29 {
 	display: flex;
-	position: relative;
 	color: #fff;
 	background: url(images/sections/section-29/arrow.svg) 52rem 27rem/68.7rem no-repeat, url(images/sections/section-29/icon-deer.svg) left 8rem bottom 8rem/8rem no-repeat, url(images/sections/section-29/bg.jpg) 0 0/192rem no-repeat;
 }
@@ -733,9 +775,6 @@ section .event-name {
 	margin-top: 2rem;
 }
 /* ~~~ */
-.section-31 {
-	position: relative;
-}
 .section-31 header {
 	height: 32rem;
 	padding: 8rem;
@@ -783,7 +822,6 @@ section .event-name {
 }
 /* ~~~ */
 .section-32 {
-	position: relative;
 	padding-top: 12.9rem;
 	background: url(images/sections/section-30/bg-4-people-in-a-circle.svg) 8rem 110.3rem/7.9rem no-repeat, url(images/sections/section-32/bg-1.jpg) 0 0/192rem no-repeat, url(images/sections/section-32/bg-2.jpg) 0 68.9rem/192rem no-repeat;
 }
@@ -815,7 +853,6 @@ section .event-name {
 	margin: 12rem 0 0 72rem;
 	padding-bottom: 12.5rem;
 }
-
 /* ~~~ */
 .section-33 {
 	height: 96rem;
@@ -873,6 +910,7 @@ section .event-name {
 .section-35 li {
 	padding-left: 0.5rem;
 }
+/* ~~~ */
 .section-35 {
 	display: flex;
 	padding-top: 24rem;
@@ -902,10 +940,95 @@ section .event-name {
 	padding-bottom: 4rem;
 }
 /* ~~~ */
-.section-36
-
-
-
+.section-36 {
+	padding-top: 8rem;
+	color: #F48E8E;
+	background: url(images/sections/section-36/bg-1.jpg) 0 0/contain no-repeat;
+}
+.section-36 .flex {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	height: 176rem;
+}
+.section-36 .flex > * {
+	width: 68rem;
+}
+.section-36::after {
+	color: #fff;
+}
+.section-36 h4 {
+	margin: 10rem 0 5rem;
+}
+.section-36 footer {
+	position: relative;
+	height: 23.7rem;
+	margin: 0 -8rem;
+	background: url(images/sections/section-36/logo-support-meaning-inspiration.svg) 8rem 6.5rem/32.7rem no-repeat, url(images/sections/section-36/bg-2.jpg) 0 0/contain no-repeat;
+}
+.section-36 footer .event-name {
+	top: 6rem;
+	right: 8rem;
+	left: auto;
+	text-align: right;
+}
 /* ~~~ */
-/* ~~~ */
-/* ~~~ */
+.section-37 {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	height: 72rem;
+	padding: 8rem 0 16rem;
+	box-sizing: content-box;
+	background: url(images/sections/section-37/san-francisco-hub.svg) top right/14rem no-repeat, url(images/sections/section-37/bg.jpg) 0 0/contain no-repeat;
+}
+.section-37::after {
+	top: auto;
+	bottom: 17rem;
+}
+.section-37::before {
+	content: '';
+	position: absolute;
+	height: 8rem;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #E1F0A3;
+}
+.section-37 img {
+	width: 68rem;
+	height: auto;
+}
+.section-37 figure {
+	margin-left: 11rem;
+}
+.section-37 h2 {
+	width: 52rem;
+}
+.section-37 h4 {
+	margin: 8rem 0;
+}
+.section-37 address {
+	width: 25rem;
+	margin-top: 12rem;
+	margin-left: 36rem;
+}
+.section-37 address a {
+	display: block;
+	font-size: 2.8rem;
+	line-height: 4rem;
+	padding-left: 3.8rem;
+	color: inherit;
+	text-decoration: none;
+	background: 0 0.9rem/2.5rem no-repeat;
+}
+.section-37 address a.telegram {
+	background-image: url(images/sections/section-37/icon-telegram.svg);
+}
+.section-37 address a.whatsapp {
+	background-image: url(images/sections/section-37/icon-whatsapp.svg);
+}
+.section-37 address a.email {
+	background-image: url(images/sections/section-37/icon-email.svg);
+}
