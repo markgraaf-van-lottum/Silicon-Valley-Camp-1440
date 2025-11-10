@@ -230,6 +230,55 @@ section .event-name {
 	margin-left: 70.8rem;
 }
 /* ~~~ */
+.section-12 {
+	padding-bottom: 19rem;
+	background: url(images/sections/section-12/bg-green-curve.svg) bottom right/163.2rem no-repeat;
+}
+.section-12 h2 {
+	display: inline-block;
+}
+.section-12 p.default {
+	display: inline-block;
+	vertical-align: top;
+	width: 96rem;
+	margin-left: 17rem;
+	padding: 12rem 12rem 0 16rem;
+	background: url(images/sections/section-12/bg.jpg) 0 0 / contain no-repeat;
+}
+.section-12 ul,
+.section-15 ul {
+	margin-top: 42rem;
+	margin-left: 40rem;
+}
+.section-12 li a,
+.section-15 li a {
+	color: inherit;
+	font-size: 2rem;
+	padding: 2rem 0 .1rem;
+	text-decoration: none;
+	border-bottom: .05rem solid #000;
+}
+.section-12 li,
+.section-15 li {
+	width: 40rem;
+	margin-top: -18rem;
+}
+.section-12 li:nth-child(even),
+.section-15 li:nth-child(even) {
+	margin-left: 72rem;
+}
+.section-12 li::before,
+.section-15 li::before {
+	top: 9rem !important;
+	left: -14rem !important;
+}
+.section-12 li img,
+.section-15 li img {
+	width: 32rem;
+	height: auto;
+	margin: 4rem 0 1rem;
+}
+/* ~~~ */
 .section-14 {
 	background: #E1F0A3;
 }
@@ -240,6 +289,17 @@ section .event-name {
 	box-sizing: content-box;
 	width: 74rem;
 	padding: 17rem 0 11rem 14rem;
+}
+/* ~~~ */
+.section-15 {
+	padding: 2.5rem 0;
+	background: url(images/sections/section-15/bg.jpg) 0 0/192rem no-repeat;
+}
+.section-15 ul {
+	margin-top: 0;
+}
+.section-15 li:first-child {
+	margin-top: 0;
 }
 /* ~~~ */
 .section-16 {
@@ -487,11 +547,11 @@ section .event-name {
 .section-22::before {
 	content: '';
 	width: 130rem;
-	height: 180rem;
+	height: 182rem;
 	position: absolute;
 	top: -63rem;
 	right: 0;
-	background: url(images/sections/section-22/bg.svg) 100% 0/contain no-repeat;
+	background: url(images/sections/section-22/bg.svg) 0 0/contain no-repeat;
 	z-index: -1;
 }
 .section-22 .flex-row {
@@ -550,6 +610,8 @@ section .event-name {
 	margin-left: 36rem;
 }
 .section-11 li::before,
+.section-12 li::before,
+.section-15 li::before,
 .section-24 li::before {
 	position: relative;
 	left: -13.4rem;
@@ -613,7 +675,6 @@ section .event-name {
 }
 /* ~~~ */
 .section-27 {
-	height: 120rem;
 	padding-top: 6rem;
 	padding-bottom: 7rem;
 	background: url(images/sections/section-27/bg-decor.svg) 54rem 61rem/6.6rem no-repeat, url(images/sections/section-27/san-francisco-hub.svg) top 21.5rem left 0/11.5rem no-repeat, url(images/sections/section-27/bg.jpg) 0 0/100vw no-repeat;
@@ -633,14 +694,14 @@ section .event-name {
 	list-style: unset;
 }
 .section-27 li {
-	padding-left: 0.6rem;
+	padding-left: 1rem;
 }
 .section-27 li:not(:last-child) {
 	padding-bottom: 4rem;
 }
 .section-27 h2 {
 	width: 46rem;
-	margin: 14rem 0 20rem;
+	margin: 14rem 0 19rem;
 }
 .section-27 h2 + p {
 	width: 82.5rem;
@@ -662,7 +723,7 @@ section .event-name {
 }
 .section-28 h4 {
 	width: 55rem;
-	margin: 8rem 0 12rem 48rem;
+	margin: 8rem 0 13rem 48rem;
 }
 .section-28 img.NEClub-logo {
 	position: absolute;
@@ -674,14 +735,14 @@ section .event-name {
 .section-28 img.NEClub-photo {
 	width: 72rem;
 	height: auto;
-	margin: 3rem 0 5rem;
+	margin: 3.5rem 0 5rem;
 }
 .section-28 .event-name {
 	text-align: right;
 	top: auto;
 	left: auto;
 	bottom: 8rem;
-	right: 24rem;
+	right: 27rem;
 }
 /* ~~~ */
 .section-29 {
@@ -692,7 +753,7 @@ section .event-name {
 .section-29 h2 {
 	width: 85rem;
 	padding: 24rem 0 48rem;
-	margin-right: auto;
+	margin-right: 38rem;
 }
 .section-29 ul {
 	width: 55rem;
@@ -964,7 +1025,7 @@ section .event-name {
 	position: relative;
 	height: 23.7rem;
 	margin: 0 -8rem;
-	background: url(images/sections/section-36/logo-support-meaning-inspiration.svg) 8rem 6.5rem/32.7rem no-repeat, url(images/sections/section-36/bg-2.jpg) 0 0/contain no-repeat;
+	background: url(images/sections/section-36/logo-support-meaning-inspiration.svg) 8rem 6.5rem/32.7rem no-repeat, url(images/sections/section-36/bg-2.jpg) 0 0/100vw no-repeat;
 }
 .section-36 footer .event-name {
 	top: 6rem;
