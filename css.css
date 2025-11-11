@@ -242,7 +242,7 @@ section .event-name {
 	vertical-align: top;
 	width: 96rem;
 	margin-left: 17rem;
-	padding: 12rem 12rem 0 16rem;
+	padding: 11.6rem 12rem 0 16rem;
 	background: url(images/sections/section-12/bg.jpg) 0 0 / contain no-repeat;
 }
 .section-12 ul,
@@ -292,7 +292,7 @@ section .event-name {
 }
 /* ~~~ */
 .section-15 {
-	padding: 2.5rem 0;
+	padding: 1rem 0;
 	background: url(images/sections/section-15/bg.jpg) 0 0/192rem no-repeat;
 }
 .section-15 ul {
@@ -524,7 +524,7 @@ section .event-name {
 	margin-right: 8rem;
 }
 .section-20 h4 {
-	margin: 4rem 0 8rem;
+	margin: 3rem 0 8rem;
 }
 .h-320 h4 {
 	margin-bottom: 3.5rem;
@@ -566,7 +566,7 @@ section .event-name {
 	margin-bottom: 14rem;
 }
 .section-22 .h-320 h4 {
-	margin-top: 4rem;
+	margin-top: 3rem;
 }
 /* ~~~ */
 .section-23 {
@@ -579,7 +579,7 @@ section .event-name {
 }
 /* ~~~ */
 .section-24 {
-	padding: 15.6rem 8rem 1rem 44rem !important;
+	padding: 14.2rem 8rem 1rem 44rem !important;
 	background: url(images/sections/section-24/mars.png) right 38rem/25.1rem no-repeat, url(images/sections/section-24/bg-grey.jpg) 0 0/100vw no-repeat;
 }
 .section-24::before {
@@ -952,7 +952,7 @@ section .event-name {
 }
 .section-33 h4 {
 	width: 40rem;
-	margin: 8rem 0 5rem;
+	margin: 7rem 0 5rem;
 }
 /* ~~~ */
 .section-34 {
@@ -1002,7 +1002,7 @@ section .event-name {
 }
 /* ~~~ */
 .section-36 {
-	padding-top: 8rem;
+	padding-top: 7rem;
 	color: #F48E8E;
 	background: url(images/sections/section-36/bg-1.jpg) 0 0/contain no-repeat;
 }
@@ -1010,7 +1010,7 @@ section .event-name {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	height: 176rem;
+	height: 180rem;
 }
 .section-36 .flex > * {
 	width: 68rem;
@@ -1019,7 +1019,7 @@ section .event-name {
 	color: #fff;
 }
 .section-36 h4 {
-	margin: 10rem 0 5rem;
+	margin: 9rem 0 5rem;
 }
 .section-36 footer {
 	position: relative;
