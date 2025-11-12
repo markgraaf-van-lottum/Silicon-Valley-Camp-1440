@@ -63,18 +63,121 @@ html {
 	background: #fff;
 	color: #000;
 	font-family: var(--font-hauora-sans);
-	font-size: calc((100vw - var(--scrollbar-width, 0))/1920*10);
 	scroll-behavior: smooth;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
 	html {
 		--scrollbar-width: 0px;
+		font-size: calc((100vw - var(--scrollbar-width, 0))/440*10);
 	}
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1025px) {
 	html {
 		--scrollbar-width: 15px;
+		font-size: calc((100vw - var(--scrollbar-width, 0))/1920*10);
 	}
+	.section-11 figure {
+		float: right;
+	}
+	.request {
+		display: grid;
+		grid-template-columns: 1fr 32rem 68rem;
+		grid-template-rows: 1fr auto;
+		gap: 1.8rem 4rem;
+		align-items: center;
+		margin: 16rem 0;
+		padding: 0 8rem;
+	}
+	.request__divider {
+		height: .3rem;
+		width: 32rem;
+		background: #000;
+	}
+	.section--img-800x1040 {
+		display: flex;	
+	}
+	.section--img-800x1040 .text-content {
+		padding: 8rem;
+		box-sizing: content-box;
+	}
+	.section-14 {
+		background: #E1F0A3;
+	}
+	.section-14 .text-content,
+	.section-19 .text-content,
+	.section-23 .text-content,
+	.section-25 .text-content {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	.section-14 .text-with-padding {
+		box-sizing: content-box;
+		width: 74rem;
+		padding: 17rem 0 11rem 14rem;
+	}
+	.section-15 {
+		padding: 1rem 0;
+		background: url(images/sections/section-15/bg.jpg) 0 0/192rem no-repeat;
+	}
+	.section-16 .text-content {
+		width: 72rem;
+	}
+	.section-16 {
+		background: #E1F0A3;
+	}
+	.section-16 figcaption {
+		color: #fff;
+		font-size: 2rem;
+		font-weight: 300;
+		position: absolute;
+		bottom: 5rem;
+		right: 5rem;
+	}
+	.section-17 .event-name {
+		top: 18rem;
+		font-size: 3.6rem;
+		color: #000;
+	}
+	.section-17 .section-head {
+		display: flex;
+		padding: 8rem 0 32rem;
+		text-transform: lowercase;
+	}
+	.section-17 .section-head::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 125.4rem;
+		height: 66.4rem;
+		z-index: -1;
+		background: url(images/sections/section-17/bg-decor.svg) 0/cover;
+	}
+	.section-17 .section-head::after {
+		content: '';
+		position: absolute;
+		top: 8rem;
+		left: 8rem;
+		right: 8rem;
+		height: 56rem;
+		z-index: -2;
+		background: url(images/sections/section-17/bg.jpg) 0/cover;
+	}
+	.section-17 h2 {
+		width: 70rem;
+		margin-left: 36rem;
+	}
+	.section-17 .text-content {
+		width: 82rem;
+		margin: -15rem 0 0 72rem;
+	}
+	.section-18 .person {
+		columns: 2;
+		column-gap: 7rem;
+		width: 139rem;
+	}
+
 }
 
 body {
@@ -112,27 +215,13 @@ figure {
 }
 
 /* Блок "Оставить заявку" */
-.request {
-	display: grid;
-	grid-template-columns: 1fr 32rem 68rem;
-	grid-template-rows: 1fr auto;
-	gap: 1.8rem 4rem;
-	align-items: center;
-	margin: 16rem 0;
-	padding: 0 8rem;
-}
 .request__text {
 	font-size: 2.8rem;
 	line-height: 4rem;
 }
-.request__divider {
-	height: .3rem;
-	width: 32rem;
-	background: #000;
-}
 .button {
-	line-height: 16rem;
 	font-size: 2.6rem;
+	line-height: 16rem;
 	background: var(--primary-color);
 	transition: background-color .2s;
 	cursor: pointer;
@@ -161,16 +250,9 @@ section .event-name {
 	font-weight: 300;
 	line-height: 3rem;
 }
-.section--img-800x1040 {
-	display: flex;	
-}
 .section--img-800x1040 img {
 	width: 80rem;
 	height: auto;
-}
-.section--img-800x1040 .text-content {
-	padding: 8rem;
-	box-sizing: content-box;
 }
 .section--img-800x1040 a.button {
 	display: inline-block;
@@ -200,9 +282,6 @@ section .event-name {
 .section-11 {
 	padding-bottom: 8rem;
 }
-.section-11 figure {
-	float: right;
-}
 .section-11 img {
 	width: 68rem;
 	height: auto;
@@ -220,12 +299,20 @@ section .event-name {
 .section-11 li::before {
 	top: 10rem !important;
 }
+.section-11 li:nth-child(1) {
+	width: 50rem;
+}
 .section-11 li:nth-child(2) {
+	width: 54rem;
 	margin-top: 17rem;
 	margin-left: 70.8rem;
 	margin-bottom: 7rem;
 }
+.section-11 li:nth-child(3) {
+	width: 45rem;
+}
 .section-11 li:nth-child(4) {
+	width: 60rem;
 	margin-top: 16rem;
 	margin-left: 70.8rem;
 }
@@ -279,22 +366,6 @@ section .event-name {
 	margin: 4rem 0 1rem;
 }
 /* ~~~ */
-.section-14 {
-	background: #E1F0A3;
-}
-.section-14::after {
-	display: none;
-}
-.section-14 .text-with-padding {
-	box-sizing: content-box;
-	width: 74rem;
-	padding: 17rem 0 11rem 14rem;
-}
-/* ~~~ */
-.section-15 {
-	padding: 1rem 0;
-	background: url(images/sections/section-15/bg.jpg) 0 0/192rem no-repeat;
-}
 .section-15 ul {
 	margin-top: 0;
 }
@@ -302,26 +373,12 @@ section .event-name {
 	margin-top: 0;
 }
 /* ~~~ */
-.section-16 {
-	background: #E1F0A3;
-}
 .section-16::after {
 	bottom: 3rem;
 	top: auto;
 }
 .section-16 figure {
 	position: relative;
-}
-.section-16 figcaption {
-	color: #fff;
-	font-size: 2rem;
-	font-weight: 300;
-	position: absolute;
-	bottom: 5rem;
-	right: 5rem;
-}
-.section-16 .text-content {
-	width: 72rem;
 }
 .section-16 .text-content h2 {
 	margin-bottom: 13rem;
@@ -330,44 +387,6 @@ section .event-name {
 .section-17 {
 	padding-top: 8rem;
 	padding-bottom: 8rem;
-}
-.section-17 .event-name {
-	top: 18rem;
-	font-size: 3.6rem;
-	color: #000;
-}
-.section-17 .section-head {
-	display: flex;
-	padding: 8rem 0 32rem;
-	text-transform: lowercase;
-}
-.section-17 .section-head::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 125.4rem;
-	height: 66.4rem;
-	z-index: -1;
-	background: url(images/sections/section-17/bg-decor.svg) 0/cover;
-}
-.section-17 .section-head::after {
-	content: '';
-	position: absolute;
-	top: 8rem;
-	left: 8rem;
-	right: 8rem;
-	height: 56rem;
-	z-index: -2;
-	background: url(images/sections/section-17/bg.jpg) 0/cover;
-}
-.section-17 h2 {
-	width: 70rem;
-	margin-left: 36rem;
-}
-.section-17 .text-content {
-	width: 82rem;
-	margin: -15rem 0 0 72rem;
 }
 .section-17 ul.list-experts {
 	list-style: unset;
@@ -384,21 +403,19 @@ section .event-name {
 }
 .section-17 ul.logo-experts li {
 	background: center/contain no-repeat;
+	height: 5rem;
 }
 .section-17 ul li.logo-google {
 	width: 6.9rem;
-	height: 5rem;
 	background-image: url(images/sections/section-17/logo-google.svg);
 }
 .section-17 ul li.logo-amazon {
 	width: 7.6rem;
-	height: 5rem;
 	background-image: url(images/sections/section-17/logo-amazon.svg);
 	background-position-y: 70%;
 }
 .section-17 ul li.logo-netflix {
 	width: 7.4rem;
-	height: 5rem;
 	background-image: url(images/sections/section-17/logo-netflix.svg);
 }
 .section-17 ul li.logo-apple {
@@ -408,27 +425,19 @@ section .event-name {
 }
 .section-17 ul li.logo-microsoft {
 	width: 14.6rem;
-	height: 5rem;
 	background-image: url(images/sections/section-17/logo-microsoft.svg);
 }
 .section-17 ul li.logo-meta {
 	width: 8.7rem;
-	height: 5rem;
 	background-image: url(images/sections/section-17/logo-meta.svg);
 }
 .section-17 ul li.logo-tesla {
 	width: 10.7rem;
-	height: 5rem;
 	background-image: url(images/sections/section-17/logo-tesla.svg);
 }
 /* ~~~ */
 .section-18 {
 	padding-top: 9rem;
-}
-.section-18 .person {
-	columns: 2;
-	column-gap: 7rem;
-	width: 139rem;
 }
 .section-18 .person + .person {
 	margin-top: 16rem;
@@ -468,14 +477,6 @@ section .event-name {
 }
 .section-19 .event-name {
 	top: 15rem;
-}
-.section-14 .text-content,
-.section-19 .text-content,
-.section-23 .text-content,
-.section-25 .text-content {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
 }
 .section-19 .text-with-padding {
 	box-sizing: content-box;
@@ -1092,4 +1093,307 @@ section .event-name {
 }
 .section-37 address a.email {
 	background-image: url(images/sections/section-37/icon-email.svg);
+}
+
+/*  ADAPTIVE */
+@media screen and (max-width: 1024px) {
+	h2 {
+		font-size: 5rem;
+		line-height: 4rem;
+	}
+	h4 {
+		font-size: 2.4rem;
+		line-height: 2rem;
+	}
+	p + p {
+		margin-top: 2rem;
+	}
+	section p,
+	section ul {
+		font-size: 1.8rem !important;
+		line-height: 2rem !important;
+	}
+	section h2 {
+		position: absolute;
+		top: -2rem;
+		left: 2rem;
+	}
+	.request {
+		margin: 4rem 0;
+		padding: 1rem 2rem;
+		background: #F7F7F7;
+	}
+	.request__text,
+	.request__button-hint {
+		font-size: 1rem;
+		line-height: 4.5;
+		text-align: center;
+	}
+	.button {
+		width: 100%;
+		font-size: 2rem;
+		line-height: 10rem;
+	}
+	section .event-name {
+		top: 14rem;
+		left: 2rem;
+		width: 5rem;
+		font-size: 1rem !important;
+		line-height: 1rem !important;
+	}
+	.section--img-800x1040 img {
+		width: 100vw;
+	}
+	.section--img-800x1040 a.button {
+		position: absolute;
+		top: 63rem;
+		right: 2rem;
+		width: 12rem;
+		font-size: 1rem;
+		line-height: 4rem;
+	}
+	.section--img-800x1040::after,
+	.blot::after {
+		top: 13.5rem;
+		right: 1.5rem;
+		font-size: 2.4rem;
+		color: #fff;
+	}
+	section:not(.section--img-800x1040) {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+	.section-11 {
+		padding-bottom: 4rem;
+	}
+	.section-11 h2 {
+		display: none;
+	}
+	.section-11 img {
+		width: 40rem;
+	}
+	.section-11 ul {
+		margin-left: 7rem;
+	}
+	.section-11 li:nth-child(1) {
+		width: 20rem;
+	}
+	.section-11 li:nth-child(2) {
+		width: 25rem;
+		margin-top: 2.5rem;
+		margin-left: 9rem;
+		margin-bottom: 3.5rem;
+	}
+	.section-11 li:nth-child(3) {
+		width: 22rem;
+	}
+	.section-11 li:nth-child(4) {
+		width: 22rem;
+		margin-top: 4rem;
+		margin-left: 9rem;
+	}
+	.section-11 li::before,
+	.section-12 li::before,
+	.section-15 li::before,
+	.section-24 li::before {
+		width: 5rem;
+		font-size: 8rem;
+		left: -6.7rem !important;
+		top: 4.5rem !important;
+		text-align: left;
+	}
+	.section-12 p.default {
+		width: auto;
+		margin: 6rem -2rem 0 0;
+		padding: 2rem 2rem 6rem 4rem;
+		background: #F7F7F7;
+	}
+	.section-12 ul,
+	.section-15 ul {
+		margin: 0 0 0 6.4rem;
+		position: relative;
+	}
+	.section-12 {
+		padding-bottom: 5rem;
+		background: url(images/sections/section-12/bg-green-curve--mobile.svg) bottom right/100vw no-repeat;
+	}
+	.section-12 ul::before {
+		content: '';
+		position: absolute;
+		top: 22rem;
+		left: -8.4rem;
+		width: 28rem;
+		height: 140rem;
+		background: #f7f8f8;
+		z-index: -1;
+	}
+	.section-12 li,
+	.section-15 li {
+		width: 16rem;
+		margin: 0;
+	}
+	.section-12 li:nth-child(even),
+	.section-15 li:nth-child(even) {
+		margin-left: 17.6rem;
+	}
+	.section-12 li img,
+	.section-15 li img {
+		width: 100%;
+		margin: 2rem 0 0;
+	}
+	.section-12 li a,
+	.section-15 li a {
+		font-size: 1.8rem;
+		line-height: 2rem;
+		border-bottom-width: .1rem;
+		vertical-align: top;
+	}
+	.section-14 figure,
+	.section-16 figure {
+		padding-top: 12rem;
+		background: #E1F0A3;
+	}
+	.section-15 li {
+		margin-bottom: 2rem;
+	}
+	.section-14 .text-with-padding {
+		margin-left: 2rem;
+		padding: 4.5rem 2rem 4rem 6rem;
+		background: #F6F7F8;
+	}
+	.section-16 {
+		margin-top: 9rem;
+	}
+	.section-16 .text-content {
+		position: relative;
+		margin-left: 2rem;
+		padding: 8.5rem 2rem 4rem 6rem;
+	}
+	.section-16 .text-content::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 24.6rem;
+		background: #F6F7F8;
+		z-index: -1;
+	}
+	.section-16 figure::after {
+		content: '';
+		position: absolute;
+		bottom: -17rem;
+		left: 0;
+		width: 44rem;
+		height: 39rem;
+		background: url(images/sections/section-16/bg-green-curve--mobile.svg) 0 0/100vw no-repeat;
+	}
+	.section-16 figcaption {
+		display: none;
+	}
+	.section-16 h2 {
+		top: -71.5rem;
+		left: 0;
+	}
+	.section-16 .event-name {
+		z-index: 1;
+	}
+	.section-17 {
+		margin-top: 7rem;
+		padding-bottom: 0;
+	}
+	.section-17 .event-name {
+		display: none;
+	}
+	.section-17 h2::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		height: 32rem;
+		width: 100%;
+		background: #F6F7F8;
+		z-index: -1;
+	}
+	.section-17 .text-content {
+		margin-top: 2rem;
+		margin-left: 6rem;
+	}
+	.section-17 ul.list-experts {
+		padding: 4rem 0 0 2rem;
+	}
+	.section-17 ul.list-experts li {
+		margin-bottom: 2rem;
+	}
+	.section-17 ul.logo-experts {
+		margin-top: 8rem;
+		flex-wrap: wrap;
+	}
+	.section-17 ul li.logo-google {
+		width: 3.2rem;
+		background-position-y: 0;
+	}
+	.section-17 ul li.logo-amazon {
+		width: 3.5rem;
+		order: 2;
+		background-position-y: 0;
+	}
+	.section-17 ul li.logo-netflix {
+		width: 3.4rem;
+		order: 4;
+		background-position-y: 0;
+	}
+	.section-17 ul li.logo-apple {
+		width: 1.2rem;
+		order: 6;
+		background-position-y: 0;
+	}
+	.section-17 ul li.logo-microsoft {
+		width: 4.7rem;
+		order: 1;
+		background-position-y: 100%;
+	}
+	.section-17 ul li.logo-meta {
+		width: 3.7rem;
+		order: 3;
+		background-position-y: 100%;
+	}
+	.section-17 ul li.logo-tesla {
+		width: 5rem;
+		order: 5;
+		background-position-y: 100%;
+	}
+	.section-18 {
+		padding-bottom: 14.5rem;
+		background: url(images/sections/section-18/bg-green-curve--mobile.svg) left bottom/100vw no-repeat;
+	}
+	.section-18 h4 {
+		font-size: 3rem;
+	}
+	.section-18 .person img {
+		width: 26rem;
+		height: 26rem;
+	}
+	.section-18 .person .name {
+		padding-top: 2rem;
+	}
+	.section-18 .person .companies {
+		margin-top: 2.5rem;
+	}
+	.section-18 .person.wozniak .resume,
+	.section-18 .person.geshuri .resume {
+		width: 38rem;
+	}
+	.section-18 .person.kriens .resume {
+		width: 36rem;
+	}
+	.section-18 .person a.more {
+		padding-bottom: 0.4rem;
+		margin-top: 1.4rem;
+	}
+	.section-18 .person + .person {
+		margin-top: 8rem;
+	}
+	.section-18 + .request {
+		display: none;
+	}
 }
