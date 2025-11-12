@@ -65,16 +65,13 @@ html {
 	font-family: var(--font-hauora-sans);
 	scroll-behavior: smooth;
 }
-@media screen and (max-width: 1024px) {
-	html {
-		--scrollbar-width: 0px;
-		font-size: calc((100vw - var(--scrollbar-width, 0))/440*10);
-	}
-}
 @media screen and (min-width: 1025px) {
 	html {
 		--scrollbar-width: 15px;
 		font-size: calc((100vw - var(--scrollbar-width, 0))/1920*10);
+	}
+	h3 {
+		margin-bottom: 15rem;
 	}
 	.section-11 figure {
 		float: right;
@@ -176,6 +173,139 @@ html {
 		columns: 2;
 		column-gap: 7rem;
 		width: 139rem;
+	}
+	.section-19 {
+		background: #FCFECE;
+	}
+	.section-19 h2::first-letter {
+		margin-left: 0.3rem;
+	}
+	.section-19 .event-name {
+		top: 15rem;
+	}
+	.section-19 figure::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 80rem;
+		height: 76.2rem;
+		background: url(images/sections/section-19/bg.svg) 0 0 / 80rem no-repeat;
+	}
+	.section-19 .text-with-padding {
+		box-sizing: content-box;
+		width: 77rem;
+		padding: 17rem 0 15rem 8rem;
+	}
+	.section-20 {
+		padding-top: 16rem;
+		padding-bottom: 3rem;
+		background: url(images/sections/section-20/planet.jpg) 0 100%/30.3rem no-repeat, url(images/sections/section-20/bg.jpg) 16rem 40rem/160rem no-repeat;
+	}
+	.flex-row {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		margin-bottom: 8rem;
+	}
+	.section-20 .flex-row + .flex-row {
+		margin-left: 24rem;
+	}
+	.section-20 .flex-row + .flex-row + .flex-row {
+		margin-left: 48rem;
+	}
+	.section-20 .h-640 {
+		height: 64rem;
+		width: 88rem;
+	}
+	.section-20 .h-640 img {
+		width: 64rem;
+		height: 64rem;
+	}
+	.h-320 {
+		height: 32rem;
+		width: 80rem;
+	}
+	.section-20 .h-320 + .h-320 {
+		width: 75rem;
+	}
+	.h-320 img {
+		width: 32rem;
+		height: 32rem;
+	}
+	.section-20 + .request {
+		margin-top: 5rem;
+	}
+	.section-21 {
+		background: #FEF2CE;
+		z-index: -1;
+	}
+	.section-21 .text-with-padding {
+		box-sizing: content-box;
+		width: 72rem;
+		padding: 21rem 0 15rem 16rem;
+	}
+	.section-20 img,
+	.section-22 img {
+		margin-right: 8rem;
+	}
+	.section-20 h4 {
+		margin: 3rem 0 8rem;
+	}
+	.h-320 h4 {
+		margin-bottom: 3.5rem;
+	}
+	/* ~~~ */
+	.section-22 {
+		padding-top: 12rem;
+		padding-bottom: 2rem;
+	}
+	.section-22::before {
+		content: '';
+		width: 130rem;
+		height: 182rem;
+		position: absolute;
+		top: -63rem;
+		right: 0;
+		background: url(images/sections/section-22/bg.svg) 0 0/contain no-repeat;
+		z-index: -1;
+	}
+	.section-22 .flex-row {
+		width: 72rem;
+		padding-left: 24rem;
+		box-sizing: content-box;
+	}
+	.section-22 .flex-row + .flex-row {
+		margin-left: 8rem;
+	}
+	.section-22 > h4 {
+		margin-bottom: 14rem;
+	}
+	.section-22 .h-320 h4 {
+		margin-top: 3rem;
+	}
+	.section-23 {
+		background: #FECEE7;
+	}
+	.section-23 .text-with-padding {
+		box-sizing: content-box;
+		width: 72rem;
+		padding: 14rem 0 10rem 16rem;
+	}
+	.section-24 {
+		padding: 14.2rem 8rem 1rem 44rem !important;
+		background: url(images/sections/section-24/mars.png) right 38rem/25.1rem no-repeat, url(images/sections/section-24/bg-grey.jpg) 0 0/100vw no-repeat;
+	}
+	.section-11 li::before,
+	.section-12 li::before,
+	.section-15 li::before,
+	.section-24 li::before {
+		left: -13.4rem;
+		top: 8.2rem;
+		display: inline-block;
+		width: 8.8rem;
+		text-align: right;
+		font-size: 16rem;
 	}
 
 }
@@ -469,120 +599,6 @@ section .event-name {
 	content: ' >';
 }
 /* ~~~ */
-.section-19 {
-	background: #FCFECE;
-}
-.section-19 h2::first-letter {
-	margin-left: 0.3rem;
-}
-.section-19 .event-name {
-	top: 15rem;
-}
-.section-19 .text-with-padding {
-	box-sizing: content-box;
-	width: 77rem;
-	padding: 17rem 0 15rem 8rem;
-}
-/* ~~~ */
-.section-20 {
-	padding-top: 16rem;
-	padding-bottom: 3rem;
-	background: url(images/sections/section-20/planet.jpg) 0 100%/30.3rem no-repeat, url(images/sections/section-20/bg.jpg) 16rem 40rem/160rem no-repeat;
-}
-.flex-row {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	margin-bottom: 8rem;
-}
-.section-20 .flex-row + .flex-row {
-	margin-left: 24rem;
-}
-.section-20 .flex-row + .flex-row + .flex-row {
-	margin-left: 48rem;
-}
-.section-20 .h-640 {
-	height: 64rem;
-	width: 88rem;
-}
-.section-20 .h-640 img {
-	width: 64rem;
-	height: 64rem;
-}
-.h-320 {
-	height: 32rem;
-	width: 80rem;
-}
-.section-20 .h-320 + .h-320 {
-	width: 75rem;
-}
-.h-320 img {
-	width: 32rem;
-	height: 32rem;
-}
-.section-20 img,
-.section-22 img {
-	margin-right: 8rem;
-}
-.section-20 h4 {
-	margin: 3rem 0 8rem;
-}
-.h-320 h4 {
-	margin-bottom: 3.5rem;
-}
-/* ~~~ */
-.section-21 {
-	background: #FEF2CE;
-	z-index: -1;
-}
-.section-21 .text-with-padding {
-	box-sizing: content-box;
-	width: 72rem;
-	padding: 21rem 0 15rem 16rem;
-}
-/* ~~~ */
-.section-22 {
-	padding-top: 12rem;
-	padding-bottom: 2rem;
-}
-.section-22::before {
-	content: '';
-	width: 130rem;
-	height: 182rem;
-	position: absolute;
-	top: -63rem;
-	right: 0;
-	background: url(images/sections/section-22/bg.svg) 0 0/contain no-repeat;
-	z-index: -1;
-}
-.section-22 .flex-row {
-	width: 72rem;
-	padding-left: 24rem;
-	box-sizing: content-box;
-}
-.section-22 .flex-row + .flex-row {
-	margin-left: 8rem;
-}
-.section-22 > h4 {
-	margin-bottom: 14rem;
-}
-.section-22 .h-320 h4 {
-	margin-top: 3rem;
-}
-/* ~~~ */
-.section-23 {
-	background: #FECEE7;
-}
-.section-23 .text-with-padding {
-	box-sizing: content-box;
-	width: 72rem;
-	padding: 14rem 0 10rem 16rem;
-}
-/* ~~~ */
-.section-24 {
-	padding: 14.2rem 8rem 1rem 44rem !important;
-	background: url(images/sections/section-24/mars.png) right 38rem/25.1rem no-repeat, url(images/sections/section-24/bg-grey.jpg) 0 0/100vw no-repeat;
-}
 .section-24::before {
 	content: '';
 	position: absolute;
@@ -615,12 +631,6 @@ section .event-name {
 .section-15 li::before,
 .section-24 li::before {
 	position: relative;
-	left: -13.4rem;
-	top: 8.2rem;
-	display: inline-block;
-	width: 8.8rem;
-	text-align: right;
-	font-size: 16rem;
 	font-weight: 200;
 	color: #D9D9D9;
 	content: counter(list-item);
@@ -1097,9 +1107,18 @@ section .event-name {
 
 /*  ADAPTIVE */
 @media screen and (max-width: 1024px) {
+	html {
+		--scrollbar-width: 0px;
+		font-size: calc((100vw - var(--scrollbar-width, 0))/440*10);
+	}
 	h2 {
 		font-size: 5rem;
 		line-height: 4rem;
+	}
+	h3 {
+		font-size: 4.2rem;
+		line-height: 3.2rem;
+		margin: 3rem 0;
 	}
 	h4 {
 		font-size: 2.4rem;
@@ -1154,7 +1173,7 @@ section .event-name {
 	}
 	.section--img-800x1040::after,
 	.blot::after {
-		top: 13.5rem;
+		top: 14rem;
 		right: 1.5rem;
 		font-size: 2.4rem;
 		color: #fff;
@@ -1200,7 +1219,6 @@ section .event-name {
 		font-size: 8rem;
 		left: -6.7rem !important;
 		top: 4.5rem !important;
-		text-align: left;
 	}
 	.section-12 p.default {
 		width: auto;
@@ -1246,19 +1264,20 @@ section .event-name {
 		font-size: 1.8rem;
 		line-height: 2rem;
 		border-bottom-width: .1rem;
-		vertical-align: top;
+		vertical-align: -1rem;
 	}
-	.section-14 figure,
-	.section-16 figure {
+	.section--img-800x1040 figure {
 		padding-top: 12rem;
 		background: #E1F0A3;
 	}
 	.section-15 li {
 		margin-bottom: 2rem;
 	}
-	.section-14 .text-with-padding {
+	.section-14 .text-with-padding,
+	.section-19 .text-with-padding,
+	.section-21 .text-content {
 		margin-left: 2rem;
-		padding: 4.5rem 2rem 4rem 6rem;
+		padding: 4rem 2rem 4rem 4rem;
 		background: #F6F7F8;
 	}
 	.section-16 {
@@ -1366,12 +1385,16 @@ section .event-name {
 		padding-bottom: 14.5rem;
 		background: url(images/sections/section-18/bg-green-curve--mobile.svg) left bottom/100vw no-repeat;
 	}
-	.section-18 h4 {
+	.section-18 h4,
+	.section-20 h4,
+	.section-22 h4 {
 		font-size: 3rem;
 	}
-	.section-18 .person img {
+	.section-18 .person img,
+	.section-22 img,
+	.section-20 .h-640 img {
 		width: 26rem;
-		height: 26rem;
+		height: auto;
 	}
 	.section-18 .person .name {
 		padding-top: 2rem;
@@ -1396,4 +1419,81 @@ section .event-name {
 	.section-18 + .request {
 		display: none;
 	}
+	.section-19 figure {
+		background: #FCFECE;
+	}
+	.section-20 {
+		margin-top: -2rem;
+		padding-top: 4rem;
+		padding-bottom: 32rem;
+		background: url(images/sections/section-20/bg--mobile.svg) left bottom / 100vw no-repeat, url(images/sections/section-20/planet--mobile.png) top right / 12rem no-repeat;
+	}
+	.section-20 .h-640 h4 {
+		margin: 4rem 0;
+	}
+	.section-20 .h-640 + .h-320 {
+		margin-top: 2rem;
+		padding: 4rem 0;
+	}
+	.section-20 .h-640 + .h-320::before {
+		content: '';
+		position: absolute;
+		top: 0rem;
+		left: -2rem;
+		bottom: 0;
+		width: 38rem;
+		background: #f6f7f8;
+		z-index: -1;
+	}
+	.section-20 .h-320 {
+		position: relative;
+		margin-right: -2rem;
+		padding-top: 2rem;
+	}
+	.section-20 .h-320 h4 {
+		margin-top: 0;
+		margin-bottom: 2.5rem;
+	}
+	.section-20 .h-320 img {
+		float: left;
+		width: 12rem;
+		height: auto;
+		margin: 0 2rem 8rem 0;
+	}
+	.section-20 + .request {
+		margin-top: -28rem;
+	}
+	.section-20 + .request > * {
+		z-index: 1;
+		position: relative;
+	}
+	.section-21 {
+		margin-top: 7rem;
+	}
+	.section-21 figure {
+		background: #FEF2CE;
+	}
+	.section-22 h3 {
+		width: 30rem;
+	}
+	.section-22 h4 {
+		margin: 4rem 0 2.4rem;
+	}
+	.section-22 .flex-row + .flex-row {
+		margin-top: 4rem;
+	}
+	.section-23 {
+		margin-top: 8rem;
+	}
+	.section-23 figure {
+		background: #FECEE7;
+	}
+	.section-24::before {
+		top: -20rem;
+		left: 0;
+		width: 44rem;
+		height: 30rem;
+		background: url(images/sections/section-24/mars--mobile.png) right bottom / 8rem no-repeat, url(images/sections/section-24/bg--mobile.svg) 0 0 / 100% no-repeat;
+	}
+
 }
