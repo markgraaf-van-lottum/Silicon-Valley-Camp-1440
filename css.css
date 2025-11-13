@@ -307,6 +307,125 @@ html {
 		text-align: right;
 		font-size: 16rem;
 	}
+	.section-24 h4 {
+		width: 35rem;
+	}
+	.section-24 ul {
+		margin-top: 15.5rem;
+		margin-left: 37rem;
+	}
+	.section-24 li {
+		width: 50rem;
+		margin-bottom: 8rem;
+	}
+	.section-24 li:first-child {
+		margin-bottom: 4rem;
+	}
+	.section-24 li:nth-child(3) {
+		width: 40rem;
+	}
+	.section-24 li:nth-child(even) {
+		margin-left: 36rem;
+	}
+	.section-25 .text-with-padding {
+		padding: 13rem 8rem 7rem 15.5rem;
+	}
+	.section-26 {
+		padding: 16rem 8rem 18rem;
+	}
+	.section-26::after {
+		content: '✦';
+		position: absolute;
+		bottom: 12rem;
+		right: 11rem;
+		font-size: 5rem;
+	}
+	.section-26 .flex-row {
+		height: 64rem;
+	}
+	.section-26 img {
+		width: 64rem;
+		height: 64rem;
+	}
+	.section-26 figure {
+		margin-right: 8rem;
+	}
+	.section-26 p.default {
+		width: 76rem;
+	}
+	.section-27 {
+		padding-top: 6rem;
+		padding-bottom: 7rem;
+		background: url(images/sections/section-27/bg-decor.svg) 54rem 61rem/6.6rem no-repeat, url(images/sections/section-27/san-francisco-hub.svg) top 21.5rem left 0/11.5rem no-repeat, url(images/sections/section-27/bg.jpg) 0 0/100vw no-repeat;
+	}
+	.section-27::before {
+		content: '';
+		position: absolute;
+		top: -7.3rem;
+		right: 9rem;
+		width: 14.6rem;
+		height: 14.6rem;
+		background: url(images/sections/section-27/planet.png) 0 0/contain no-repeat;
+	}
+	.section-27 h2 {
+		width: 46rem;
+		margin: 14rem 0 19rem;
+	}
+	.section-27 h2 + p {
+		width: 82.5rem;
+		margin-left: 72rem;
+	}
+	.section-28 {
+		padding-bottom: 15rem;
+		background: url(images/sections/section-28/bg-decor.svg) left 64rem bottom 50rem/8rem no-repeat, url(images/sections/section-28/bg-net.png) 0 bottom/125.5rem no-repeat, url(images/sections/section-28/bg-grey.jpg) 56rem bottom/119.8rem no-repeat;
+	}
+	.section-28 .content {
+		width: 72rem;
+		margin-left: 72rem;
+	}
+	.section-28 h2 {
+		width: 50rem;
+		top: -8.1rem;
+		position: relative;
+	}
+	.section-28 .content img[width="360"] {
+		display: none;
+	}
+	.section-29 {
+		display: flex;
+		color: #fff;
+		background: url(images/sections/section-29/arrow.svg) 52rem 27rem/68.7rem no-repeat, url(images/sections/section-29/icon-deer.svg) left 8rem bottom 8rem/8rem no-repeat, url(images/sections/section-29/bg.jpg) 0 0/192rem no-repeat;
+	}
+	.section-29 h2 {
+		width: 85rem;
+		padding: 24rem 0 48rem;
+		margin-right: 38rem;
+	}
+	.section-29 ul {
+		width: 55rem;
+		margin-top: 25.6rem;
+		list-style: unset;
+	}
+	.section-30 .build-community-since-2010::before {
+		content: '';
+		width: 40.7rem;
+		height: 24.2rem;
+		position: absolute;
+		top: -21.5rem;
+		right: 10rem;
+		border-radius: 2.6rem;
+		transform: rotate(15deg);
+		backdrop-filter: blur(14px);
+		background: url(images/sections/section-30/card.svg) 0 0/contain no-repeat;
+	}
+	.section-30 .half-screen-square:nth-child(1) h2 {
+		padding-bottom: 9rem;
+	}
+	.section-30 p.flex {
+		height: 20rem;
+		display: flex;
+		align-items: center;
+	}
 
 }
 
@@ -609,23 +728,6 @@ section .event-name {
 	background: url(images/sections/section-24/bg.svg) 0/contain no-repeat;
 	pointer-events: none;
 }
-.section-24 h4 {
-	width: 35rem;
-}
-.section-24 ul {
-	margin-top: 15.5rem;
-	margin-left: 37rem;
-}
-.section-24 li {
-	width: 50rem;
-	margin-bottom: 8rem;
-}
-.section-24 li:first-child {
-	margin-bottom: 4rem;
-}
-.section-24 li:nth-child(even) {
-	margin-left: 36rem;
-}
 .section-11 li::before,
 .section-12 li::before,
 .section-15 li::before,
@@ -653,52 +755,12 @@ section .event-name {
 .section-25 h2 {
 	width: 65rem;
 }
-.section-25 .text-with-padding {
-	padding: 13rem 8rem 7rem 15.5rem;
-}
 /* ~~~ */
-.section-26 {
-	padding: 16rem 8rem 18rem;
-}
-.section-26::after {
-	content: '✦';
-	position: absolute;
-	bottom: 12rem;
-	right: 11rem;
-	font-size: 5rem;
-}
-.section-26 .flex-row {
-	height: 64rem;
-}
-.section-26 img {
-	width: 64rem;
-	height: 64rem;
-}
-.section-26 figure {
-	margin-right: 8rem;
-}
 .section-26 h4 {
 	width: 104rem;
 	margin: 4rem 0 8rem;
 }
-.section-26 p.default {
-	width: 76rem;
-}
 /* ~~~ */
-.section-27 {
-	padding-top: 6rem;
-	padding-bottom: 7rem;
-	background: url(images/sections/section-27/bg-decor.svg) 54rem 61rem/6.6rem no-repeat, url(images/sections/section-27/san-francisco-hub.svg) top 21.5rem left 0/11.5rem no-repeat, url(images/sections/section-27/bg.jpg) 0 0/100vw no-repeat;
-}
-.section-27::before {
-	content: '';
-	position: absolute;
-	top: -7.3rem;
-	right: 9rem;
-	width: 14.6rem;
-	height: 14.6rem;
-	background: url(images/sections/section-27/planet.png) 0 0/contain no-repeat;
-}
 .section-27 ul {
 	width: 68rem;
 	margin-left: 72rem;
@@ -710,28 +772,7 @@ section .event-name {
 .section-27 li:not(:last-child) {
 	padding-bottom: 4rem;
 }
-.section-27 h2 {
-	width: 46rem;
-	margin: 14rem 0 19rem;
-}
-.section-27 h2 + p {
-	width: 82.5rem;
-	margin-left: 72rem;
-}
 /* ~~~ */
-.section-28 {
-	padding-bottom: 15rem;
-	background: url(images/sections/section-28/bg-decor.svg) left 64rem bottom 50rem/8rem no-repeat, url(images/sections/section-28/bg-net.png) 0 bottom/125.5rem no-repeat, url(images/sections/section-28/bg-grey.jpg) 56rem bottom/119.8rem no-repeat;
-}
-.section-28 .content {
-	width: 72rem;
-	margin-left: 72rem;
-}
-.section-28 h2 {
-	width: 50rem;
-	top: -8.1rem;
-	position: relative;
-}
 .section-28 h4 {
 	width: 55rem;
 	margin: 8rem 0 13rem 48rem;
@@ -756,21 +797,6 @@ section .event-name {
 	right: 27rem;
 }
 /* ~~~ */
-.section-29 {
-	display: flex;
-	color: #fff;
-	background: url(images/sections/section-29/arrow.svg) 52rem 27rem/68.7rem no-repeat, url(images/sections/section-29/icon-deer.svg) left 8rem bottom 8rem/8rem no-repeat, url(images/sections/section-29/bg.jpg) 0 0/192rem no-repeat;
-}
-.section-29 h2 {
-	width: 85rem;
-	padding: 24rem 0 48rem;
-	margin-right: 38rem;
-}
-.section-29 ul {
-	width: 55rem;
-	margin-top: 25.6rem;
-	list-style: unset;
-}
 .section-29 ul li {
 	padding-left: 0.4rem;
 }
@@ -789,22 +815,9 @@ section .event-name {
 	width: 96rem;
 	height: auto;
 }
-.section-30 .people-9 {}
 .section-30 .build-community-since-2010 {
 	position: relative;
 	background: url(images/sections/section-30/bg-4-people-in-a-circle.svg) top 9rem right 8rem/7.9rem no-repeat;
-}
-.section-30 .build-community-since-2010::before {
-	content: '';
-	width: 40.7rem;
-	height: 24.2rem;
-	position: absolute;
-	top: -21.5rem;
-	right: 10rem;
-	border-radius: 2.6rem;
-	transform: rotate(15deg);
-	backdrop-filter: blur(14px);
-	background: url(images/sections/section-30/card.svg) 0 0/contain no-repeat;
 }
 .section-30 .build-community-since-2010 h2 {
 	padding-bottom: 13rem;
@@ -837,11 +850,6 @@ section .event-name {
 .section-30 .text-2-lines {
 	display: inline-block;
 	width: 42%;
-}
-.section-30 p.flex {
-	height: 20rem;
-	display: flex;
-	align-items: center;
 }
 .section-30 p.flex:first-child {
 	margin-top: 2rem;
@@ -1121,18 +1129,23 @@ section .event-name {
 		margin: 3rem 0;
 	}
 	h4 {
-		font-size: 2.4rem;
+		font-size: 3rem;
 		line-height: 2rem;
 	}
 	p + p {
 		margin-top: 2rem;
+	}
+	section > figure {
+		box-sizing: content-box;
+		overflow-y: hidden;
+		max-height: 56rem;
 	}
 	section p,
 	section ul {
 		font-size: 1.8rem !important;
 		line-height: 2rem !important;
 	}
-	section h2 {
+	section .text-content h2 {
 		position: absolute;
 		top: -2rem;
 		left: 2rem;
@@ -1165,7 +1178,7 @@ section .event-name {
 	}
 	.section--img-800x1040 a.button {
 		position: absolute;
-		top: 63rem;
+		top: 61.8rem;
 		right: 2rem;
 		width: 12rem;
 		font-size: 1rem;
@@ -1218,7 +1231,7 @@ section .event-name {
 		width: 5rem;
 		font-size: 8rem;
 		left: -6.7rem !important;
-		top: 4.5rem !important;
+		top: 4rem !important;
 	}
 	.section-12 p.default {
 		width: auto;
@@ -1232,8 +1245,12 @@ section .event-name {
 		position: relative;
 	}
 	.section-12 {
-		padding-bottom: 5rem;
+		padding-bottom: 7rem;
 		background: url(images/sections/section-12/bg-green-curve--mobile.svg) bottom right/100vw no-repeat;
+	}
+	.section-12 h4,
+	.section-15 h4 {
+		font-size: 2.4rem;
 	}
 	.section-12 ul::before {
 		content: '';
@@ -1250,9 +1267,16 @@ section .event-name {
 		width: 16rem;
 		margin: 0;
 	}
+	.section-12 li + li,
+	.section-15 li + li {
+		margin-top: 5rem;
+	}
 	.section-12 li:nth-child(even),
 	.section-15 li:nth-child(even) {
 		margin-left: 17.6rem;
+	}
+	.section-15 {
+		margin-bottom: 5.5rem;
 	}
 	.section-12 li img,
 	.section-15 li img {
@@ -1273,9 +1297,7 @@ section .event-name {
 	.section-15 li {
 		margin-bottom: 2rem;
 	}
-	.section-14 .text-with-padding,
-	.section-19 .text-with-padding,
-	.section-21 .text-content {
+	.section--img-800x1040:not(.section-16) .text-content {
 		margin-left: 2rem;
 		padding: 4rem 2rem 4rem 4rem;
 		background: #F6F7F8;
@@ -1285,40 +1307,40 @@ section .event-name {
 	}
 	.section-16 .text-content {
 		position: relative;
-		margin-left: 2rem;
-		padding: 8.5rem 2rem 4rem 6rem;
+		padding: 8.5rem 2rem 4rem 8rem;
+		z-index: 1;
 	}
 	.section-16 .text-content::before {
 		content: '';
 		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		height: 24.6rem;
-		background: #F6F7F8;
-		z-index: -1;
-	}
-	.section-16 figure::after {
-		content: '';
-		position: absolute;
-		bottom: -17rem;
+		top: -21.8rem;
 		left: 0;
 		width: 44rem;
 		height: 39rem;
 		background: url(images/sections/section-16/bg-green-curve--mobile.svg) 0 0/100vw no-repeat;
+		z-index: -1;
+	}
+	.section-16 .text-content::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 42rem;
+		height: 24rem;
+		background: #f6f7f8;
+		z-index: -2;
 	}
 	.section-16 figcaption {
 		display: none;
 	}
-	.section-16 h2 {
-		top: -71.5rem;
-		left: 0;
+	.section-16 .text-content h2 {
+		top: -70rem;
 	}
 	.section-16 .event-name {
 		z-index: 1;
 	}
 	.section-17 {
-		margin-top: 7rem;
+		padding-top: 6rem;
 		padding-bottom: 0;
 	}
 	.section-17 .event-name {
@@ -1334,7 +1356,7 @@ section .event-name {
 		z-index: -1;
 	}
 	.section-17 .text-content {
-		margin-top: 2rem;
+		margin-top: 4rem;
 		margin-left: 6rem;
 	}
 	.section-17 ul.list-experts {
@@ -1344,55 +1366,42 @@ section .event-name {
 		margin-bottom: 2rem;
 	}
 	.section-17 ul.logo-experts {
-		margin-top: 8rem;
+		margin-top: 5rem;
 		flex-wrap: wrap;
 	}
 	.section-17 ul li.logo-google {
-		width: 3.2rem;
-		background-position-y: 0;
+		width: 8rem;
+		margin-right: 1rem;
 	}
 	.section-17 ul li.logo-amazon {
-		width: 3.5rem;
-		order: 2;
-		background-position-y: 0;
+		width: 8rem;
+		margin-right: 1rem;
 	}
 	.section-17 ul li.logo-netflix {
-		width: 3.4rem;
-		order: 4;
-		background-position-y: 0;
+		width: 8rem;
+		margin-right: 1rem;
 	}
 	.section-17 ul li.logo-apple {
-		width: 1.2rem;
-		order: 6;
-		background-position-y: 0;
+		width: 2.6rem;
 	}
 	.section-17 ul li.logo-microsoft {
-		width: 4.7rem;
-		order: 1;
-		background-position-y: 100%;
+		width: 11rem;
 	}
 	.section-17 ul li.logo-meta {
-		width: 3.7rem;
-		order: 3;
-		background-position-y: 100%;
+		width: 9rem;
 	}
 	.section-17 ul li.logo-tesla {
-		width: 5rem;
-		order: 5;
-		background-position-y: 100%;
+		width: 11rem;
 	}
 	.section-18 {
-		padding-bottom: 14.5rem;
+		padding: 6rem 0 14.5rem;
+		/*padding: 6rem 0 10rem;*/
 		background: url(images/sections/section-18/bg-green-curve--mobile.svg) left bottom/100vw no-repeat;
-	}
-	.section-18 h4,
-	.section-20 h4,
-	.section-22 h4 {
-		font-size: 3rem;
+		/*background: url(images/sections/section-18/bg-green-curve--mobile.svg) left bottom -4rem /100vw no-repeat;*/
 	}
 	.section-18 .person img,
 	.section-22 img,
-	.section-20 .h-640 img {
+	img[width="640"] {
 		width: 26rem;
 		height: auto;
 	}
@@ -1400,7 +1409,7 @@ section .event-name {
 		padding-top: 2rem;
 	}
 	.section-18 .person .companies {
-		margin-top: 2.5rem;
+		margin-top: 3rem;
 	}
 	.section-18 .person.wozniak .resume,
 	.section-18 .person.geshuri .resume {
@@ -1411,7 +1420,7 @@ section .event-name {
 	}
 	.section-18 .person a.more {
 		padding-bottom: 0.4rem;
-		margin-top: 1.4rem;
+		margin-top: 1.2rem;
 	}
 	.section-18 .person + .person {
 		margin-top: 8rem;
@@ -1488,12 +1497,193 @@ section .event-name {
 	.section-23 figure {
 		background: #FECEE7;
 	}
+	.section-24 {
+		margin: 4rem 0 6rem;
+	}
+	.section-24 h4 {
+		width: 20rem;
+	}
 	.section-24::before {
-		top: -20rem;
+		top: -10rem;
 		left: 0;
 		width: 44rem;
 		height: 30rem;
 		background: url(images/sections/section-24/mars--mobile.png) right bottom / 8rem no-repeat, url(images/sections/section-24/bg--mobile.svg) 0 0 / 100% no-repeat;
+	}
+	.section-24 ul {
+		margin-top: 8rem;
+		margin-left: 6.5rem;
+	}
+	.section-24 li {
+		margin-top: 5rem;
+	}
+	.section-24 li:nth-child(even) {
+		margin-left: 10rem;
+	}
+	.section-24 li:nth-child(3) {
+		width: 22rem;
+	}
+	.section-24 li:nth-child(5) {
+		width: 30rem;
+	}
+	.section-25 {
+		margin-top: 10rem;
+		background: none;
+	}
+	.section-25::after {
+		top: auto;
+		bottom: 1.5rem;
+		color: #000;
+	}
+	.section-25::before {
+		top: 12rem;
+		width: 100%;
+		background: 0 0 / contain url(images/sections/section-25/bg--mobile.svg) no-repeat;
+	}
+	.section-25 figure {
+		background: #CEFFC7;
+	}
+	.section-25 figure::before {
+		content: '';
+		position: absolute;
+		top: 7.3rem;
+		right: 2rem;
+		width: 21rem;
+		height: 3.4rem;
+		background: top right / contain url(images/sections/section-25/lift-leaders.svg) no-repeat;
+		z-index: 100;
+	}
+	.section-25 h2 {
+		width: 31rem;
+	}
+	.section-26 {
+		padding-top: 8rem;
+		padding-bottom: 4rem;
+	}
+	.section-26 h4 {
+		width: auto;
+		margin-bottom: 4.5rem;
+	}
+	.section-26 p.default {
+		width: auto;
+	}
+	.section-27 h2 {
+		width: 24rem;
+		margin: 12rem 0 4rem;
+	}
+	.section-27 h2::before {
+		content: '';
+		position: absolute;
+		top: 16rem;
+		left: 0;
+		width: 40rem;
+		height: 24rem;
+		background: #f6f7f8;
+		z-index: -1;
+	}
+	.section-27 ul {
+		width: auto;
+		margin-left: 2.5rem;
+	}
+	.section-27 li:not(:last-child) {
+		padding-bottom: 2rem;
+	}
+	.section-27 li {
+		padding-left: 0.5rem;
+	}
+	.section-28 {
+		padding-bottom: 8rem;
+	}
+	.section-28 h2 {
+		width: 28rem;
+		font-size: 6rem;
+	}
+	.section-28 h2 + figure,
+	.section-28 .content img[width="720"] {
+		display: none;
+	}
+	.section-28 .content figure {
+		text-align: right;
+	}
+	.section-28 .content img[width="360"] {
+		width: 36rem;
+		margin: 4rem 0 2rem;
+	}
+	.section-28 h4 {
+		width: auto;
+		margin: 4rem -2rem 6rem 14rem;
+	}
+	.section-28 .event-name {
+		display: none;
+	}
+	.section-29 {
+		padding: 4rem 0 5rem;
+		color: #fff;
+		background: url(images/sections/section-29/bg--mobile.jpg) 0 0 / 100% no-repeat;
+	}
+	.section-29 ul {
+		margin: 8rem 2rem 0 3rem;
+		list-style: unset;
+	}
+	.section-29 li {
+		line-height: 4rem;
+	}
+	.section-29::after {
+		display: none;
+	}
+	.section-30 {
+		background: none;
+	}
+	.section-30 .half-screen-square {
+		width: 100vw;
+		height: 100vw;
+	}
+	.section-30 .half-screen-square img {
+		width: 100vw;
+	}
+	.section-30 .half-screen-square h2 {
+		width: 20rem;
+		padding-bottom: 2rem;
+		font-size: 3rem;
+		line-height: 2.5rem;
+	}
+	.section-30 .half-screen-square h2 ~ p {
+		padding-left: 4rem;
+  }
+	.section-30 .half-screen-square:nth-child(1) {
+		order: -1;
+		background: url(images/sections/section-30/bg-2block--mobile.svg) 0 0 / 100% no-repeat;
+	}
+	.section-30 .half-screen-square:nth-child(2) {
+		order: -2;
+	}
+	.section-30 .half-screen-square:nth-child(5) {
+		order: 1;
+		background: url(images/sections/section-30/bg-6block--mobile.svg) 0 0 / 100% no-repeat;
+	}
+	.section-30 .half-screen-square:has(p) {
+		padding: 3.5rem 2rem;
+	}
+	.section-30 .build-community-since-2010 {
+		background: url(images/sections/section-30/bg-4block--mobile.svg) 0 0 / 100% no-repeat;
+	}
+	.section-30 .build-community-since-2010 h2 {
+		padding-bottom: 6rem;
+	}
+	.section-30 .H4-font-size {
+		margin-right: 2rem;
+		font-size: 6rem;
+		line-height: 2rem;
+	}
+	.section-30 p.flex {
+		height: 10rem;
+	}
+	.section-30 .H4-font-size,
+	.section-30 .text-2-lines {
+		width: 44%;
+	}
+	.section-30 p.flex:first-child {
+		margin-top: 4rem;
 	}
 
 }
