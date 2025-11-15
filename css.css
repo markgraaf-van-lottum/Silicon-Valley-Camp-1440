@@ -73,6 +73,16 @@ html {
 	h3 {
 		margin-bottom: 15rem;
 	}
+	nav #nav_button,
+	nav button.button {
+		display: none !important;
+	}
+	nav ul {
+		display: flex;
+		align-items: center;
+		height: 8rem;
+	}
+
 	.section-11 figure {
 		float: right;
 	}
@@ -426,7 +436,186 @@ html {
 		display: flex;
 		align-items: center;
 	}
-
+	.section-31 header {
+		height: 32rem;
+		padding: 8rem;
+		margin: 0 -8rem;
+		background: url(images/sections/section-31/bg.jpg) 0 0/contain no-repeat;
+	}
+	.section-31 h2 {
+		width: 88rem;
+	}
+	.section-31 .event-name {
+		color: #000;
+		left: auto;
+		right: 8rem;
+		text-align: right;
+	}
+	.section-31 .media a {
+		padding: 0 2rem;
+	}
+	.section-31 img[src*='logo-forbes'] {
+		width: 7.9rem;
+	}
+	.section-31 img[src*='logo-digital-journal'] {
+		width: 20.8rem;
+	}
+	.section-31 img[src*='logo-ted'] {
+		width: 6.2rem;
+	}
+	.section-31 img[src*='logo-ny-weekly'] {
+		width: 23.7rem;
+	}
+	.section-31 img[src*='logo-tech-bullion'] {
+		width: 11.1rem;
+	}
+	.section-31 img[src*='logo-theamericanreporter'] {
+		width: 29.4rem;
+	}
+	.section-32 {
+		padding-top: 12.9rem;
+		background: url(images/sections/section-30/bg-4-people-in-a-circle.svg) 8rem 110.3rem/7.9rem no-repeat, url(images/sections/section-32/bg-1.jpg) 0 0/192rem no-repeat, url(images/sections/section-32/bg-2.jpg) 0 68.9rem/192rem no-repeat;
+	}
+	.section-32 .event-name {
+		top: 21rem;
+		z-index: 1;
+	}
+	.section-32 .blot {
+		color: #fff;
+	}
+	.section-32 .blot::after {
+		top: auto;
+		bottom: 12rem;
+	}
+	.section-32 figure {
+		position: relative;
+		margin: 0 -8rem;
+	}
+	.section-32 figure img[width="440"],
+	.section-33 figure img[width="400"] {
+		display: none;
+	}
+	.section-32 figure img {
+		width: 192rem;
+		height: auto;
+	}
+	.section-32 h4 {
+		width: 95rem;
+		margin-top: 4rem;
+	}
+	.section-32 h4 + p {
+		width: 87rem;
+		margin: 12rem 0 0 72rem;
+		padding-bottom: 12.5rem;
+	}
+	.section-33 {
+		height: 96rem;
+		padding: 8rem;
+		box-sizing: content-box;
+		align-content: flex-start;
+	}
+	.section-33 figure {
+		position: relative;
+		margin-right: 12rem;
+		z-index: -1;
+	}
+	.section-33 figure::before {
+		content: '';
+		width: 126.6rem;
+		height: 60rem;
+		position: absolute;
+		top: 28rem;
+		left: -8rem;
+		background: url(images/sections/section-33/bg.svg) 0 0 / contain no-repeat;
+		z-index: 1;
+	}
+	.section-33 .event-name {
+		top: auto;
+		left: auto;
+		bottom: 2.5rem;
+		right: 2.5rem;
+		text-align: right;
+	}
+	.section-33 h4 ~ p {
+		width: 60rem;
+	}
+	.section-33 h4 {
+		width: 40rem;
+		margin: 7rem 0 5rem;
+	}
+	.section-33 .blot::after {
+		color: #fff;
+		top: auto;
+		right: auto;
+		left: 3rem;
+		bottom: 5rem;
+	}
+	.section-34 {
+		padding: 8rem;
+		padding-left: 44rem !important;
+	}
+	.section-34 h2 {
+		width: 72rem;
+		margin-bottom: 13rem;
+	}
+	.section-35 {
+		display: flex;
+		padding-top: 24rem;
+		padding-bottom: 4rem;
+	}
+	.section-35 h2::after {
+		content: '';
+		position: absolute;
+		top: 11.8rem;
+		left: 107%;
+		width: 55.1rem;
+		height: 12rem;
+		background: url(images/sections/section-35/arrow.svg) 0 0 / contain no-repeat;
+	}
+	.section-36 .flex {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		height: 180rem;
+	}
+	.section-36 .flex > * {
+		width: 68rem;
+	}
+	.section-36::after {
+		color: #fff;
+	}
+	.section-36 h4 {
+		margin: 9rem 0 5rem;
+	}
+	.section-36 footer {
+		position: relative;
+		height: 23.7rem;
+		margin: 0 -8rem;
+		background: url(images/sections/section-36/logo-support-meaning-inspiration.svg) 8rem 6.5rem/32.7rem no-repeat, url(images/sections/section-36/bg-2.jpg) 0 0/100vw no-repeat;
+	}
+	.section-36 footer .event-name {
+		top: 6rem;
+		right: 8rem;
+		left: auto;
+		text-align: right;
+	}
+	.section-37 figure {
+		margin-left: 11rem;
+	}
+	.section-37 h2 {
+		width: 52rem;
+	}
+	.section-37 h4 {
+		margin: 8rem 0;
+	}
+	.section-37 address {
+		width: 25rem;
+		margin-top: 12rem;
+		margin-left: 36rem;
+	}
+	.section-37 p.co-founder {
+		width: 61rem;
+	}
 }
 
 body {
@@ -479,6 +668,64 @@ figure {
 	grid-area: 2/3;
 	font-size: 2rem;
 	text-align: center;
+}
+
+/* Навигация - Меню */
+nav[hidden] {
+	will-change: transform;
+	transform: translateY(-101%);
+}
+nav {
+	will-change: transform;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	padding-left: 6rem;
+	background: rgba(255,255,255,0.9);
+	transform: translateY(0);
+	transition: transform .3s;
+	user-select: none;
+	z-index: 10;
+}
+nav > * {
+	opacity: 1;
+	transition: opacity .2s;
+}
+nav[hidden] > * {
+	opacity: 0;
+}
+nav ul {
+	display: flex;
+}
+nav ul li {
+	display: flex;
+	margin-right: 10rem;
+}
+nav a {
+	color: inherit;
+	padding: 1rem 2rem;
+	font-size: 2rem;
+	line-height: 2rem;
+	font-weight: 700;
+	text-decoration: none;
+}
+nav #nav_button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	width: 6rem;
+	height: 6rem;
+	background: none;
+}
+nav #nav_button svg {
+	margin: auto;
+}
+/* кнопка "Оставить заявку" */
+nav .button {
+	width: 28rem;
+	line-height: 8rem;
 }
 
 /* COMMON */
@@ -567,6 +814,7 @@ section .event-name {
 }
 /* ~~~ */
 .section-12 {
+	padding-top: 8rem;	/* чтобы заголовок секции не остался под нав.панелью при переходе по якорной ссылке */
 	padding-bottom: 19rem;
 	background: url(images/sections/section-12/bg-green-curve.svg) bottom right/163.2rem no-repeat;
 }
@@ -773,6 +1021,10 @@ section .event-name {
 	padding-bottom: 4rem;
 }
 /* ~~~ */
+.section-28 {
+	padding-top: 16rem;	/* чтобы заголовок секции не остался под нав.панелью при переходе по якорной ссылке */
+	margin-top: -16rem;	/* компенсация padding */
+}
 .section-28 h4 {
 	width: 55rem;
 	margin: 8rem 0 13rem 48rem;
@@ -855,133 +1107,21 @@ section .event-name {
 	margin-top: 2rem;
 }
 /* ~~~ */
-.section-31 header {
-	height: 32rem;
-	padding: 8rem;
-	margin: 0 -8rem;
-	background: url(images/sections/section-31/bg.jpg) 0 0/contain no-repeat;
-}
-.section-31 h2 {
-	width: 88rem;
-}
-.section-31 .event-name {
-	color: #000;
-	left: auto;
-	right: 8rem;
-	text-align: right;
-}
 .section-31 .media {
 	display: flex;
 	justify-content: space-between;
 	margin: 0 -2rem;
 	padding: 13rem 0;
 }
-.section-31 .media a {
-	padding: 0 2rem;
-}
 .section-31 .media img {
 	height: auto;
 }
-.section-31 img[src*='logo-forbes'] {
-	width: 7.9rem;
-}
-.section-31 img[src*='logo-digital-journal'] {
-	width: 20.8rem;
-}
-.section-31 img[src*='logo-ted'] {
-	width: 6.2rem;
-}
-.section-31 img[src*='logo-ny-weekly'] {
-	width: 23.7rem;
-}
-.section-31 img[src*='logo-tech-bullion'] {
-	width: 11.1rem;
-}
-.section-31 img[src*='logo-theamericanreporter'] {
-	width: 29.4rem;
-}
 /* ~~~ */
-.section-32 {
-	padding-top: 12.9rem;
-	background: url(images/sections/section-30/bg-4-people-in-a-circle.svg) 8rem 110.3rem/7.9rem no-repeat, url(images/sections/section-32/bg-1.jpg) 0 0/192rem no-repeat, url(images/sections/section-32/bg-2.jpg) 0 68.9rem/192rem no-repeat;
-}
-.section-32 .event-name {
-	top: 21rem;
-	z-index: 1;
-}
-.section-32 .blot::after {
-	top: auto;
-	bottom: 12rem;
-}
-.section-32 figure {
-	position: relative;
-	margin: 0 -8rem;
-}
-.section-32 figure img {
-	width: 192rem;
-	height: auto;
-}
-.section-32 .blot {
-	color: #fff;
-}
-.section-32 h4 {
-	width: 95rem;
-	margin-top: 4rem;
-}
-.section-32 h4 + p {
-	width: 87rem;
-	margin: 12rem 0 0 72rem;
-	padding-bottom: 12.5rem;
-}
-/* ~~~ */
-.section-33 {
-	height: 96rem;
-	padding: 8rem;
-	box-sizing: content-box;
-	align-content: flex-start;
-}
 .section-33 img {
 	width: 96rem;
 	height: auto;
 }
-.section-33 figure {
-	position: relative;
-	margin-right: 12rem;
-	z-index: -1;
-}
-.section-33 figure::after {
-	content: '';
-	width: 126.6rem;
-	height: 60rem;
-	position: absolute;
-	top: 28rem;
-	left: -8rem;
-	background: url(images/sections/section-33/bg.svg) 0 0 / contain no-repeat;
-	z-index: 1;
-}
-.section-33 .event-name {
-	top: auto;
-	left: auto;
-	bottom: 2.5rem;
-	right: 2.5rem;
-	text-align: right;
-}
-.section-33 h4 ~ p {
-	width: 60rem;
-}
-.section-33 h4 {
-	width: 40rem;
-	margin: 7rem 0 5rem;
-}
 /* ~~~ */
-.section-34 {
-	padding: 8rem;
-	padding-left: 44rem !important;
-}
-.section-34 h2 {
-	width: 72rem;
-	margin-bottom: 13rem;
-}
 .section-34 ul {
 	list-style: unset;
 	margin: 4rem 0 4rem 5rem;
@@ -991,23 +1131,9 @@ section .event-name {
 	padding-left: 0.5rem;
 }
 /* ~~~ */
-.section-35 {
-	display: flex;
-	padding-top: 24rem;
-	padding-bottom: 4rem;
-}
 .section-35 h2 {
 	position: relative;
 	width: 46rem;
-}
-.section-35 h2::after {
-	content: '';
-	position: absolute;
-	top: 11.8rem;
-	left: 107%;
-	width: 55.1rem;
-	height: 12rem;
-	background: url(images/sections/section-35/arrow.svg) 0 0 / contain no-repeat;
 }
 .section-35 ul {
 	width: 50rem;
@@ -1021,36 +1147,9 @@ section .event-name {
 }
 /* ~~~ */
 .section-36 {
-	padding-top: 7rem;
+	padding-top: 8rem;	/* чтобы заголовок секции не остался под нав.панелью при переходе по якорной ссылке */
 	color: #F48E8E;
-	background: url(images/sections/section-36/bg-1.jpg) 0 0/contain no-repeat;
-}
-.section-36 .flex {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	height: 180rem;
-}
-.section-36 .flex > * {
-	width: 68rem;
-}
-.section-36::after {
-	color: #fff;
-}
-.section-36 h4 {
-	margin: 9rem 0 5rem;
-}
-.section-36 footer {
-	position: relative;
-	height: 23.7rem;
-	margin: 0 -8rem;
-	background: url(images/sections/section-36/logo-support-meaning-inspiration.svg) 8rem 6.5rem/32.7rem no-repeat, url(images/sections/section-36/bg-2.jpg) 0 0/100vw no-repeat;
-}
-.section-36 footer .event-name {
-	top: 6rem;
-	right: 8rem;
-	left: auto;
-	text-align: right;
+	background: url(images/sections/section-36/bg-1.jpg) 0 0 / cover no-repeat;
 }
 /* ~~~ */
 .section-37 {
@@ -1080,28 +1179,14 @@ section .event-name {
 	width: 68rem;
 	height: auto;
 }
-.section-37 figure {
-	margin-left: 11rem;
-}
-.section-37 h2 {
-	width: 52rem;
-}
-.section-37 h4 {
-	margin: 8rem 0;
-}
-.section-37 address {
-	width: 25rem;
-	margin-top: 12rem;
-	margin-left: 36rem;
-}
 .section-37 address a {
-	display: block;
+	display: inline-block;
 	font-size: 2.8rem;
 	line-height: 4rem;
 	padding-left: 3.8rem;
 	color: inherit;
 	text-decoration: none;
-	background: 0 0.9rem/2.5rem no-repeat;
+	background: 0 0.9rem / 2.5rem no-repeat;
 }
 .section-37 address a.telegram {
 	background-image: url(images/sections/section-37/icon-telegram.svg);
@@ -1115,6 +1200,45 @@ section .event-name {
 
 /*  ADAPTIVE */
 @media screen and (max-width: 1024px) {
+	nav {
+		background: rgba(255,255,255,0.5);
+	}
+	nav:not(.opened):not([hidden]) {
+		height: 6rem;
+	}
+	nav.opened {
+		padding: 8rem;
+		background: #fff;
+	}
+	nav.opened:not([hidden])::after {
+		content: '';
+		position: fixed;
+		top: 100%;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		backdrop-filter: blur(5px);
+		z-index: -1;
+	}
+	nav ul {
+		flex-direction: column;
+		margin-left: -2rem;
+	}
+	nav a {
+		padding: 2rem 6rem 2rem 2rem;
+	}
+	nav .nav_button {
+		width: 7.2rem;
+	}
+	nav .button {
+		margin-top: 6rem;
+	}
+	nav.opened #icon-menu,
+	nav:not(.opened) #icon-close,
+	nav:not(.opened) .nav-content {
+		display: none;
+	}
+
 	html {
 		--scrollbar-width: 0px;
 		font-size: calc((100vw - var(--scrollbar-width, 0))/440*10);
@@ -1202,9 +1326,10 @@ section .event-name {
 		display: none;
 	}
 	.section-11 img {
-		width: 40rem;
+		width: 100%;
 	}
 	.section-11 ul {
+		margin-top: 3rem;
 		margin-left: 7rem;
 	}
 	.section-11 li:nth-child(1) {
@@ -1366,7 +1491,7 @@ section .event-name {
 		margin-bottom: 2rem;
 	}
 	.section-17 ul.logo-experts {
-		margin-top: 5rem;
+		margin-top: 8rem;
 		flex-wrap: wrap;
 	}
 	.section-17 ul li.logo-google {
@@ -1394,7 +1519,7 @@ section .event-name {
 		width: 11rem;
 	}
 	.section-18 {
-		padding: 6rem 0 14.5rem;
+		padding: 8rem 0 14.5rem;
 		/*padding: 6rem 0 10rem;*/
 		background: url(images/sections/section-18/bg-green-curve--mobile.svg) left bottom/100vw no-repeat;
 		/*background: url(images/sections/section-18/bg-green-curve--mobile.svg) left bottom -4rem /100vw no-repeat;*/
@@ -1685,5 +1810,225 @@ section .event-name {
 	.section-30 p.flex:first-child {
 		margin-top: 4rem;
 	}
-
+	.section-31 header {
+		height: 12rem;
+		margin: 0 -2rem;
+		padding: 0 2rem;
+		background: url(images/sections/section-31/bg--mobile.jpg) 0 0 / contain no-repeat;
+	}
+	.section-31 .event-name {
+		display: none;
+	}
+	.section-31 h2 {
+		width: 25rem;
+		position: relative;
+		top: -2rem;
+	}
+	.section-31 .media {
+		flex-wrap: wrap;
+		margin: 0;
+		padding: 3rem 0;
+	}
+	.section-31 .media a {
+		padding: 1rem 0;
+	}
+	.section-31 a:has(img[src*='logo-digital-journal']) {
+		order: 1;
+		padding-top: 1.4rem;
+	}
+	.section-31 a:has(img[src*='logo-tech-bullion']) {
+		order: 2;
+	}
+	.section-31 a:has(img[src*='logo-ny-weekly']) {
+		order: 3;
+		padding-top: 0.6rem;
+	}
+	.section-31 a:has(img[src*='logo-forbes']) {
+		order: 4;
+		padding-top: 0.8rem;
+	}
+	.section-31 a:has(img[src*='logo-theamericanreporter']) {
+		order: 5;
+		padding-top: 1.5rem;
+	}
+	.section-31 a:has(img[src*='logo-ted']) {
+		order: 6;
+		padding-top: 1.5rem;
+	}
+	.section-31 img[src*='logo-forbes'] {
+		width: 7.9rem;
+	}
+	.section-31 img[src*='logo-digital-journal'] {
+		width: 20.8rem;
+	}
+	.section-31 img[src*='logo-ted'] {
+		width: 5rem;
+	}
+	.section-31 img[src*='logo-ny-weekly'] {
+		width: 23.7rem;
+	}
+	.section-31 img[src*='logo-tech-bullion'] {
+		width: 11.1rem;
+	}
+	.section-31 img[src*='logo-theamericanreporter'] {
+		width: 29.4rem;
+	}
+	.section-32 figure {
+		position: relative;
+		margin: 0 -2rem;
+	}
+	.section-32 figure img[width="1920"],
+	.section-33 figure img[width="960"] {
+		display: none;
+	}
+	.section-32 .blot::after {
+		top: auto;
+		bottom: 2.5rem;
+	}
+	.section-32 .event-name {
+		top: 2rem;
+		z-index: 1;
+	}
+	.section-32 h4 {
+		width: 28rem;
+		margin: 8rem 0 4rem;
+	}
+	.section-32 h4 + p {
+		margin-left: 4rem;
+	}
+	.section-33 {
+		display: flex;
+		flex-direction: column;
+		padding-top: 4rem;
+		background: url(images/sections/section-33/bg--mobile.svg) 0 0 / contain no-repeat;
+	}
+	.section-33 .event-name,
+	.section-33 figure::after {
+		display: none;
+	}
+	.section-33 img {
+		width: 100%;
+		margin: 6rem 0 4.5rem;
+	}
+	.section-33 h4 {
+		font-size: 5rem;
+		line-height: 4rem;
+		order: -1;
+	}
+	.section-33 h4 ~ p {
+		padding-left: 4rem;
+	}
+	.section-34 {
+		padding-left: 6rem !important;
+	}
+	.section-34::after {
+		content: '✦';
+		position: absolute;
+		top: -3.5rem;
+		right: 1.5rem;
+		font-size: 2.4rem;
+  }
+	.section-34 h2 {
+		width: 22rem;
+		margin: 7.5rem 0 8.5rem -4rem;
+		font-size: 3rem;
+		line-height: 2.5rem;
+	}
+	.section-34 ul {
+		margin: 2rem 0 2rem 2.3rem;
+	}
+	.section-35 h2 {
+		width: 28rem;
+		margin-top: 7rem;
+		font-size: 6rem;
+		line-height: 5rem;
+	}
+	.section-35 ul {
+		width: auto;
+		margin: 8rem 0;
+		margin-left: 6rem;
+	}
+	.section-35 li {
+		padding-left: 0.5rem;
+		padding-bottom: 2rem;
+	}
+	.section-36 {
+		background: url(images/sections/section-36/logo-support-meaning-inspiration.svg) right 2rem bottom 4rem / 12rem no-repeat, url(images/sections/section-36/bg-1--mobile.jpg) 0 0 / cover no-repeat;
+	}
+	.section-36::after {
+		color: inherit;
+		top: 2rem;
+		right: 2.5rem;
+	}
+	.section-36 h4 {
+		margin: 3.6rem 0 4.4rem;
+		line-height: 2.5rem;
+	}
+	.section-36 h4.lang {
+		width: 22rem;
+	}
+	.section-36 h4.closing {
+		width: 20rem;
+	}
+	.section-36 h4.teen-club {
+		width: 25rem;
+	}
+	.section-36 h4.visa {
+		width: 20rem;
+	}
+	.section-36 h4.teen-club + p,
+	.section-36 h4.visa + p {
+		width: 30rem;
+	}
+	.section-36 h4:first-child {
+		width: 28rem;
+	}
+	.section-36 h2 {
+		margin-bottom: 3rem;
+		font-size: 6rem;
+		line-height: 1;
+	}
+	.section-36 footer {
+		display: none;
+	}
+	.section-36 .flex {
+		padding-bottom: 12rem;
+	}
+	.section-36 .flex p {
+		margin-left: 4rem;
+	}
+	.section-37 {
+		height: auto;
+		padding-bottom: 7rem;
+		background: url(images/sections/section-37/bg-corner--decor.svg) top right / 10.1rem no-repeat, url(images/sections/section-37/bg-deer--mobile.svg) bottom 4rem right / 31.7rem no-repeat, url(images/sections/section-37/bg--mobile.jpg) 0 0 / 100% 100% no-repeat;
+		background-blend-mode: multiply;
+	}
+	.section-37 h4 {
+		margin: 4rem 0 2.4rem;
+	}
+	.section-37 h4 {}
+	.section-37 p.co-founder {
+		font-size: 1.6rem !important;
+		width: 26rem;
+	}
+	.section-37 address {
+		width: 26rem;
+		order: 1;
+	}
+	.section-37 address a {
+		font-size: 2.2rem;
+		padding-left: 9.39rem;
+	}
+	.section-37 figure {
+		margin: 3.6rem 0 3.2rem;
+	}
+	.section-37 img {
+		width: 26rem;
+	}
+	.section-37::before {
+		height: 4rem;
+	}
+	.section-37::after {
+		display: none;
+	}
 }

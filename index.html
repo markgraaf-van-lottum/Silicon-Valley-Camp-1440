@@ -16,6 +16,55 @@
 	<link rel="mask-icon" href="safari-pinned-tab.svg">
 </head>
 <body>
+<nav id="main_nav" aria-label="Навигация по сайту">
+	<div class="nav-content">
+		<ul aria-label="Разделы сайта">
+			<li><a href="#format">Формат</a></li>
+			<li><a href="#experts">Эксперты</a></li>
+			<li><a href="#neclub">NE Club</a></li>
+			<li><a href="#faq">FAQ</a></li>
+			<li><a href="#contacts">Контакты</a></li>
+		</ul>
+		<button class="button" type="button">Оставить заявку</button>
+	</div>
+
+	<button id="nav_button" type="button" aria-label="Кнопка меню">
+		<svg id="icon-close" width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m1 1 14.14 14.14m0-14.14L1 15.14" stroke="#000" stroke-width="2" stroke-linecap="round"/></svg>
+		<svg id="icon-menu" width="32" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 11h30M1 1h30" stroke="#000" stroke-width="2" stroke-linecap="round"/></svg>
+	</button>
+</nav>
+
+<script>
+// 	let Y1 = pageYOffset,
+	// 			Y2;
+	// 	console.log(Y1);
+	// 	console.log(Y2);
+	// window.addEventListener('scroll', function() {
+	// 	// console.log(pageYOffset);
+	// 	Y2 = pageYOffset;
+	// 	console.log('Y1', Y1);
+	// 	console.log('Y2', Y2);
+	// });
+	// // Y1 = Y2;
+	// 	console.log('Y1', Y1);
+	// 	console.log('Y2', Y2);
+// 
+	nav_button.onclick = function (event) {
+		main_nav.classList.toggle('opened');
+	};
+	document.querySelectorAll('.nav-content a').forEach((element) => {element.onclick = function() {
+		main_nav.classList.toggle('opened');
+	}});
+
+	window.addEventListener('wheel', function(event) {
+		main_nav.classList.remove('opened');
+		if (event.deltaY < 0) {
+			main_nav.hidden = false;
+		} else {
+			main_nav.hidden = true;
+		}});
+</script>
+
 
 <section class="section-11">
 	<figure>
@@ -38,7 +87,7 @@
 	<div class="request__button-hint">Количество мест ограничено. Осталось 71 из 150 мест</div>
 </div>
 
-<section class="section-12">
+<section id="format" class="section-12">
 	<h2>формат</h2>
 	<p class="default">В концепции мероприятия каждый участник выбирает, как прожить следующий час. Несколько площадок работают параллельно. Мы называем их треками. Каждый трек — это не просто тема, а среда для нетворкинга и исследований</p>
 	<ul>
@@ -134,7 +183,7 @@
 		<p>Для предпринимателя личная встреча с такими людьми — редкая возможность прикоснуться к первоисточнику. Услышать, как создавались смыслы, ради которых работали десятки тысяч сотрудников. Как эти смыслы превратились в продукты, изменившие жизнь 9 миллиардов людей. Это возможность задать вопрос тем, кто прошел путь от гаража до трансформации мировой экономики — и остался в этом пути человеком, мыслящим на уровне культуры, не только прибыли.</p>
 	</div>
 </section>
-<section class="section-17">
+<section id="experts" class="section-17">
 	<div class="section-head">
 		<p class="event-name">Silicon Valley Camp 1440</p>
 		<h2>кто наши эксперты?</h2>
@@ -320,7 +369,7 @@
 		<div class="text-with-padding">
 			<p>Это практическая лидерская программа для подростков, готовых формировать будущее.</p>
 			<p>Всего за пять дней участники узнают свои сильные стороны, разберутся, как работает искусственный интеллект, и создадут реальные решения для значимых для них проблем.</p>
-			<p>Благодаря командной работе, креативности и действиям, основанным на ценностях, они не просто исследуют будущее — они его создают</p>
+			<p>Благодаря командной работе, креативности и действиям, основанным на ценностях, они не просто исследуют будущее — они его создают.</p>
 		</div>
 		<a href="#" class="button">Подробнее >></a>
 	</div>
@@ -362,7 +411,7 @@
 <!-- Карусель -->
 	<div style="padding: 10rem 0; background: #D3E599;font-size: 6rem;text-align: center;color: green;margin: 8rem 0;">Карусель</div>
 
-<section class="section-28">
+<section id="neclub" class="section-28">
 	<h2>что такое ne club?</h2>
 	<figure>
 		<img loading="lazy" decoding="async" class="NEClub-logo" width="234" height="232" src="images/sections/section-28/NEClub-logo.svg" alt="Логотип Neo Entrepreneurship Club" />
@@ -451,7 +500,7 @@
 </section>
 
 <!-- Карусель -->
-	<div style="padding: 10rem 0; background: #D3E599;font-size: 6rem;text-align: center;color: green;margin: 8rem 0;">Карусель</div>
+	<div style="padding: 10rem 0; background: #D3E599;font-size: 6rem;text-align: center;color: green;margin: 4rem 0 4rem;">Карусель</div>
 
 <!-- Оставить заявку -->
 <div class="request">
@@ -464,7 +513,8 @@
 <section class="section-32">
 	<p class="event-name">Silicon Valley Camp 1440</p>
 	<figure class="blot">
-		<img loading="lazy" decoding="async" width="1920" height="560" src="images/sections/section-32/informal-communication.jpg" alt="Сильвио Санжинето" />
+		<img loading="lazy" decoding="async" width="1920" height="560" src="images/sections/section-32/informal-communication.jpg" alt="неформальное общение" />
+		<img loading="lazy" decoding="async" width="440" height="520" src="images/sections/section-32/informal-communication--mobile.jpg" alt="неформальное общение" />
 	</figure>
 	<h4>мы также создаем пространство для неформального общения</h4>
 	<p>Проводим комьюнити-встречи, открытые события и вечеринки для основателей. Среди них — GPT Party, Love, Life + Robots и десятки камерных встреч, куда мы приглашаем не только выпускников программ, но и друзей сообщества</p>
@@ -475,13 +525,14 @@
 <section class="section-33 flex-row">
 	<figure class="blot">
 		<img loading="lazy" decoding="async" width="960" height="960" src="images/sections/section-33/the-Gafarov-couple.jpg" alt="Руслан и Алина Гафаровы" />
+		<img loading="lazy" decoding="async" width="400" height="220" src="images/sections/section-33/the-Gafarov-couple--mobile.jpg" alt="Руслан и Алина Гафаровы" />
 		<p class="event-name">Silicon Valley Camp 1440</p>
 	</figure>
 	<h4>организаторы кемпа</h4>
 	<p>Руслан и Алина Гафаровы</p>
 	<p>Основатели San Francisco Innovation Hub и некоммерческой организации Neo Entrepreneurship Club (NE Club).</p>
 	<p>С 2016 года изучаем культуру, мышление и подходы Кремниевой долины, которые позволяют этой среде быть центром глобальных трансформаций. Создаем пространства, где предприниматели из разных стран могут переосмыслить своё развитие, соединиться с сильным окружением и выйти на следующий уровень.</p>
-	<p>Наша миссия — вдохновлять предпринимателей создавать прорывы</p>
+	<p>Наша миссия — вдохновлять предпринимателей создавать прорывы.</p>
 </section>
 <section class="section-34">
 	<h2>почему стоит зайти сейчас?</h2>
@@ -511,37 +562,37 @@
 	<div class="request__button-hint">Количество мест ограничено. Осталось 71 из 150 мест</div>
 </div>
 
-<section class="section-36 blot">
+<section id="faq" class="section-36 blot">
 	<h2>faq</h2>
 	<div class="flex">
 		<h4>почему 150 человек, а не 1000?</h4>
 		<p>Мы сознательно ограничиваем количество участников. Формат на 1000+ — это стенд с визитками, шум, продажи, усталость и поверхностное общение.</p>
 		<p>150 — это максимум, при котором мы можем сохранить фильтр, собрать людей на равных и создать среду, где каждый на своём месте. Где можно выдохнуть, быть собой и говорить вглубь, а не вширь.</p>
 		<h4>почему именно кремниевая долина, а не, например, мексика или оаэ?</h4>
-		<p>Да, в Мексике или АОЭ было бы дешевле и проще по логистике. <br>Но именно в Долине мы можем собрать спикеров, которые создают будущее.</p>
+		<p>Да, в Мексике или ОАЭ было бы дешевле и проще по логистике. <br>Но именно в Долине мы можем собрать спикеров, которые создают будущее.</p>
 		<p>Здесь работают люди, которые формируют смыслы, технологии и подходы.</p>
 		<p>А виза в США — это естественный фильтр, который помогает сохранить фокус и уровень участников.</p>
 		<h4>в формате pathfinders. teen club 12+ можно ли детей до 12 лет?</h4>
 		<p>Нет, участие возможно только с 12 лет.</p>
-		<h4>на каком языке проходит программа?</h4>
+		<h4 class="lang">на каком языке проходит программа?</h4>
 		<p>Часть спикеров выступает на английском.</p>
 		<p>Для тех, кому нужен перевод, — будут устройства синхронного перевода. Всё заранее организовано, чтобы никто не выпадал из потока.</p>
-		<h4>почему регистрация закрывается заранее?</h4>
+		<h4 class="closing">почему регистрация закрывается заранее?</h4>
 		<p>Каждого участника мы утверждаем совместно с некоммерческой организацией, которая владеет площадкой. Это важная часть партнёрства и доверия.</p>
 		<p>Поэтому мы закрываем регистрацию до конца 2025 года, чтобы успеть пройти все этапы согласования и подготовить пространство так, как мы задумали.</p>
-		<h4>на каком языке проходит pathfinders. teen club 12+?</h4>
+		<h4 class="teen-club">на каком языке проходит pathfinders. teen club 12+?</h4>
 		<p>Все занятия проходят на английском языке.</p>
-		<h4>а если у меня нет визы?</h4>
+		<h4 class="visa">а если у меня нет визы?</h4>
 		<p>Мы предоставим бизнес-приглашение под эту программу и порекомендуем проверенных партнёров для оформления визы.</p>
 	</div>
 	<footer>
 		<p class="event-name">Silicon Valley Camp 1440</p>
 	</footer>
 </section>
-<section class="section-37 blot">
+<section id="contacts" class="section-37 blot">
 	<h2>остались вопросы?</h2>
 	<h4>напишите мне</h4>
-	<p>Сооснователь San Francisco Innovation Hub, <br>Алина Гафарова</p>
+	<p class="co-founder">Сооснователь San Francisco Innovation Hub, Алина Гафарова</p>
 	<address>
 		<a class="telegram" target="_blank" href="https://t.me/alina868">@alina868</a>
 		<a class="whatsapp" target="_blank" href="https://wa.me/+19292532759">+1 929 253 27 59</a>
@@ -568,6 +619,6 @@
 
 
 
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<script src="http://localhost:35729/livereload.js?snipver=1"></script>
 </body>
 </html>
