@@ -29,13 +29,16 @@
 }
 
 :root {
-	/*font-size: 10px;*/
 	--font-hauora-sans: "Hauora Sans", system-ui, sans-serif;
 	--primary-color: #d3e599;
 	--accent-color: #9277d2;
-	/* Overlay */
+	--page-padding-x: 8rem;
+	--z-index-blot-image: 1;
+	--z-index-section-content: 2;
+	--screen-desktop-width: 1920;
+	--screen-mobile-width: 440;
 	--overlay-blur: 1rem;
-	/* Input */
+	--overlay-background-color: rgb(225 240 163/0.1);
 	--input-height: 8rem;
 	--input-padding: 0 4rem;
 	--input-font-size: 2rem;
@@ -49,8 +52,7 @@
 	--input-error-border-color: #fb4040;
 	--input-background-color: #fff;
 	--input-hover-border-color: var(--accent-color);
-	/* Select */
-	--select-item-border-radius: 1.8rem;
+	--select-item-border-radius: 1.8rem
 }
 * {
 	box-sizing: border-box
@@ -66,7 +68,8 @@ html {
 	scroll-behavior: smooth;
 }
 body {
-	position: relative
+	position: relative;
+	cursor: default;
 }
 h2 {
 	font-size: 10.4rem;
@@ -98,13 +101,19 @@ p + p {
 figure {
 	line-height: 0;
 }
+img {
+	user-select: none;
+}
+button {
+	cursor: pointer;
+}
 
 /* Блок "Оставить заявку" */
 .request__text {
 	font-size: 2.8rem;
 	line-height: 4rem;
 }
-.button {
+.button-request {
 	font-size: 2.6rem;
 	line-height: 16rem;
 	background: var(--primary-color);
@@ -115,6 +124,8 @@ figure {
 	grid-area: 2/3;
 	font-size: 2rem;
 	text-align: center;
+	width: 30rem;
+	margin: auto;
 }
 
 /* Навигация - Меню */
@@ -170,7 +181,7 @@ nav #nav_button svg {
 	margin: auto;
 }
 /* кнопка "Оставить заявку" */
-nav .button {
+nav .button-request {
 	width: 28rem;
 	line-height: 8rem;
 }
@@ -179,7 +190,7 @@ nav .button {
 section {
 	position: relative;
 }
-section:not(.section--img-800x1040) {
+section:not(.section--img-800x1040):not(.q6):not(.i0) {
 	padding-left: 8rem;
 	padding-right: 8rem;
 }
@@ -197,7 +208,7 @@ section .event-name {
 	width: 80rem;
 	height: auto;
 }
-.section--img-800x1040 a.button {
+button.button-more {
 	display: inline-block;
 	width: 32rem;
 	margin-left: auto;
@@ -205,10 +216,14 @@ section .event-name {
 	font-weight: 300;
 	line-height: 8rem;
 	color: #fff;
-	background: #FB4040;
+	background: #FF5252;
 	border-radius: 8rem;
 	text-align: center;
 	text-decoration: none;
+}
+button:hover {
+	background: var(--accent-color);
+	transition: background .3s;
 }
 .section--img-800x1040::after,
 .blot::after {
@@ -218,12 +233,42 @@ section .event-name {
 	right: 9rem;
 	font-size: 5rem;
 }
+.b {
+	position: fixed;
+	top: 50%;
+	right: -6rem;
+	width: 16rem;
+	font-size: 1.4rem;
+	line-height: 8rem;
+	letter-spacing: 0.02rem;
+	text-align: center;
+	background: #D3E599;
+	border-radius: 8rem 8rem 0 0;
+	transform: rotate(-90deg) translateX(25%);
+	cursor: pointer;
+	user-select: none;
+	transition: background .3s;
+	z-index: 5;
+}
+.b:hover {
+	background: var(--accent-color);
+}
+a.more {
+	color: #000;
+	transition: color .3s;
+	font-size: 2rem;
+	text-decoration-thickness: 7%;
+	text-underline-offset: 25%;
+}
+a.more:hover {
+	color: var(--accent-color);
+}
 
 /*            */
 /*  SECTIONs  */
 /*            */
 .section-11 {
-	padding-bottom: 8rem;
+	padding-bottom: 23rem;
 }
 .section-11 img {
 	width: 68rem;
@@ -261,9 +306,9 @@ section .event-name {
 }
 /* ~~~ */
 .section-12 {
-	padding-top: 8rem;	/* чтобы заголовок секции не остался под нав.панелью при переходе по якорной ссылке */
+	padding-top: 17rem;	/* чтобы заголовок секции не остался под нав.панелью при переходе по якорной ссылке */
 	padding-bottom: 19rem;
-	background: url(images/sections/section-12/bg-green-curve.svg) bottom right/163.2rem no-repeat;
+	background: url(images/sections/section-12/bg-green-curve.svg) bottom right / 163.2rem no-repeat;
 }
 .section-12 h2 {
 	display: inline-block;
@@ -283,11 +328,7 @@ section .event-name {
 }
 .section-12 li a,
 .section-15 li a {
-	color: inherit;
-	font-size: 2rem;
 	padding: 2rem 0 .1rem;
-	text-decoration: none;
-	border-bottom: .05rem solid #000;
 }
 .section-12 li,
 .section-15 li {
@@ -401,10 +442,6 @@ section .event-name {
 	display: inline-block;
 	margin-top: 9rem;
 	padding: 1.4rem 0 0.7rem;
-	color: #000;
-	font-size: 2rem;
-	text-decoration: none;
-	border-bottom: .1rem solid #000;
 }
 .section-18 .person a.more::before {
 	content: 'Подробнее';
@@ -677,7 +714,7 @@ section .event-name {
 	nav .nav_button {
 		width: 7.2rem;
 	}
-	nav .button {
+	nav .button-request {
 		margin-top: 6rem;
 	}
 	nav.opened #icon-menu,
@@ -1453,7 +1490,6 @@ section .event-name {
 	.section-37 h4 {
 		margin: 4rem 0 2.4rem;
 	}
-	.section-37 h4 {}
 	.section-37 p.co-founder {
 		font-size: 1.6rem !important;
 		width: 26rem;
@@ -1481,11 +1517,10 @@ section .event-name {
 
 	/* Верстка Володи */
 	.b {
-		--button-width: 5rem;
-		height: 10rem;
+		line-height: 4rem;
+		width: 10rem;
 		font-size: 0.8rem;
 		right: -1.4rem;
-		padding: 0 0 0 1.5rem;
 	}
 	.c {
 		padding: 3.2rem 0 2.8rem;
@@ -1666,6 +1701,13 @@ section .event-name {
 		width: auto !important;
 		margin: 0 !important;
 	}
+	.i0 > p {
+		width: 32rem !important;
+		margin-right: 0 !important;
+	}
+	.i0 > p + div {
+		margin-top: 1.6rem !important;
+	}
 	.k5 {
 		--carousel-slide-spacing: 2rem !important;
 		--carousel-slide-size: 18rem !important;
@@ -1677,13 +1719,6 @@ section .event-name {
 	.k5 .l5 {
 		margin-left: -6rem;
 		margin-right: -2rem;
-	}
-	.i0 > p {
-		width: 32rem !important;
-		margin-right: 0 !important;
-	}
-	.i0 > p + div {
-		margin-top: 1.6rem !important;
 	}
 	.u-flex {
 		margin: 0 0 2rem 0 !important;
@@ -1801,18 +1836,18 @@ section .event-name {
 	section.z0 .c1 svg {
 		display: none;
 	}
-	div.y0 {
+	.y0 {
 		height: auto;
 		padding: 2rem;
 		margin-top: 2rem;
 	}
-	div.y0 h3 {
+	.y0 h3 {
 		position: static !important;
 		font-size: 5rem;
 		line-height: 4rem;
 		text-transform: lowercase;
 	}
-	div.y0 h3::before {
+	.y0 h3::before {
 		content: '';
 		position: absolute;
 		width: 36rem;
@@ -1822,11 +1857,11 @@ section .event-name {
 		background: #f6f7f8;
 		z-index: -1;
 	}
-	div.y0 h3 + div {
+	.y0 h3 + div {
 		margin-top: 16rem !important;
 		position: relative;
 	}
-	div.y0 h3 + div::before {
+	.y0 h3 + div::before {
 		content: '';
 		position: absolute;
 		top: 10rem;
@@ -1836,48 +1871,48 @@ section .event-name {
 		background: #f6f7f8;
 		z-index: -1;
 	}
-	div.y0 > img {
+	.y0 > img {
 		display: none;
 	}
-	div.y0 figure {
+	.y0 figure {
 		width: auto;
 		position: static !important;
 	}
-	div.y0 figure:nth-child(odd) {
+	.y0 figure:nth-child(odd) {
 		margin-left: 4.6rem !important;
 	}
-	div.y0 figure:nth-child(even) {
+	.y0 figure:nth-child(even) {
 		margin-left: 20rem !important;
 	}
-	div.y0 figure + figure {
+	.y0 figure + figure {
 		margin-top: 5.5rem !important;		
 	}
-	div.y0 figure:nth-child(2) {
+	.y0 figure:nth-child(2) {
 		margin-top: 8rem !important;		
 	}
-	div.y0 figure:nth-child(3) .j4,
-	div.y0 figure:nth-child(5) .j4 {
+	.y0 figure:nth-child(3) .j4,
+	.y0 figure:nth-child(5) .j4 {
 		top: -25rem;
 		left: -5.5rem;
 	}
-	div.y0 figure:nth-child(4) .j4 {
+	.y0 figure:nth-child(4) .j4 {
 		top: -24rem;
 	}
-	div.y0 figure img {
+	.y0 figure img {
 		width: 16rem !important;
 		height: auto !important;
 	}
-	div.y0 figure h4 {
+	.y0 figure h4 {
 		font-size: 2.4rem;
 		margin-top: 2rem !important;
 	}
-	div.y0 figure figcaption {
+	.y0 figure figcaption {
 		position: relative;
 		margin-top: 2rem;
 		font-size: 1.8rem;
 		line-height: 2rem;
 	}
-	div.y0 figure figcaption .j4 {
+	.y0 figure figcaption .j4 {
 		top: -26rem;
 		right: calc(100% + 2rem);
 		font-size: 8rem;
@@ -1903,10 +1938,12 @@ section .event-name {
 		height: 42.4rem !important;
 	}
 	.r .t {
+		width: auto;
 		margin: 4rem 0 6rem;
 	}
 	.r .t p + p {
 		margin-top: 2rem;
+		padding: 0;
 	}
 }
 
@@ -1919,7 +1956,7 @@ section .event-name {
 		margin-bottom: 15rem;
 	}
 	nav #nav_button,
-	nav button.button {
+	nav button.button-request {
 		display: none !important;
 	}
 	nav ul {
@@ -1931,14 +1968,19 @@ section .event-name {
 	.section-11 figure {
 		float: right;
 	}
+	body > .request {
+		margin: 16rem 0;
+	}
+	body > .request,
+	section > .request {
+		padding: 0 8rem;
+	}
 	.request {
 		display: grid;
 		grid-template-columns: 1fr 32rem 68rem;
 		grid-template-rows: 1fr auto;
 		gap: 1.8rem 4rem;
 		align-items: center;
-		margin: 16rem 0;
-		padding: 0 8rem;
 	}
 	.request__divider {
 		height: .3rem;
@@ -2110,7 +2152,6 @@ section .event-name {
 	.h-320 h4 {
 		margin-bottom: 3.5rem;
 	}
-	/* ~~~ */
 	.section-22 {
 		padding-top: 12rem;
 		padding-bottom: 2rem;
@@ -2461,4 +2502,74 @@ section .event-name {
 	.section-37 p.co-founder {
 		width: 61rem;
 	}
+	.i0 .request {
+		margin-top: 11rem;
+	}
 }
+
+/* хрень всякая */
+.u-absolute {position: absolute}
+.u-block {display: block}
+.u-bottom-\[2\.5rem\] {bottom: 2.5rem}
+.u-flex {display: flex}
+.u-grow-1 {flex-grow: 1}
+.u-h-\[1\.5rem\] {height: 1.5rem}
+.u-h-\[1\.7rem\] {height: 1.7rem}
+.u-h-\[16rem\] {height: 16rem}
+.u-h-\[2\.1rem\] {height: 2.1rem}
+.u-h-\[2\.7rem\] {height: 2.7rem}
+.u-h-\[24rem\] {height: 24rem}
+.u-h-\[2rem\] {height: 2rem}
+.u-h-\[32rem\] {height: 32rem}
+.u-h-\[5\.3rem\] {height: 5.3rem}
+.u-h-\[64rem\] {height: 64rem}
+.u-h-\[72rem\] {height: 72rem}
+.u-justify-end {justify-content: flex-end}
+.u-left-\[116rem\] {left: 116rem}
+.u-left-\[16rem\] {left: 16rem}
+.u-left-\[8rem\] {left: 8rem}
+.u-mb-\[-0\.2rem\] {margin-bottom: -.2rem}
+.u-mb-\[-0\.6rem\] {margin-bottom: -.6rem}
+.u-mb-\[4\.5rem\] {margin-bottom: 4.5rem}
+.u-ml-\[36rem\] {margin-left: 36rem}
+.u-ml-\[8rem\] {margin-left: 8rem}
+.u-ml-auto {margin-left: auto}
+.u-mr-\[8rem\] {margin-right: 8rem}
+.u-mt-\[0\.21rem\] {margin-top: .21rem}
+.u-mt-\[11\.6rem\] {margin-top: 11.6rem}
+.u-mt-\[12\.4rem\] {margin-top: 12.4rem}
+.u-mt-\[12rem\] {margin-top: 12rem}
+.u-mt-\[15\.4rem\] {margin-top: 15.4rem}
+.u-mt-\[22rem\] {margin-top: 22rem}
+.u-mt-\[29\.6rem\] {margin-top: 29.6rem}
+.u-mt-\[3\.5rem\] {margin-top: 3.5rem}
+.u-mt-\[3\.8rem\] {margin-top: 3.8rem}
+.u-mt-\[4\.9rem\] {margin-top: 4.9rem}
+.u-mt-\[4rem\] {margin-top: 4rem}
+.u-mt-\[5\.4rem\] {margin-top: 5.4rem}
+.u-mt-\[5\.5rem\] {margin-top: 5.5rem}
+.u-mt-\[8\.2rem\] {margin-top: 8.2rem}
+.u-mx-\[8rem\] {margin-left: 8rem;margin-right: 8rem}
+.u-right-\[10\.4rem\] {right: 10.4rem}
+.u-shrink-0 {flex-shrink: 0}
+.u-text-right {text-align: right}
+.u-top-\[192\.7rem\] {top: 192.7rem}
+.u-top-\[8rem\] {top: 8rem}
+.u-top-\[96\.2rem\] {top: 96.2rem}
+.u-w-\[1\.1rem\] {width: 1.1rem}
+.u-w-\[136rem\] {width: 136rem}
+.u-w-\[160rem\] {width: 160rem}
+.u-w-\[192rem\] {width: 192rem}
+.u-w-\[32rem\] {width: 32rem}
+.u-w-\[60rem\] {width: 60rem}
+.u-w-\[64rem\] {width: 64rem}
+.u-w-\[67\.9rem\] {width: 67.9rem}
+.u-w-\[68rem\] {width: 68rem}
+.u-w-\[7\.6rem\] {width: 7.6rem}
+.u-w-\[7\.9rem\] {width: 7.9rem}
+.u-w-\[76rem\] {width: 76rem}
+.u-w-\[8\.2rem\] {width: 8.2rem}
+.u-w-\[88rem\] {width: 88rem}
+.u-w-\[9\.4rem\] {width: 9.4rem}
+.u-z-1 {z-index: 1}
+.u-z-2 {z-index: 2}
