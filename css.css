@@ -2479,9 +2479,14 @@ nav .button-request {
 section {
 	position: relative;
 }
-section:not(.section--img-800x1040):not(.q6):not(.i0) {
+section:not(.section--img-800x1040) {
 	padding-left: 8rem;
 	padding-right: 8rem;
+}
+section.q6,
+section.i0 {
+	padding-left: 0;
+	padding-right: 0;
 }
 section .event-name {
 	position: absolute;
@@ -2552,7 +2557,10 @@ a.more {
 a.more:hover {
 	color: var(--accent-color);
 }
-
+.media_slider {
+	display: none;
+	opacity: 0;
+}
 /*            */
 /*  SECTIONs  */
 /*            */
@@ -3092,7 +3100,11 @@ a.more:hover {
 		font-size: 2.4rem;
 		color: #fff;
 	}
-	section:not(.section--img-800x1040) {
+	section.q6 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	section[class*="section-"]:not(.section--img-800x1040) {
 		padding-left: 2rem;
 		padding-right: 2rem;
 	}
@@ -3809,6 +3821,9 @@ a.more:hover {
 	}
 
 	/* Верстка Володи */
+	:root {
+		--page-padding-x: 2rem;
+	}
 	.b {
 		line-height: 4rem;
 		width: 10rem;
@@ -3859,6 +3874,9 @@ a.more:hover {
 		margin-top: 3.4rem;
 		-moz-column-gap: 2rem;
 		column-gap: 2rem;
+	}
+	.l {
+		display: none;
 	}
 	.l4,
 	.m4 {
@@ -3986,9 +4004,9 @@ a.more:hover {
 		font-size: 3rem;
 		line-height: 2rem;
 	}
-	.i0 {
+	section.i0 {
 		height: auto;
-		padding: 3.5rem 0 0;
+		padding: 3.5rem 2rem 0;
 	}
 	.i0 h2 {
 		width: auto !important;
@@ -4116,15 +4134,17 @@ a.more:hover {
 	}
 	section.z0 .d1 {
 		width: 20rem;
-		font-size: 1rem;
-		line-height: 1;
+	}
+	section.z0 .d1 p {
+		font-size: 1rem !important;
+		line-height: 1 !important;
 	}
 	section.z0 .d1 p + p {
 		margin-top: 1rem !important;
 	}
 	section.z0 .c1 img {
 		width: 12rem !important;
-		height: auto !important;
+		height: 12rem !important;
 	}
 	section.z0 .c1 svg {
 		display: none;
@@ -4133,6 +4153,9 @@ a.more:hover {
 		height: auto;
 		padding: 2rem;
 		margin-top: 2rem;
+	}
+	.y0 .r6 > img {
+		display: none;
 	}
 	.y0 h3 {
 		position: static !important;
@@ -4145,7 +4168,7 @@ a.more:hover {
 		position: absolute;
 		width: 36rem;
 		height: 12rem;
-		top: 0rem;
+		top: -2rem;
 		left: 4.4rem;
 		background: #f6f7f8;
 		z-index: -1;
@@ -4201,6 +4224,7 @@ a.more:hover {
 	}
 	.y0 figure figcaption {
 		position: relative;
+		width: auto !important;
 		margin-top: 2rem;
 		font-size: 1.8rem;
 		line-height: 2rem;
@@ -4219,7 +4243,7 @@ a.more:hover {
 		font-size: 1.8rem;
 	}
 	.r figure .u-flex,
-	.r > img {
+	.r6 > img {
 		display: none;
 	}
 	.r figure {
@@ -4689,8 +4713,6 @@ a.more:hover {
 		text-align: right;
 	}
 	.media_slider {
-		display: none;
-		opacity: 0;
 		position: fixed;
 		top: 0;
 		right: 0;
