@@ -3026,10 +3026,9 @@ a.more:hover {
 		max-height: 56rem;
 	}
 	section p:not(.z6):not(.event-name):not(.co-founder),
-	section p:not([class]),
 	section ul {
-		font-size: 1.8rem !important;
-		line-height: 2rem !important;
+		font-size: 1.8rem;
+		line-height: 2rem;
 	}
 	section .text-content h2 {
 		position: absolute;
@@ -3384,14 +3383,13 @@ a.more:hover {
 		z-index: 1;
 		position: relative;
 	}
-	.section-21 {
-		margin-top: 7rem;
-	}
 	.section-21 figure {
 		background: #FEF2CE;
 	}
 	.section-22 h3 {
+		margin-top: 4.5rem;
 		width: 30rem;
+		font-size: 4rem;
 	}
 	.section-22 h4 {
 		margin: 4rem 0 2.4rem;
@@ -3399,8 +3397,48 @@ a.more:hover {
 	.section-22 .flex-row + .flex-row {
 		margin-top: 4rem;
 	}
+	.section-22-23-carousel {
+		padding: 4rem 0 0 !important;
+	}
+	.section-22-23-carousel .autoscrolling-images img {
+		height: 20rem;
+		width: auto;
+	}
+	.section-22-23-carousel .autoscrolling-images .carousel_slides {
+		--carousel-slide-spacing: 5rem;
+		--carousel-slide-size: 25.6rem;
+	}
+	.section-22-23-carousel .autoscrolling-images .m5 {
+		justify-content: flex-end;
+	}
+	#networking-activities__carousel {
+		padding-top: 4rem;
+		padding-left: 2rem;
+	}
+	.carousel--text .carousel_controls {
+		margin-right: 2rem;
+		margin-bottom: 2rem;
+	}
+	.carousel--text .slide h5 {
+		margin-bottom: 2.2rem;
+		min-height: 6rem;
+		font-size: 3rem;
+		line-height: 2rem;
+	}
+	.carousel--text .slide h5.w-16r {
+		width: 16rem;
+	}
+	.carousel--text .slide h5.w-20r {
+		width: 20rem;
+	}
+	.carousel--text .slide h5.w-25r {
+		width: 25rem;
+	}
+	.carousel--text .slide h5.w-28r {
+		width: 28rem;
+	}
 	.section-23 {
-		margin-top: 8rem;
+		margin-top: 4rem !important;
 	}
 	.section-23 figure {
 		background: #FECEE7;
@@ -3416,7 +3454,7 @@ a.more:hover {
 		left: 0;
 		width: 44rem;
 		height: 30rem;
-		background: url(images/sections/section-24/mars--mobile.png) right bottom / 8rem no-repeat, url(images/sections/section-24/bg--mobile.svg) 0 0 / 100% no-repeat;
+		background: url(images/sections/section-24/mars--mobile-2x.webp) right bottom / 8rem no-repeat, url(images/sections/section-24/bg--mobile.svg) 0 0 / 100% no-repeat;
 	}
 	.section-24 ul {
 		margin-top: 8rem;
@@ -3435,11 +3473,11 @@ a.more:hover {
 		width: 30rem;
 	}
 	.section-25 {
-		margin-top: 8rem;
+		margin-top: 8rem !important;
 		background: none;
 	}
 	.section-25::after {
-		top: auto;
+		top: auto !important;
 		bottom: 1.5rem;
 		color: #000;
 	}
@@ -3474,6 +3512,25 @@ a.more:hover {
 	}
 	.section-26 p.default {
 		width: auto;
+	}
+	.section-26-27-carousel {
+		padding-right: 0 !important;
+	}
+	.section-26-27-carousel::before {
+		content: '';
+		position: absolute;
+		top: 4rem;
+		right: 0;
+		width: 38rem;
+		height: 24rem;
+		background: #f6f7f8;
+		z-index: -1;
+	}
+	.section-26-27-carousel .carousel--text {
+		padding-top: 6rem;
+	}
+	.section-26-27-carousel h4 {
+		width: 18rem;
 	}
 	.section-27 h2 {
 		width: 24rem;
@@ -4604,16 +4661,19 @@ a.more:hover {
 	.section-22 .h-320 h4 {
 		margin-top: 3rem;
 	}
-
-	#networking-activities {
+	#networking-activities__carousel {
 		margin-top: 8.5rem;
 	}
-	#networking-activities .carousel_controls {
+	#networking-activities__carousel .carousel_controls {
 		margin-bottom: 2rem;
 	}
 	.section-22-23-carousel {
 		padding: 0 !important;
 		background: url(images/sections/section-22-23-carousel/bg.webp) center top 16rem / contain no-repeat;
+	}
+	.section-22-23-carousel .autoscrolling-images .carousel_slides {
+		--carousel-slide-spacing: 8rem;
+		--carousel-slide-size: 41rem;
 	}
 	.section-26-27-carousel {
 		padding: 0 0 0 4rem !important;
@@ -4658,7 +4718,7 @@ a.more:hover {
 	}
 	.section-24 {
 		padding: 14.2rem 8rem 1rem 44rem !important;
-		background: url(images/sections/section-24/mars.png) right 38rem/25.1rem no-repeat, url(images/sections/section-24/bg-grey.jpg) 0 0/100vw no-repeat;
+		background: url(images/sections/section-24/mars.webp) right 38rem/25.1rem no-repeat, url(images/sections/section-24/bg-grey.webp) 0 0/100vw no-repeat;
 	}
 	.section-11 li::before,
 	.section-12 li::before,
