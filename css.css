@@ -346,10 +346,9 @@ button {
 	justify-content: center;
 }
 .s5 {
-	--carousel-dot-color: #d9d9d9;
 	width: 1.21rem;
 	height: 1.21rem;
-	background-color: var(--carousel-dot-color);
+	background-color: #d9d9d9;
 	border-radius: 1.2rem;
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -359,7 +358,7 @@ button {
 }
 .s5.t5 {
 	background-color: #000;
-	border: .21rem solid var(--carousel-dot-color);
+	border: .21rem solid #d9d9d9;
 }
 .p5 {
 	display: grid;
@@ -1627,8 +1626,6 @@ button {
 }
 .b1 {
 	align-items: center;
-	-moz-column-gap: 21.6rem;
-	column-gap: 21.6rem;
 	color: #1e1e1e;
 }
 .c1 {
@@ -1649,15 +1646,9 @@ button {
 	position: relative;
 	font-size: 10.4rem;
 }
-.y0 h3 + div figure:nth-child(4) .k4 {
-	width: 45rem;
-}
 .y0 .r6 > img {
 	left: 16rem;
 	top: 9rem;
-}
-.y0 .request {
-	padding: 16rem 0;
 }
 .i4 {
 	width: 68rem;
@@ -2483,7 +2474,7 @@ button.button-more {
 	font-weight: 300;
 	line-height: 8rem;
 	color: #fff;
-	background: #FF5252;
+	background: #FB4040;
 	border-radius: 8rem;
 	text-align: center;
 	text-decoration: none;
@@ -2522,7 +2513,7 @@ button.button-more:hover,
 a.more {
 	color: #000;
 	font-size: 2rem;
-	text-decoration-thickness: 7%;
+	text-decoration-thickness: 5%;
 	text-underline-offset: 25%;
 	transition: color .3s;
 }
@@ -2959,7 +2950,6 @@ a.more:hover {
 @media screen and (max-width: 1024px) {
 	nav {
 		background: rgba(255,255,255,0.5);
-		height: 6rem;
 	}
 	nav.opened {
 		padding: 8rem;
@@ -2988,6 +2978,9 @@ a.more:hover {
 	nav .button-request {
 		margin-top: 6rem;
 	}
+	nav:not(.opened) {
+		height: 6rem;
+	}
 	nav.opened #icon-menu,
 	nav:not(.opened) #icon-close,
 	nav:not(.opened) .nav-content {
@@ -3014,12 +3007,26 @@ a.more:hover {
 	p + p {
 		margin-top: 2rem;
 	}
+	section[id]:not(#experts):not(#contacts) {
+		padding-top: 4rem;
+		margin-top: -4rem;
+	}
+	section[id] .text-content h2 {
+		top: 2rem;
+	}
+	section[id] .event-name {
+		top: 18rem;
+	}
+	section[id]::after {
+		top: 18rem;
+	}
 	section > figure {
 		box-sizing: content-box;
 		overflow-y: hidden;
 		max-height: 56rem;
 	}
-	section p:not(.z6),
+	section p:not(.z6):not(.event-name):not(.co-founder),
+	section p:not([class]),
 	section ul {
 		font-size: 1.8rem !important;
 		line-height: 2rem !important;
@@ -3032,12 +3039,13 @@ a.more:hover {
 	body > .request {
 		margin: 4rem 0;
 	}
-	section .request {
-		/*margin: 0 -2rem;*/
+	.section-35 + .request .request__text {
+
 	}
 	.request {
+		position: relative;
 		padding: 2rem;
-		background: #F7F7F7;
+		background: #b5b5b51a;
 	}
 	.request__text,
 	.request__button-hint {
@@ -3056,7 +3064,7 @@ a.more:hover {
 	section .event-name {
 		top: 14rem;
 		left: 2rem;
-		width: 5rem;
+		width: 3rem;
 		font-size: 1rem !important;
 		line-height: 1rem !important;
 	}
@@ -3081,6 +3089,14 @@ a.more:hover {
 	section[class*="section-"]:not(.section--img-800x1040) {
 		padding-left: 2rem;
 		padding-right: 2rem;
+	}
+	button.button-more {
+		position: absolute;
+		top: 64rem;
+		right: 2rem;
+		width: 20rem;
+		font-size: 1rem;
+		line-height: 6;
 	}
 	.section-11 {
 		padding-bottom: 4rem;
@@ -3133,6 +3149,8 @@ a.more:hover {
 		position: relative;
 	}
 	.section-12 {
+		margin-bottom: -4rem;
+		padding-top: 0;
 		padding-bottom: 7rem;
 		background: url(images/sections/section-12/bg-green-curve--mobile.svg) bottom right/100vw no-repeat;
 	}
@@ -3145,7 +3163,7 @@ a.more:hover {
 		position: absolute;
 		top: 22rem;
 		left: -8.4rem;
-		width: 28rem;
+		width: 28.8rem;
 		height: 140rem;
 		background: #f7f8f8;
 		z-index: -1;
@@ -3175,8 +3193,10 @@ a.more:hover {
 	.section-15 li a {
 		font-size: 1.8rem;
 		line-height: 2rem;
-		border-bottom-width: .1rem;
 		vertical-align: -1rem;
+	}
+	.section-14 img[width="800"] {
+		display: none;
 	}
 	.section--img-800x1040 figure {
 		padding-top: 12rem;
@@ -3191,11 +3211,11 @@ a.more:hover {
 		background: #F6F7F8;
 	}
 	.section-16 {
-		margin-top: 9rem;
+		margin-top: 5rem !important;
 	}
 	.section-16 .text-content {
 		position: relative;
-		padding: 8.5rem 2rem 4rem 8rem;
+		padding: 8.5rem 3rem 4rem 8rem;
 		z-index: 1;
 	}
 	.section-16 .text-content::before {
@@ -3222,7 +3242,7 @@ a.more:hover {
 		display: none;
 	}
 	.section-16 .text-content h2 {
-		top: -70rem;
+		top: -70rem !important;
 	}
 	.section-16 .event-name {
 		z-index: 1;
@@ -3323,7 +3343,7 @@ a.more:hover {
 		margin-top: -2rem;
 		padding-top: 4rem;
 		padding-bottom: 32rem;
-		background: url(images/sections/section-20/bg--mobile.svg) left bottom / 100vw no-repeat, url(images/sections/section-20/planet--mobile.png) top right / 12rem no-repeat;
+		background: url(images/sections/section-20/bg--mobile.svg) left bottom / 100vw no-repeat, url(images/sections/section-20/planet--mobile-2x.webp) top right / 12rem no-repeat;
 	}
 	.section-20 .h-640 h4 {
 		margin: 4rem 0;
@@ -3415,7 +3435,7 @@ a.more:hover {
 		width: 30rem;
 	}
 	.section-25 {
-		margin-top: 10rem;
+		margin-top: 8rem;
 		background: none;
 	}
 	.section-25::after {
@@ -3424,7 +3444,7 @@ a.more:hover {
 		color: #000;
 	}
 	.section-25::before {
-		top: 12rem;
+		top: 16rem;
 		width: 100%;
 		background: 0 0 / contain url(images/sections/section-25/bg--mobile.svg) no-repeat;
 	}
@@ -3434,7 +3454,7 @@ a.more:hover {
 	.section-25 figure::before {
 		content: '';
 		position: absolute;
-		top: 7.3rem;
+		top: 11.3rem;
 		right: 2rem;
 		width: 21rem;
 		height: 3.4rem;
@@ -3478,6 +3498,11 @@ a.more:hover {
 	}
 	.section-27 li {
 		padding-left: 0.5rem;
+	}
+	.section-28,
+	.section-36,
+	.section-37 {
+		padding-top: 8rem !important;
 	}
 	.section-28 {
 		padding-bottom: 8rem;
@@ -3770,7 +3795,8 @@ a.more:hover {
 		margin: 4rem 0 2.4rem;
 	}
 	.section-37 p.co-founder {
-		font-size: 1.6rem !important;
+		font-size: 1.6rem;
+		line-height: 2rem;
 		width: 26rem;
 	}
 	.section-37 address {
@@ -3931,7 +3957,11 @@ a.more:hover {
 		height: 132rem;
 		padding: 0 2rem;
 	}
-	.j0::after {
+	.j0 .k0 {
+		display: none;
+	}
+	.j0::after,
+	.w0::after {
 		content: '✦';
 		position: absolute;
 		bottom: 2rem;
@@ -3977,30 +4007,29 @@ a.more:hover {
 	.j0 img[alt="earth"] {
 		display: none;
 	}
+	.bg-cosmos {
+		position: absolute;
+	}
 	.j0 .b9 {
-		top: 70rem;
-		right: 20rem;
+		top: 72.5rem;
+		right: 16.5rem;
 		width: 8rem;
 	}
 	.j0 .c9 {
-
+		top: 96.5rem;
+		right: 3.5rem;
+		width: 5.2rem;
+	}
+	.j0 .c9 path {
+		fill: #777;
 	}
 	.j0 .d9 {
-
+		top: 120rem;
+		right: 16rem;
+		width: 5.4rem;
 	}
 	.x6+.x6 {
 		padding-top: 2rem;
-	}
-	.l0 {
-		width: 44rem;
-		height: 64.2rem;
-		background-image: url(images/sections/section-05/bg-1--mobile.webp);
-	}
-	.m0 {
-		margin-top: -0.1rem;
-		width: 44rem;
-		height: 67.8rem;
-		background-image: url(images/sections/section-05/bg-2--mobile.webp);
 	}
 	.g7 {
 		font-size: 3rem;
@@ -4012,11 +4041,11 @@ a.more:hover {
 	}
 	.i0 h2 {
 		width: auto !important;
-		margin: 0 !important;
+		margin-left: 2rem;
 	}
 	.i0 > p {
-		width: 32rem !important;
-		margin-right: 0 !important;
+		width: 32rem;
+		margin-right: 2rem;
 	}
 	.i0 > p + div {
 		margin-top: 1.6rem !important;
@@ -4030,7 +4059,21 @@ a.more:hover {
 		height: 18rem !important;
 	}
 	.u-flex {
-		margin: 0 0 2rem 0 !important;
+		margin: 0 0 2rem 0;
+	}
+	.i0 .u-flex,
+	.z0 .u-flex,
+	.w0 .u-flex {
+		margin-right: 2rem;
+	}
+	.s5 {
+		width: 0.65rem;
+		height: 0.65rem;
+		background-color: #f6f6f6;
+		box-shadow: inset 0 .1rem .3rem #00000040;
+	}
+	.i0 .request {
+		margin-top: 5.5rem;
 	}
 	.q5 {
 		width: 4rem;
@@ -4062,15 +4105,20 @@ a.more:hover {
 		margin: auto 0 0.1rem;
 	}
 	.r5 {
-		margin-top: 4rem !important;
+		margin-top: 4rem;
 		column-gap: 0.435rem;
 	}
 	.s5.t5 {
-		border-width: 0.1rem !important;
+		border-width: 0.1075rem !important;
 	}
 	/* w0 - Секция 6 */
 	.w0 {
 		height: auto;
+	}
+	.w0::after {
+		bottom: auto;
+		top: 2rem;
+		color: #000;
 	}
 	.w0 h2 {
 		font-size: 3rem;
@@ -4087,6 +4135,11 @@ a.more:hover {
 		padding: 2rem;
 		flex-wrap: wrap;
 		align-content: flex-end;
+		background-image: url(images/sections/section-07/bg--mobile-2x.webp);
+	}
+	.w0 .r5,
+	.z0 .r5 {
+		margin-top: 1.8rem;
 	}
 	.w0 .u5 {
 		width: 44rem !important;
@@ -4107,23 +4160,32 @@ a.more:hover {
 		padding: 0 2rem;
 	}
 	section.z0 .z6 {
-		margin: 1rem 0 1.8rem !important;
+		font-size: 1rem;
+		margin: 1rem 0 1.8rem;
 	}
 	section.z0 .b1 {
 		width: 100%;
 		justify-content: space-between;
 	}
-	section.z0 .b1 svg {
-		flex-basis: 11%;
+	section.z0 .b1 svg:nth-child(1) {
+		width: 5rem;
 	}
 	section.z0 .b1 svg:nth-child(2) {
+		width: 5.5rem;
 		order: 1;
+		padding-bottom: 0.3rem;
 	}
 	section.z0 .b1 svg:nth-child(3) {
+		width: 4.5rem;
 		order: 3;
 	}
+	section.z0 .b1 svg:nth-child(4) {
+		width: 5.5rem;
+	}
 	section.z0 .b1 svg:nth-child(5) {
+		width: 5rem;
 		order: 2;
+		padding-bottom: 0.4rem;
 	}
 	section.z0 .c1 {
 		column-gap: 2rem;
@@ -4143,16 +4205,16 @@ a.more:hover {
 		width: 12rem !important;
 		height: 12rem !important;
 	}
-	section.z0 .c1 svg {
+	section.z0 .c1 img.u-w-\[32rem\],
+	section.z0 .c1 svg,
+	.y0 > img,
+	.y0 .r6 > img {
 		display: none;
 	}
 	.y0 {
 		height: auto;
 		padding: 2rem;
 		margin-top: 2rem;
-	}
-	.y0 .r6 > img {
-		display: none;
 	}
 	.y0 h3 {
 		position: static !important;
@@ -4184,9 +4246,6 @@ a.more:hover {
 		background: #f6f7f8;
 		z-index: -1;
 	}
-	.y0 > img {
-		display: none;
-	}
 	.y0 figure {
 		width: auto;
 		position: static !important;
@@ -4203,10 +4262,19 @@ a.more:hover {
 	.y0 figure:nth-child(2) {
 		margin-top: 8rem !important;		
 	}
+	.y0 figure:nth-child(3) .k4 {
+		width: 25rem;
+	}
+	.y0 figure:nth-child(3) .k4 br {
+		display: none;
+	}
 	.y0 figure:nth-child(3) .j4,
 	.y0 figure:nth-child(5) .j4 {
 		top: -25rem;
 		left: -5.5rem;
+	}
+	.y0 figure:nth-child(4) .k4 {
+		margin-right: -1rem;
 	}
 	.y0 figure:nth-child(4) .j4 {
 		top: -24rem;
@@ -4221,7 +4289,7 @@ a.more:hover {
 	}
 	.y0 figure figcaption {
 		position: relative;
-		width: auto !important;
+		width: auto;
 		margin-top: 2rem;
 		font-size: 1.8rem;
 		line-height: 2rem;
@@ -4232,15 +4300,19 @@ a.more:hover {
 		font-size: 8rem;
 		line-height: 6rem;
 	}
+	.y0 .r6 {
+		margin-bottom: 5.5rem;
+	}
 	.r {
 		padding: 0 2rem;
 	}
 	.r h4 {
+		position: static;
 		width: 26rem;
 		font-size: 1.8rem;
 	}
 	.r figure .u-flex,
-	.r6 > img {
+	img[width="1602"] {
 		display: none;
 	}
 	.r figure {
@@ -4252,7 +4324,7 @@ a.more:hover {
 		height: 42.4rem !important;
 	}
 	.r .t {
-		width: auto;
+		width: 37rem;
 		margin: 4rem 0 6rem;
 	}
 	.r .t p + p {
@@ -4263,10 +4335,15 @@ a.more:hover {
 
 /* desktop only */
 @media screen and (min-width: 1025px) {
-
+	.bg-cosmos {
+		display: none;
+	}
 	/* Верстка Володи */
 	.k {
 		background: url(images/sections/section-01/bg-1.svg) 0 8rem / auto no-repeat, url(images/sections/section-01/bg-2.webp) 0 100% / 100% auto no-repeat;
+	}
+	.w0 .l5 {
+		margin-left: -64rem;
 	}
 	.w0 .z6 {
 		text-align: right;
@@ -4278,6 +4355,17 @@ a.more:hover {
 	.c {
 		background: url(images/sections/section-01/icon-arrow.svg) center bottom 8rem / auto no-repeat;
 	}
+	.b1 {
+		-moz-column-gap: 21.6rem;
+		column-gap: 21.6rem;
+	}
+	.y0 figure:nth-child(4) .k4 {
+		width: 45rem;
+	}
+	.y0 .request {
+		padding: 16rem 0;
+	}
+
 
 	html {
 		--scrollbar-width: 15px;
@@ -4329,6 +4417,9 @@ a.more:hover {
 	}
 	.section-14 {
 		background: #E1F0A3;
+	}
+	.section-14 img[width="440"] {
+		display: none;
 	}
 	.section-14 .text-content,
 	.section-19 .text-content,
@@ -4389,7 +4480,7 @@ a.more:hover {
 		right: 8rem;
 		height: 56rem;
 		z-index: -2;
-		background: url(images/sections/section-17/bg.jpg) 0/cover;
+		background: url(images/sections/section-17/bg.webp) 0/cover;
 	}
 	.section-17 h2 {
 		width: 70rem;
@@ -4430,7 +4521,7 @@ a.more:hover {
 	.section-20 {
 		padding-top: 16rem;
 		padding-bottom: 3rem;
-		background: url(images/sections/section-20/planet.jpg) 0 100%/30.3rem no-repeat, url(images/sections/section-20/bg.jpg) 16rem 40rem/160rem no-repeat;
+		background: url(images/sections/section-20/planet-2x.webp) 0 100%/30.3rem no-repeat, url(images/sections/section-20/bg.webp) 16rem 40rem/160rem no-repeat;
 	}
 	.flex-row {
 		display: flex;
