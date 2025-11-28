@@ -2618,7 +2618,7 @@ a.more:hover {
 	padding: 8rem 0 16rem;
 	box-sizing: content-box;
 	background: url(images/sections/section-37/bg-deer.svg) bottom 8rem right / 40rem no-repeat, url(images/sections/section-37/san-francisco-hub.svg) top right / 14rem no-repeat, url(images/sections/section-37/bg.webp) 0 0 / contain no-repeat;
-		background-blend-mode: multiply;
+	background-blend-mode: multiply;
 }
 .section-37::after {
 	top: auto;
@@ -2717,6 +2717,11 @@ a.more:hover {
 	}
 	p + p {
 		margin-top: 2rem;
+	}
+	.carousel_dots-indicator,
+	.r5 {
+		-moz-column-gap: .4rem;
+		column-gap: .4rem;
 	}
 	section[id]:not(#experts):not(#contacts) {
 		padding-top: 4rem;
@@ -3131,7 +3136,6 @@ a.more:hover {
 	}
 	#networking-activities__carousel {
 		padding-top: 4rem;
-		padding-left: 2rem;
 	}
 	.carousel .carousel_controls {
 		margin-right: 2rem;
@@ -3253,6 +3257,9 @@ a.more:hover {
 	.section-26-27-carousel--2 {
 		padding: 0 0 4rem !important;
 	}
+	.section-26-27-carousel--2 .m5 {
+		transform: translate3d(-41rem, 0, 0);
+	}
 	.section-26-27-carousel--2 .carousel_controls {
 		margin-bottom: 4rem;
 	}
@@ -3263,6 +3270,9 @@ a.more:hover {
 	}
 	.section-26-27-carousel--2 .carousel_slides {
 		--carousel-slide-spacing: 2.5rem;
+	}
+	.section-26-27-carousel--2 .slide {
+		flex-basis: auto;
 	}
 	.section-26-27-carousel--2 .slide img {
 		height: 20rem;
@@ -3308,11 +3318,11 @@ a.more:hover {
 	.section-27-28-carousel::after {
 		content: '✦';
 		position: absolute;
-    bottom: -1rem;
-    right: 1rem;
-    font-size: 2.4rem;
-    color: #000;
-}
+		bottom: -1rem;
+		right: 1rem;
+		font-size: 2.4rem;
+		color: #000;
+	}
 	.section-27-28-carousel .carousel_slides {
 		--carousel-slide-size: 18rem;
 		--carousel-slide-spacing: 2rem;
@@ -3394,7 +3404,7 @@ a.more:hover {
 	}
 	.section-30 .half-screen-square h2 ~ p {
 		padding-left: 4rem;
-  }
+	}
 	.section-30 .half-screen-square:nth-child(1) {
 		order: -1;
 		background: url(images/sections/section-30/bg-2block--mobile.svg) 0 0 / 100% no-repeat;
@@ -3419,13 +3429,13 @@ a.more:hover {
 		position: relative;
 	}
 	.section-30 .half-screen-square:has(> img)::after {
-    content: '✦';
-    color: #fff;
-    position: absolute;
-    bottom: 1.4rem;
-    right: 1.4rem;
-    font-size: 2.5rem;
-}
+		content: '✦';
+		color: #fff;
+		position: absolute;
+		bottom: 1.4rem;
+		right: 1.4rem;
+		font-size: 2.5rem;
+	}
 	.section-30 .H4-font-size {
 		margin-right: 2rem;
 		font-size: 6rem;
@@ -3439,6 +3449,9 @@ a.more:hover {
 		width: 44%;
 	}
 	.section-30 p.flex:first-child {
+		margin-top: 4rem;
+	}
+	.section-31 {
 		margin-top: 4rem;
 	}
 	.section-31 header {
@@ -3499,6 +3512,9 @@ a.more:hover {
 		--carousel-slide-spacing: 2rem;
 		--carousel-slide-size: 34rem;
 	}
+	.section-31-32-carousel .m5 {
+		transform: translate3d(-32rem, 0, 0);
+	}
 	.section-31-32-carousel .slide img {
 		width: var(--carousel-slide-size);
 		height: auto;
@@ -3525,7 +3541,10 @@ a.more:hover {
 		z-index: 1;
 	}
 	.section-32 .carousel {
-		margin-right: -2rem;
+		margin: 0 -2rem;
+	}
+	.section-32 .carousel .m5 {
+		transform: translate3d(-30rem, 0, 0);
 	}
 	.section-32 .carousel_slides {
 		--carousel-slide-spacing: 2rem;
@@ -3581,7 +3600,7 @@ a.more:hover {
 		top: -3.5rem;
 		right: 1.5rem;
 		font-size: 2.4rem;
-  }
+	}
 	.section-34 h2 {
 		width: 22rem;
 		margin: 7.5rem 0 8.5rem -4rem;
@@ -3685,7 +3704,7 @@ a.more:hover {
 		display: none;
 	}
 
-	/* Верстка Володи */
+/* Верстка Володи */
 	:root {
 		--page-padding-x: 2rem;
 	}
