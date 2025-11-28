@@ -3588,6 +3588,9 @@ a.more:hover {
 	.section-33.marie h4 {
 		font-size: 4.8rem;
 	}
+	.section-33.marie {
+		background-position-y: 8rem;
+	}
 	.section-33 h4 ~ p {
 		padding-left: 4rem;
 	}
