@@ -1054,11 +1054,6 @@ button {
 	align-self: flex-end;
 	margin-top: auto;
 }
-.s0 {
-	padding-top: 11.3rem;
-	padding-bottom: 16rem;
-	background: url(/images/sections/section-15/bg.jpg) 0 0/192rem no-repeat;
-}
 .t0 {
 	margin-right: auto;
 	margin-left: auto;
@@ -1668,46 +1663,9 @@ button {
 	font-size: 3.6rem;
 	line-height: 8rem;
 }
-.m2 {
-	padding-top: 16rem;
-	padding-bottom: 3rem;
-	background: url(/images/sections/section-20/planet.jpg) 0 100%/30.3rem no-repeat, url(/images/sections/section-20/bg.jpg) 16rem 40rem/160rem no-repeat;
-}
-.n2 {
-	display: flex;
-	margin-bottom: 8rem;
-	flex-flow: column wrap;
-}
-.m2 .n2+.n2 {
-	margin-left: 24rem;
-}
-.m2 .n2+.n2+.n2 {
-	margin-left: 48rem;
-}
-.m2 .o2 {
-	width: 88rem;
-	height: 64rem;
-}
-.m2 .o2 img {
-	width: 64rem;
-	height: 64rem;
-}
-.p2 {
-	width: 80rem;
-	height: 32rem;
-}
-.m2 .p2+.p2 {
-	width: 75rem;
-}
 .p2 img {
 	width: 32rem;
 	height: 32rem;
-}
-.m2 img, .q2 img {
-	margin-right: 8rem;
-}
-.m2 h4 {
-	margin: 3rem 0 8rem;
 }
 .p2 h4 {
 	margin-bottom: 3.5rem;
@@ -1721,34 +1679,6 @@ button {
 	box-sizing: content-box;
 	padding: 21rem 0 15rem 16rem;
 }
-.q2 {
-	padding-top: 12rem;
-	padding-bottom: 2rem;
-}
-.q2:before {
-	position: absolute;
-	top: -63rem;
-	right: 0;
-	width: 130rem;
-	height: 182rem;
-	background: url(/images/sections/section-22/bg.svg) 0 0/contain no-repeat;
-	z-index: -1;
-	content: "";
-}
-.q2 .n2 {
-	width: 72rem;
-	box-sizing: content-box;
-	padding-left: 24rem;
-}
-.q2 .n2+.n2 {
-	margin-left: 8rem;
-}
-.q2>h4 {
-	margin-bottom: 14rem;
-}
-.q2 .p2 h4 {
-	margin-top: 3rem;
-}
 .t2 {
 	background: #fecee7;
 }
@@ -1756,37 +1686,6 @@ button {
 	width: 72rem;
 	box-sizing: content-box;
 	padding: 14rem 0 10rem 16rem;
-}
-.u2 {
-	padding: 14.2rem 8rem 1rem 44rem !important;
-	background: url(/images/sections/section-24/mars.png) right 38rem/25.1rem no-repeat, url(/images/sections/section-24/bg-grey.jpg) 0 0/100vw no-repeat;
-}
-.u2:before {
-	position: absolute;
-	top: -25.5rem;
-	left: 0;
-	width: 178.8rem;
-	height: 80rem;
-	background: url(/images/sections/section-24/bg.svg) 0/contain no-repeat;
-	content: "";
-	pointer-events: none;
-}
-.u2 h4 {
-	width: 35rem;
-}
-.u2 ul {
-	margin-top: 15.5rem;
-	margin-left: 37rem;
-}
-.u2 li {
-	width: 50rem;
-	margin-bottom: 8rem;
-}
-.u2 li:first-child {
-	margin-bottom: 4rem;
-}
-.u2 li:nth-child(2n) {
-	margin-left: 36rem;
 }
 .v2 {
 	margin-top: 24rem;
@@ -1833,90 +1732,6 @@ button {
 }
 .w2 p.x2 {
 	width: 76rem;
-}
-.y2 {
-	padding-top: 6rem;
-	padding-bottom: 7rem;
-	background: url(/images/sections/section-27/bg-decor.svg) 54rem 61rem/6.6rem no-repeat, url(/images/sections/section-27/san-francisco-hub.svg) top 21.5rem left 0/11.5rem no-repeat, url(/images/sections/section-27/bg.jpg) 0 0/100vw no-repeat;
-}
-.y2:before {
-	position: absolute;
-	top: -7.3rem;
-	right: 9rem;
-	width: 14.6rem;
-	height: 14.6rem;
-	background: url(/images/sections/section-27/planet.png) 0 0/contain no-repeat;
-	content: "";
-}
-.y2 ul {
-	width: 68rem;
-	margin-left: 72rem;
-	list-style: unset;
-}
-.y2 li {
-	padding-left: 1rem;
-}
-.y2 li:not(:last-child) {
-	padding-bottom: 4rem;
-}
-.y2 h2 {
-	width: 46rem;
-	margin: 14rem 0 19rem;
-}
-.y2 h2+p {
-	width: 82.5rem;
-	margin-left: 72rem;
-}
-.z2 {
-	padding-bottom: 15rem;
-	background: url(/images/sections/section-28/bg-decor.svg) left 64rem bottom 50rem/8rem no-repeat, url(/images/sections/section-28/bg-net.png) 0 bottom/125.5rem no-repeat, url(/images/sections/section-28/bg-grey.jpg) 56rem bottom/119.8rem no-repeat;
-}
-.z2 .a3 {
-	width: 72rem;
-	margin-left: 72rem;
-}
-.z2 h2 {
-	position: relative;
-	top: -8.1rem;
-	width: 50rem;
-}
-.z2 h4 {
-	width: 55rem;
-	margin: 8rem 0 13rem 48rem;
-}
-.z2 img.b3 {
-	position: absolute;
-	top: 12.5rem;
-	right: 31rem;
-	width: 23.4rem;
-	height: auto;
-}
-.z2 img.c3 {
-	width: 72rem;
-	height: auto;
-	margin: 3.5rem 0 5rem;
-}
-.z2 .d3 {
-	text-align: right;
-	inset: auto 27rem 8rem auto;
-}
-.e3 {
-	display: flex;
-	color: #fff;
-	background: url(/images/sections/section-29/arrow.svg) 52rem 27rem/68.7rem no-repeat, url(/images/sections/section-29/icon-deer.svg) left 8rem bottom 8rem/8rem no-repeat, url(/images/sections/section-29/bg.jpg) 0 0/192rem no-repeat;
-}
-.e3 h2 {
-	width: 85rem;
-	margin-right: 38rem;
-	padding: 24rem 0 48rem;
-}
-.e3 ul {
-	width: 55rem;
-	margin-top: 25.6rem;
-	list-style: unset;
-}
-.e3 ul li {
-	padding-left: .4rem;
 }
 .f3 {
 	display: flex;
@@ -1986,83 +1801,6 @@ button {
 }
 .f3 p.l3:first-child {
 	margin-top: 2rem;
-}
-.m3 header {
-	height: 32rem;
-	margin: 0 -8rem;
-	padding: 8rem;
-	background: url(/images/sections/section-31/bg.jpg) 0 0/contain no-repeat;
-}
-.n3 {
-	width: 88rem;
-}
-.m3 .d3 {
-	right: 8rem;
-	left: auto;
-	text-align: right;
-	color: #000;
-}
-.m3 .o3 {
-	display: flex;
-	justify-content: space-between;
-	margin: 0 -2rem;
-	padding: 13rem 0;
-}
-.m3 .o3 a {
-	padding: 0 2rem;
-}
-.m3 .o3 img {
-	height: auto;
-}
-.m3 img[src*=logo-forbes] {
-	width: 7.9rem;
-}
-.m3 img[src*=logo-digital-journal] {
-	width: 20.8rem;
-}
-.m3 img[src*=logo-ted] {
-	width: 6.2rem;
-}
-.m3 img[src*=logo-ny-weekly] {
-	width: 23.7rem;
-}
-.m3 img[src*=logo-tech-bullion] {
-	width: 11.1rem;
-}
-.m3 img[src*=logo-theamericanreporter] {
-	width: 29.4rem;
-}
-.p3 {
-	padding-top: 12.9rem;
-	background: url(/images/sections/section-30/bg-4-people-in-a-circle.svg) 8rem 110.3rem/7.9rem no-repeat, url(/images/sections/section-32/bg-1.jpg) 0 0/192rem no-repeat, url(/images/sections/section-32/bg-2.jpg) 0 68.9rem/192rem no-repeat;
-}
-.p3 .d3 {
-	top: 21rem;
-	z-index: 1;
-}
-.p3 .q3:after {
-	top: auto;
-	bottom: 12rem;
-}
-.p3 figure {
-	position: relative;
-	margin: 0 -8rem;
-}
-.p3 figure img {
-	width: 192rem;
-	height: auto;
-}
-.p3 .q3 {
-	color: #fff;
-}
-.p3 h4 {
-	width: 95rem;
-	margin-top: 4rem;
-}
-.p3 h4+p {
-	width: 87rem;
-	margin: 12rem 0 0 72rem;
-	padding-bottom: 12.5rem;
 }
 .r3 {
 	height: 96rem;
@@ -2142,36 +1880,6 @@ button {
 .u3 li {
 	padding-bottom: 4rem;
 	padding-left: .5rem;
-}
-.w3 {
-	padding-top: 7rem;
-	color: #f48e8e;
-	background: url(/images/sections/section-36/bg-1.jpg) 0 0/contain no-repeat;
-}
-.w3 .l3 {
-	display: flex;
-	height: 180rem;
-	flex-flow: column wrap;
-}
-.w3 .l3>* {
-	width: 68rem;
-}
-.w3:after {
-	color: #7a5555;
-}
-.x3 {
-	margin: 9rem 0 5rem;
-}
-.w3 footer {
-	position: relative;
-	height: 23.7rem;
-	margin: 0 -8rem;
-}
-.w3 footer .d3 {
-	top: 6rem;
-	right: 8rem;
-	left: auto;
-	text-align: right;
 }
 .h4 li:before, .u2 li:before {
 	position: relative;
@@ -2631,8 +2339,8 @@ a.more:hover {
 }
 /* ~~~ */
 .section-17 {
-	padding-top: 8rem;
-	padding-bottom: 8rem;
+	/*padding-top: 8rem;*/
+	padding-top: 0;
 }
 .section-17 ul.list-experts {
 	list-style: unset;
@@ -2643,7 +2351,7 @@ a.more:hover {
 	padding-left: 1rem;
 }
 .section-17 ul.logo-experts {
-	margin-top: 17rem;
+	margin: 12rem 0 4rem;
 	display: flex;
 	justify-content: space-between;
 }
@@ -2683,14 +2391,15 @@ a.more:hover {
 }
 /* ~~~ */
 .section-18 {
-	padding-top: 9rem;
+	/*padding-top: 9rem;*/
+	padding-top: 16rem;
 }
 .section-18 .person + .person {
 	margin-top: 16rem;
 }
 .section-18 .person img {
 	width: 64rem;
-	height: 64rem;
+	height: auto;
 }
 .section-18 .person .name {
 	padding-top: 4rem;
@@ -2829,7 +2538,6 @@ a.more:hover {
 	position: relative;
 }
 .section-30 .people-on-bikes::after {
-	color: #fff;
 	top: auto;
 	bottom: 8rem;
 }
@@ -2909,7 +2617,8 @@ a.more:hover {
 	height: 72rem;
 	padding: 8rem 0 16rem;
 	box-sizing: content-box;
-	background: url(images/sections/section-37/san-francisco-hub.svg) top right/14rem no-repeat, url(images/sections/section-37/bg.jpg) 0 0/contain no-repeat;
+	background: url(images/sections/section-37/bg-deer.svg) bottom 8rem right / 40rem no-repeat, url(images/sections/section-37/san-francisco-hub.svg) top right / 14rem no-repeat, url(images/sections/section-37/bg.webp) 0 0 / contain no-repeat;
+		background-blend-mode: multiply;
 }
 .section-37::after {
 	top: auto;
@@ -3041,7 +2750,11 @@ a.more:hover {
 		margin: 4rem 0;
 	}
 	.section-35 + .request .request__text {
-
+		line-height: 2;
+		transform: translateY(-.9rem);
+	}
+	.section-35 + .request .request__text span {
+		display: block;
 	}
 	.request {
 		position: relative;
@@ -3388,15 +3101,15 @@ a.more:hover {
 	.section-21 figure {
 		background: #FEF2CE;
 	}
-	.section-22 h3 {
+	.headliners h3 {
 		margin-top: 4.5rem;
 		width: 30rem;
 		font-size: 4rem;
 	}
-	.section-22 h4 {
+	.headliners h4 {
 		margin: 4rem 0 2.4rem;
 	}
-	.section-22 .flex-row + .flex-row {
+	.headliners .flex-row + .flex-row {
 		margin-top: 4rem;
 	}
 	.section-22-23-carousel {
@@ -3699,6 +3412,17 @@ a.more:hover {
 	.section-30 .build-community-since-2010 h2 {
 		padding-bottom: 6rem;
 	}
+	.section-30 .half-screen-square:has(> img) {
+		position: relative;
+	}
+	.section-30 .half-screen-square:has(> img)::after {
+    content: '✦';
+    color: #fff;
+    position: absolute;
+    bottom: 1.4rem;
+    right: 1.4rem;
+    font-size: 2.5rem;
+}
 	.section-30 .H4-font-size {
 		margin-right: 2rem;
 		font-size: 6rem;
@@ -3718,7 +3442,7 @@ a.more:hover {
 		height: 12rem;
 		margin: 0 -2rem;
 		padding: 0 2rem;
-		background: url(images/sections/section-31/bg--mobile.jpg) 0 0 / contain no-repeat;
+		background: url(images/sections/section-31/bg--mobile.webp) 0 0 / contain no-repeat;
 	}
 	.section-31 .event-name {
 		display: none;
@@ -3731,56 +3455,60 @@ a.more:hover {
 	.section-31 .media {
 		flex-wrap: wrap;
 		margin: 0;
-		padding: 3rem 0;
+		padding: 2rem 0 6rem;
 	}
-	.section-31 .media a {
+	.section-31 .media img {
 		padding: 1rem 0;
-	}
-	.section-31 a:has(img[src*='logo-digital-journal']) {
-		order: 1;
-		padding-top: 1.4rem;
-	}
-	.section-31 a:has(img[src*='logo-tech-bullion']) {
-		order: 2;
-	}
-	.section-31 a:has(img[src*='logo-ny-weekly']) {
-		order: 3;
-		padding-top: 0.6rem;
-	}
-	.section-31 a:has(img[src*='logo-forbes']) {
-		order: 4;
-		padding-top: 0.8rem;
-	}
-	.section-31 a:has(img[src*='logo-theamericanreporter']) {
-		order: 5;
-		padding-top: 1.5rem;
-	}
-	.section-31 a:has(img[src*='logo-ted']) {
-		order: 6;
-		padding-top: 1.5rem;
 	}
 	.section-31 img[src*='logo-forbes'] {
 		width: 7.9rem;
+		order: 4;
 	}
 	.section-31 img[src*='logo-digital-journal'] {
 		width: 20.8rem;
+		order: 1;
 	}
 	.section-31 img[src*='logo-ted'] {
 		width: 5rem;
+		order: 6;
+		padding-top: 1.8rem;
 	}
 	.section-31 img[src*='logo-ny-weekly'] {
 		width: 23.7rem;
+		order: 3;
 	}
 	.section-31 img[src*='logo-tech-bullion'] {
 		width: 11.1rem;
+		order: 2;
 	}
 	.section-31 img[src*='logo-theamericanreporter'] {
 		width: 29.4rem;
+		order: 5;
+		padding-top: 1.8rem;
 	}
-	.section-32 figure {
+	.section-31-32-carousel {
+		padding: 0 0 1.6rem !important;
+	}
+	.section-31-32-carousel .carousel_controls {
+		margin-bottom: 4rem;
+	}
+	.section-31-32-carousel .carousel_slides {
+		--carousel-slide-spacing: 2rem;
+		--carousel-slide-size: 34rem;
+	}
+	.section-31-32-carousel .slide img {
+		width: var(--carousel-slide-size);
+		height: auto;
+		border-radius: 1.6rem;
+	}
+	.section-31-32-carousel + .request {
+		margin-bottom: 0;
+	}
+	.section-32 figure.blot {
 		position: relative;
 		margin: 0 -2rem;
 	}
+	.section-31-32-carousel .note,
 	.section-32 figure img[width="1920"],
 	.section-33 figure img[width="960"] {
 		display: none;
@@ -3793,6 +3521,22 @@ a.more:hover {
 		top: 2rem;
 		z-index: 1;
 	}
+	.section-32 .carousel {
+		margin-right: -2rem;
+	}
+	.section-32 .carousel_slides {
+		--carousel-slide-spacing: 2rem;
+		--carousel-slide-size: 33.333rem;
+	}
+	.section-32 .carousel_slides img {
+		width: auto;
+		height: 20rem;
+		border-radius: 1rem;
+	}
+	.section-32 .carousel_controls {
+		margin-top: 4rem;
+		margin-bottom: 4rem;
+	}
 	.section-32 h4 {
 		width: 28rem;
 		margin: 8rem 0 4rem;
@@ -3803,8 +3547,8 @@ a.more:hover {
 	.section-33 {
 		display: flex;
 		flex-direction: column;
-		padding-top: 4rem;
-		background: url(images/sections/section-33/bg--mobile.svg) 0 0 / contain no-repeat;
+		padding-top: 8rem;
+		background: url(images/sections/section-33/bg--mobile.svg) 0 4rem / contain no-repeat;
 	}
 	.section-33 .event-name,
 	.section-33 figure::after {
@@ -3818,6 +3562,9 @@ a.more:hover {
 		font-size: 5rem;
 		line-height: 4rem;
 		order: -1;
+	}
+	.section-33.marie h4 {
+		font-size: 4.8rem;
 	}
 	.section-33 h4 ~ p {
 		padding-left: 4rem;
@@ -3849,7 +3596,7 @@ a.more:hover {
 	}
 	.section-35 ul {
 		width: auto;
-		margin: 8rem 0;
+		margin: 8rem 0 10rem;
 		margin-left: 6rem;
 	}
 	.section-35 li {
@@ -3857,12 +3604,12 @@ a.more:hover {
 		padding-bottom: 2rem;
 	}
 	.section-36 {
-		background: url(images/sections/section-36/logo-support-meaning-inspiration.svg) right 2rem bottom 4rem / 12rem no-repeat, url(images/sections/section-36/bg-1--mobile.jpg) 0 0 / cover no-repeat;
+		background: url(images/sections/section-36/logo-support-meaning-inspiration.svg) right 2rem bottom 4rem / 12rem no-repeat, url(images/sections/section-36/bg-1--mobile.webp) 0 0 / cover no-repeat;
 	}
 	.section-36::after {
 		color: inherit;
-		top: 2rem;
-		right: 2.5rem;
+		top: 3rem !important;
+		right: 3rem;
 	}
 	.section-36 h4 {
 		margin: 3.6rem 0 4.4rem;
@@ -3885,7 +3632,7 @@ a.more:hover {
 		width: 30rem;
 	}
 	.section-36 h4:first-child {
-		width: 28rem;
+		width: 25rem;
 	}
 	.section-36 h2 {
 		margin-bottom: 3rem;
@@ -3904,8 +3651,7 @@ a.more:hover {
 	.section-37 {
 		height: auto;
 		padding-bottom: 7rem;
-		background: url(images/sections/section-37/bg-corner--decor.svg) top right / 10.1rem no-repeat, url(images/sections/section-37/bg-deer--mobile.svg) bottom 4rem right / 31.7rem no-repeat, url(images/sections/section-37/bg--mobile.jpg) 0 0 / 100% 100% no-repeat;
-		background-blend-mode: multiply;
+		background: url(images/sections/section-37/bg-corner--decor.svg) top right / 10.1rem no-repeat, url(images/sections/section-37/bg-deer--mobile.svg) bottom 4rem right / 31.7rem no-repeat, url(images/sections/section-37/bg--mobile.webp) 0 0 / 100% 100% no-repeat;
 	}
 	.section-37 h4 {
 		margin: 4rem 0 2.4rem;
@@ -4571,7 +4317,8 @@ a.more:hover {
 		right: 5rem;
 	}
 	.section-17 .event-name {
-		top: 18rem;
+		top: 10rem;
+		left: 16rem;
 		font-size: 3.6rem;
 		color: #000;
 	}
@@ -4593,7 +4340,8 @@ a.more:hover {
 	.section-17 .section-head::after {
 		content: '';
 		position: absolute;
-		top: 8rem;
+		/*top: 8rem;*/
+		top: 0;
 		left: 8rem;
 		right: 8rem;
 		height: 56rem;
@@ -4602,11 +4350,15 @@ a.more:hover {
 	}
 	.section-17 h2 {
 		width: 70rem;
-		margin-left: 36rem;
+		/*margin-left: 36rem;*/
+		margin-left: 44rem;
 	}
 	.section-17 .text-content {
 		width: 82rem;
 		margin: -15rem 0 0 72rem;
+	}
+	.section-17-1.headliners figcaption {
+		max-width: 81rem;
 	}
 	.section-18 .person {
 		columns: 2;
@@ -4685,7 +4437,7 @@ a.more:hover {
 		padding: 21rem 0 15rem 16rem;
 	}
 	.section-20 img,
-	.section-22 img {
+	.headliners img {
 		margin-right: 8rem;
 	}
 	.section-20 h4 {
@@ -4694,33 +4446,38 @@ a.more:hover {
 	.h-320 h4 {
 		margin-bottom: 3.5rem;
 	}
-	.section-22 {
+	.headliners {
 		padding-top: 12rem;
-		padding-bottom: 6rem;
+		padding-bottom: 16rem;
 	}
-	.section-22::before {
+	.headliners.section-22::before {
 		content: '';
 		width: 130rem;
 		height: 182rem;
 		position: absolute;
-		top: -63rem;
+		top: -61rem;
 		right: 0;
 		background: url(images/sections/section-22/bg.svg) 0 0/contain no-repeat;
 		z-index: -1;
 	}
-	.section-22 .flex-row {
-		width: 72rem;
+	.headliners figure {
+		display: flex;
+		align-items: flex-start;
 		padding-left: 24rem;
-		box-sizing: content-box;
 	}
-	.section-22 .flex-row + .flex-row {
+	.headliners figure img {
+		width: 32rem;
+		height: auto;
+	}
+	.headliners figure + figure {
+		margin-top: 8rem;
 		margin-left: 8rem;
 	}
-	.section-22 > h4 {
-		margin-bottom: 14rem;
+	.headliners figcaption {
+		max-width: 72rem;
 	}
-	.section-22 .h-320 h4 {
-		margin-top: 3rem;
+	.headliners h4 {
+		padding: 3rem 0 5rem;
 	}
 	#networking-activities__carousel {
 		margin-top: 8.5rem;
@@ -4820,11 +4577,8 @@ a.more:hover {
 		padding-bottom: 24rem;
 		background: url(images/sections/section-26-27-carousel--2/bg.webp) left 16rem bottom 0 / 160rem no-repeat;
 	}
-	.section-26-27-carousel--2 .carousel_controls {
-		display: none;
-	}
 	.section-26-27-carousel--2 .carousel {
-		margin: 16rem -8rem 0;
+		margin: 5rem -8rem 0;
 	}
 	.section-26-27-carousel--2 .slide {
 		padding: 0 var(--carousel-slide-spacing) 0 0;
@@ -4843,7 +4597,7 @@ a.more:hover {
 		margin-bottom: 8.5rem;
 		padding-top: 6rem;
 		padding-bottom: 7rem;
-		background: url(images/sections/section-27/bg-decor.svg) 54rem 61rem/6.6rem no-repeat, url(images/sections/section-27/san-francisco-hub.svg) top 21.5rem left 0/11.5rem no-repeat, url(images/sections/section-27/bg.jpg) 0 0/100vw no-repeat;
+		background: url(images/sections/section-27/bg-decor.svg) 54rem 61rem/6.6rem no-repeat, url(images/sections/section-27/san-francisco-hub.svg) top 21.5rem left 0/11.5rem no-repeat, url(images/sections/section-27/bg.webp) 0 0/100vw no-repeat;
 	}
 	.section-27::before {
 		content: '';
@@ -4852,7 +4606,7 @@ a.more:hover {
 		right: 9rem;
 		width: 14.6rem;
 		height: 14.6rem;
-		background: url(images/sections/section-27/planet.png) 0 0/contain no-repeat;
+		background: url(images/sections/section-27/planet-2x.webp) 0 0/contain no-repeat;
 	}
 	.section-27 h2 {
 		width: 46rem;
@@ -4932,7 +4686,7 @@ a.more:hover {
 		height: 32rem;
 		padding: 8rem;
 		margin: 0 -8rem;
-		background: url(images/sections/section-31/bg.jpg) 0 0/contain no-repeat;
+		background: url(images/sections/section-31/bg.webp) 0 0/contain no-repeat;
 	}
 	.section-31 h2 {
 		width: 88rem;
@@ -5062,6 +4816,10 @@ a.more:hover {
 	.section-31-32-carousel {
 		padding-right: 0 !important;
 	}
+	.section-31-32-carousel .carousel_slides {
+		--carousel-slide-spacing: 3.2rem;
+		--carousel-slide-size: 54.4rem;
+	}
 	.section-31-32-carousel img,
 	.section-32 .carousel img {
 		border-radius: 2.5rem;
@@ -5075,7 +4833,7 @@ a.more:hover {
 	.section-32 {
 		margin-top: -10rem;
 		padding-top: 12.9rem;
-		background: url(images/sections/section-30/bg-4-people-in-a-circle.svg) 8rem 110.3rem/7.9rem no-repeat, url(images/sections/section-32/bg-1.jpg) 0 0/192rem no-repeat, url(images/sections/section-32/bg-2.jpg) 0 68.9rem/192rem no-repeat;
+		background: url(images/sections/section-30/bg-4-people-in-a-circle.svg) 8rem 110.3rem/7.9rem no-repeat, url(images/sections/section-32/bg-1.webp) 0 0/192rem no-repeat, url(images/sections/section-32/bg-2.webp) 0 68.9rem/192rem no-repeat;
 	}
 	.section-32 .event-name {
 		top: 21rem;
@@ -5083,6 +4841,13 @@ a.more:hover {
 	}
 	.section-32 .carousel {
 		margin-right: -8rem;
+	}
+	.section-32 .carousel_slides {
+		--carousel-slide-spacing: 8rem;
+		--carousel-slide-size: 80rem;
+	}
+	.section-32 .carousel_dots-indicator {
+		display: none;
 	}
 	.section-32 .blot {
 		color: #fff;
@@ -5118,10 +4883,19 @@ a.more:hover {
 		box-sizing: content-box;
 		align-content: flex-start;
 	}
+	.section-33.marie {
+		padding-top: 8rem;
+		overflow-x: hidden;
+		align-content: space-between;
+	}
 	.section-33 figure {
 		position: relative;
 		margin-right: 12rem;
 		z-index: -1;
+	}
+	.section-33.marie figure {
+		margin-right: auto;
+		order: 1;
 	}
 	.section-33 figure::before {
 		content: '';
@@ -5133,6 +4907,11 @@ a.more:hover {
 		background: url(images/sections/section-33/bg.svg) 0 0 / contain no-repeat;
 		z-index: 1;
 	}
+	.section-33.marie figure::before {
+		top: 29rem;
+		left: -7.7rem;
+		transform: scale3d(-1, 1, 1) translate3d(15rem, 0, 0);
+	}
 	.section-33 .event-name {
 		top: auto;
 		left: auto;
@@ -5140,12 +4919,22 @@ a.more:hover {
 		right: 2.5rem;
 		text-align: right;
 	}
+	.section-33.marie .event-name {
+		top: 2.5rem;
+		bottom: auto;
+	}
 	.section-33 h4 ~ p {
 		width: 60rem;
 	}
 	.section-33 h4 {
 		width: 40rem;
 		margin: 7rem 0 5rem;
+	}
+	.section-33.marie h4 {
+		width: 71rem;
+	}
+	.section-33.marie h4 ~ p {
+		width: 68rem;
 	}
 	.section-33 .blot::after {
 		color: #fff;
@@ -5178,8 +4967,7 @@ a.more:hover {
 	}
 	.section-36 .flex {
 		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
+		flex-flow: column wrap;
 		height: 180rem;
 	}
 	.section-36 .flex > * {
