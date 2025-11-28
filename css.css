@@ -2988,7 +2988,7 @@ a.more:hover {
 		margin-bottom: 2rem;
 	}
 	.section-17 ul.logo-experts {
-		margin-top: 8rem;
+		margin: 4rem 0 8rem;
 		flex-wrap: wrap;
 	}
 	.section-17 ul li.logo-google {
@@ -3022,7 +3022,7 @@ a.more:hover {
 		/*background: url(images/sections/section-18/bg-green-curve--mobile.svg) left bottom -4rem /100vw no-repeat;*/
 	}
 	.section-18 .person img,
-	.section-22 img,
+	.headliners img,
 	img[width="640"] {
 		width: 26rem;
 		height: auto;
@@ -3109,11 +3109,14 @@ a.more:hover {
 	.headliners h4 {
 		margin: 4rem 0 2.4rem;
 	}
-	.headliners .flex-row + .flex-row {
+	.headliners figure + figure {
 		margin-top: 4rem;
 	}
 	.section-22-23-carousel {
 		padding: 4rem 0 0 !important;
+	}
+	.section-22-23-carousel .slide {
+		padding: 0 calc(var(--carousel-slide-spacing) / 2);
 	}
 	.section-22-23-carousel .autoscrolling-images img {
 		height: 20rem;
@@ -4230,6 +4233,9 @@ a.more:hover {
 	.i0 .n5:nth-child(2) .x4 {
 		max-width: 34rem;
 	}
+	.z0 img[width="120"] {
+		display: none;
+	}
 
 	html {
 		--scrollbar-width: 15px;
@@ -4481,6 +4487,10 @@ a.more:hover {
 	}
 	#networking-activities__carousel {
 		margin-top: 8.5rem;
+		padding: 0 0 0 4rem;
+	}
+	#networking-activities__carousel .slide {
+
 	}
 	.section-22-23-carousel {
 		padding: 0 !important;
@@ -4560,7 +4570,7 @@ a.more:hover {
 		width: 76rem;
 	}
 	.section-26-27-carousel {
-		padding: 0 0 0 4rem !important;
+		padding: 0 0 0 8rem !important;
 		background: url(images/sections/section-27-28-carousel/bg.webp) center -3px / 100% no-repeat;
 	}
 	.section-26-27-carousel h4 {
@@ -4580,8 +4590,10 @@ a.more:hover {
 	.section-26-27-carousel--2 .carousel {
 		margin: 5rem -8rem 0;
 	}
+	.section-26-27-carousel--2 .m5 {
+		transform: translate3d(-38rem, 0, 0);
+	}
 	.section-26-27-carousel--2 .slide {
-		padding: 0 var(--carousel-slide-spacing) 0 0;
 		flex: none;
 	}
 	.section-26-27-carousel--2 h2 {
