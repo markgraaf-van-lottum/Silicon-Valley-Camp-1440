@@ -71,9 +71,6 @@ body {
 	position: relative;
 	cursor: default;
 }
-body:has(#modal_Container.opened) {
-	overflow: hidden;
-}
 h2 {
 	font-size: 10.4rem;
 	line-height: 8rem;
@@ -113,6 +110,9 @@ button {
 	user-select: none;
 	background-color: unset;
 	transition: background .3s;
+}
+strong {
+	font-weight: 700;
 }
 
 /* Володина верстка */
@@ -857,7 +857,7 @@ button {
 	height: auto;
 }
 .n4 {
-	margin: 7.9rem 0 2.3rem;
+	margin: 8rem 0 2.3rem;
 	font-size: 2.8rem;
 	line-height: 2rem;
 }
@@ -2059,6 +2059,7 @@ button {
 nav.hidden {
 	will-change: transform;
 	transform: translateY(-101%);
+	opacity: 0;
 }
 nav {
 	will-change: transform;
@@ -2069,7 +2070,8 @@ nav {
 	padding-left: 6rem;
 	background: rgba(255,255,255,0.9);
 	transform: translateY(0);
-	transition: transform .3s;
+	opacity: 1;
+	transition: opacity .2s, transform .2s;
 	user-select: none;
 	z-index: 10;
 }
@@ -2185,15 +2187,20 @@ button.button-more:hover,
 	transition: background .3s;
 	z-index: 5;
 }
-a.more {
+.more {
 	color: #000;
 	font-size: 2rem;
 	text-decoration-thickness: 5%;
 	text-underline-offset: 25%;
 	transition: color .3s;
+	user-select: none;
 }
-a.more:hover {
+.more:hover {
 	color: var(--accent-color);
+}
+div.more {
+	border-bottom: 0.15rem solid currentColor;
+	cursor: pointer;
 }
 
 /*            */
@@ -2371,16 +2378,11 @@ a.more:hover {
 	margin-top: 8rem;
 	font-weight: bold;
 }
-.section-18 .person a.more {
+.section-18 .person .more {
 	display: inline-block;
 	margin-top: 9rem;
-	padding: 1.4rem 0 0.7rem;
+	padding: 1.4rem 0 0.5rem;
 }
-.section-18 .person a.more::before {
-	content: 'Подробнее';
-}
-.section-18 .person a.more::after {
-	content: ' >';
 }
 /* ~~~ */
 .section-24::before {
@@ -2621,78 +2623,130 @@ a.more:hover {
 
 /* MODALS - Модальные окна (попапы) */
 #modal_Container {
+	will-change: opacity;
 	display: none;
+	align-items: center;
+	justify-content: center;
 	position: fixed;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
+	padding: 4rem;
 	overflow: hidden;
 	background: #e1f0a31a;
 	backdrop-filter: blur(3rem);
-	/*opacity: 0;*/
-	/*transition: opacity 1.3s;*/
-	z-index: 11;
+	transition: opacity 400ms;
+	opacity: 0;
+	z-index: 100;
 }
 #modal_Container.opened {
-	display: block;
-	/*opacity: 1;*/
-	animation: anime-modal 1.5s;
+	display: flex;
+}
+#modal_Container.fade {
+	opacity: 1;
+}
+@keyframes anime-modal--show {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes fading {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		display: none;
+	}
 }
 .modal {
+	display: none;
 	position: relative;
-	/*width: 76rem;*/
-	/*max-width: 100%;*/
-	/*min-height: 88rem;*/
-	margin: auto;
-	overflow: hidden;
+	width: 76rem;
+	max-width: 100%;
 	background-image: linear-gradient(#fff,#fff),linear-gradient(-45deg,#e1f0a3,#9277d2);
 	border: .4rem solid rgba(0,0,0,0);
 	border-radius: 2.4rem;
-	/*animation: anime-modal .25s;*/
 	background-clip: content-box,border-box;
 	background-origin: border-box;
 	pointer-events: auto;
 }
+#modal_Container:not(.media).opened .modal,
+#modal_Container.media.opened .media_slider {
+	display: block;
+}
 .modal:focus {
 	outline: none
 }
-@keyframes anime-modal {
-	0% {
-		opacity: 0;
-		/*transform: scale(.9)*/
-	}
-	100% {
-		opacity: 1;
-		/*transform: scale(1)*/
-	}
+#modal_content {
+	overflow: auto;
+	max-height: calc(100vh - 2*4rem - 13.4rem - 6rem);
+	margin: 13.4rem 2rem 6rem 4rem;
+	/*position: absolute;*/
+	/*top: 0;*/
+	/*bottom: 0;*/
+	padding-right: 4rem;
 }
-
-.modal__content {
-	width: 76rem;
-	max-width: 100%;
-	min-height: 88rem;
-	padding: 13.4rem 4rem 8rem;
-}
-.modal__content p {
+#modal_content p {
 	font-size: 2.8rem;
 	line-height: 4rem;
 }
-.modal__title {
+.modal_title {
 	margin-bottom: 4.6rem;
 	font-size: 3.6rem;
 	font-weight: 700;
 	line-height: 1;
 }
-.modal__button_close {
+#modal_Container button.close {
 	position: absolute;
 	top: 2rem;
 	right: 2rem;
-	padding: .6rem;
+	width: 2rem;
+	height: 2rem;
+	padding: 1rem;
+	background: center / auto no-repeat url("data:image/svg+xml,%3Csvg class='modal__button_close' fill='none' xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='m2 22 9.412-9.412L22 2M2 2l9.412 9.412L22 22' stroke='%23000' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 	box-sizing: content-box;
 	cursor: pointer;
 }
-
+#modal_Container .media_slider button.close {
+	top: -4.5rem;
+	right: -4.5rem;
+}
+.modal ul {
+	list-style: unset;
+	margin: 0 0 4rem 3rem;
+}
+.modal ul li {
+	padding-left: 0.6rem;
+}
+#modal_Container.modal--relations .modal_title {
+	margin-bottom: 17rem;
+	font-size: 6rem;
+	line-height: 5rem;
+	font-weight: 400;
+	text-transform: lowercase;
+}
+#modal_Container.modal--relations #modal_content {
+	margin-top: 9rem;
+}
+#modal_Container.modal--relations p {
+	display: flex;
+}
+#modal_Container.modal--relations p + p {
+	margin-top: 16rem;
+}
+#modal_Container.modal--relations sup {
+	flex: 0 0 12.5rem;
+	font-size: 16rem;
+	font-weight: 200;
+	color: #d9d9d9;
+	margin-top: -0.8rem;
+	margin-left: 1.2rem;
+}
 /* ADAPTIVE */
 @media screen and (max-width: 1024px) {
 	nav {
@@ -3082,7 +3136,7 @@ a.more:hover {
 	.section-18 .person.kriens .resume {
 		width: 36rem;
 	}
-	.section-18 .person a.more {
+	.section-18 .person .more {
 		padding-bottom: 0.4rem;
 		margin-top: 1.2rem;
 	}
@@ -4286,7 +4340,8 @@ a.more:hover {
 		width: 45rem;
 	}
 	.y0 .request {
-		padding: 16rem 0;
+		padding-top: 16rem;
+		padding-bottom: 16rem;
 	}
 	.i0 .n5:nth-child(2) .x4 {
 		max-width: 34rem;
@@ -4769,7 +4824,10 @@ a.more:hover {
 		text-align: right;
 	}
 	.media_slider {
+		display: none;
+		width: 100%;
 		height: 100%;
+		/*animation: anime-modal--hide 2.3s;*/
 	}
 	.media_slider .slider_controls {
 		height: 100%;
@@ -4799,30 +4857,31 @@ a.more:hover {
 		height: 2rem;
 	}
 	.media_slider #lenta {
+		will-change: transform;
 		display: flex;
 		flex-wrap: nowrap;
 		position: absolute;
 		top: 0;
 		left: 0;
 		line-height: 0;
-		will-change: transform;
+		transition: transform .5s;
 	}
-	.media_slider #lenta.screen-1 {
+	.media_slider #lenta.forbes {
 		transform: translate3d(0, 0, 0);
 	}
-	.media_slider #lenta.screen-2 {
+	.media_slider #lenta.digital-journal {
 		transform: translate3d(-100vw, 0, 0);
 	}
-	.media_slider #lenta.screen-3 {
+	.media_slider #lenta.ted {
 		transform: translate3d(-200vw, 0, 0);
 	}
-	.media_slider #lenta.screen-4 {
+	.media_slider #lenta.ny-weekly {
 		transform: translate3d(-300vw, 0, 0);
 	}
-	.media_slider #lenta.screen-5 {
+	.media_slider #lenta.tech-bullion {
 		transform: translate3d(-400vw, 0, 0);
 	}
-	.media_slider #lenta.screen-6 {
+	.media_slider #lenta.theamericanreporter {
 		transform: translate3d(-500vw, 0, 0);
 	}
 	.media_slider .screen {
@@ -4835,26 +4894,11 @@ a.more:hover {
 	.media_slider .img-container {
 		position: relative;
 	}
-	.media_slider button.close {
-		position: absolute;
-		top: -4.7rem;
-		right: -4.8rem;
-		width: 2.4rem;
-		height: 2.3rem;
-		padding: 1.2rem;
-		border-radius: 100%;
-		background: center / auto no-repeat url("data:image/svg+xml,%3Csvg class='modal__button_close' fill='none' xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='m2 22 9.412-9.412L22 2M2 2l9.412 9.412L22 22' stroke='%23000' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-		box-sizing: content-box;
-		transition: background-color .2s;
-	}
-	.media_slider button.close:hover {
-		background-color: #00000011; 
-	}
 	.media_slider img {
 		box-shadow: 0 .4rem .4rem #00000040;
 	}
 	.section-31 img[src*='logo-forbes'] {
-		width: 7.9rem;
+		width: 8.8rem;
 	}
 	.section-31 img[src*='logo-digital-journal'] {
 		width: 20.8rem;
@@ -4863,13 +4907,13 @@ a.more:hover {
 		width: 6.2rem;
 	}
 	.section-31 img[src*='logo-ny-weekly'] {
-		width: 23.7rem;
+		width: 25rem;
 	}
 	.section-31 img[src*='logo-tech-bullion'] {
-		width: 11.1rem;
+		width: 14rem;
 	}
 	.section-31 img[src*='logo-theamericanreporter'] {
-		width: 29.4rem;
+		width: 30rem;
 	}
 	.section-31-32-carousel {
 		padding-right: 0 !important;
