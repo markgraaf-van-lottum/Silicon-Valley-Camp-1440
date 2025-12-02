@@ -4833,10 +4833,16 @@ button.button-more:hover,
 	.section-27-28-carousel .carousel_slides {
 		--carousel-slide-size: 64rem;
 	}
+	.section-27-28-carousel figure {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
 	.section-27-28-carousel figcaption {
 		margin: 6rem 0 0 4rem;
 		font-size: 2.8em;
 		line-height: 1.3;
+		padding-bottom: 1rem;
 	}
 	.section-27-28-carousel .slide img[width="180"] {
 		display: none;
