@@ -1815,6 +1815,8 @@ const DATA_modalText = [
 			document.querySelectorAll('#modal_content p:empty').forEach(element => element.remove());
 			if (ID == 18) {
 				modal_Container.classList.add('modal--relations');
+			} else if (ID >= 13 && ID <= 16) {
+				modal_Container.classList.add('experts');
 			}
 		} else {
 			modal_Container.classList.add(this.parentNode.className);
@@ -1880,7 +1882,7 @@ const slider = new BlazeSlider(el, {
 	all: {
 		enableAutoplay: true,
 		autoplayInterval: 3333,
-		transitionDuration: 999,
+		transitionDuration: 1111,
 		transitionTimingFunction: 'ease-in-out',
 		slidesToShow: 3,
 		slideGap: '4rem',
