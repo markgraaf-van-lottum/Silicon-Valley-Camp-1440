@@ -277,13 +277,6 @@ strong {
 	background-color: #ff5252;
 	border-radius: 8rem;
 }
-.carousel_slides,
-.k5 {
-/*	position: relative;
-	margin: auto;
-	--carousel-slide-spacing: 4rem;
-	--carousel-slide-size: 100%;*/
-}
 .slide {
 	/*width: auto !important;*/
 /*	min-width: 0;
@@ -313,6 +306,7 @@ strong {
 .carousel--text .slide .text {
 	line-height: 3rem;
 }
+.blaze-pagination,
 .carousel_dots-indicator,
 .r5 {
 	display: flex;
@@ -322,6 +316,14 @@ strong {
 	flex-wrap: nowrap;
 	justify-content: center;
 }
+.i0 .blaze-pagination {
+	margin-top: 5.5rem;
+}
+.w0 .blaze-pagination,
+.z0 .blaze-pagination {
+	margin-top: 3.5rem;
+}
+.blaze-pagination button,
 .s5 {
 	width: 1.21rem;
 	height: 1.21rem;
@@ -333,20 +335,21 @@ strong {
 	cursor: pointer;
 	touch-action: manipulation;
 }
+.blaze-pagination button.active,
 .s5.t5 {
 	background-color: #000;
 	border: .21rem solid #d9d9d9;
 }
-.p5 {
+.blaze-slider-controls {
 	display: grid;
 	-moz-column-gap: 1rem;
 	column-gap: 1rem;
 	grid-template-columns: repeat(2, 1fr);
 }
-.p5, .q5 {
+.blaze-slider-controls, .blaze-button {
 	align-items: center;
 }
-.q5 {
+.blaze-button {
 	display: flex;
 	width: 7rem;
 	height: 7rem;
@@ -366,7 +369,7 @@ strong {
 	justify-content: center;
 	touch-action: manipulation;
 }
-.q5:hover {
+.blaze-button:hover {
 	color: #fff;
 	background-color: #000;
 }
@@ -2409,9 +2412,10 @@ button.button-more:hover,
 	width: 104rem;
 	margin: 4rem 0 8rem;
 }
-#networking-activities__carousel .slide,
+#slider--networking-activities .slide,
 .section-26-27-carousel .slide {
 	flex-basis: 32rem;
+	user-select: none;
 }
 /* ~~~ */
 .section-28 {
@@ -2642,7 +2646,8 @@ button.button-more:hover,
 	margin: 13rem 2rem 13rem 4rem;
 	padding-right: 4rem;
 }
-.experts #modal_content {
+.experts #modal_content,
+.founders-cirlce #modal_content {
 	max-height: 74vh;
 	margin-bottom: 7rem;
 }
@@ -2756,15 +2761,15 @@ button.button-more:hover,
 	width: 100%;
 	height: 100%;
 }
-.media_slider .slider_controls {
+.media_slider .blaze-slider-controls {
 	height: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 8rem;
 }
-.media_slider .slider_controls::before,
-.media_slider .slider_controls::after {
+.media_slider .blaze-slider-controls::before,
+.media_slider .blaze-slider-controls::after {
 	content: 'добавить переключение слайдов';
 	position: absolute;
 	top: 6rem;
@@ -2774,12 +2779,12 @@ button.button-more:hover,
 	font-size: 5rem;
 	color: limegreen;
 }
-.media_slider .slider_controls::after {
+.media_slider .blaze-slider-controls::after {
 	content: 'картинки обновить на улучшенные';
 	top: auto;
 	bottom: 6rem;
 }
-.media_slider .slider_controls svg {
+.media_slider .blaze-slider-controls svg {
 	width: 1.1rem;
 	height: 2rem;
 }
@@ -2824,7 +2829,6 @@ button.button-more:hover,
 .media_slider img {
 	box-shadow: 0 .4rem .4rem #00000040;
 }
-
 
 /* ADAPTIVE */
 @media screen and (max-width: 1024px) {
@@ -3334,7 +3338,7 @@ button.button-more:hover,
 	.section-22-23-carousel .autoscrolling-images .m5 {
 		justify-content: flex-end;
 	}
-	#networking-activities__carousel {
+	#slider--networking-activities {
 		padding-top: 4rem;
 	}
 	.carousel .carousel_controls {
@@ -4172,12 +4176,12 @@ button.button-more:hover,
 	.i0 .request {
 		margin-top: 5.5rem;
 	}
-	.q5 {
+	.blaze-button {
 		width: 4rem;
 		height: 4rem;
 		border-width: 0.1rem;
 	}
-	.q5 svg {
+	.blaze-button svg {
 		width: 0.7rem !important;
 		height: 1.2rem !important;
 	}
@@ -4724,7 +4728,7 @@ button.button-more:hover,
 	.headliners h4 {
 		padding: 3rem 0 5rem;
 	}
-	#networking-activities__carousel {
+	#slider--networking-activities {
 		margin-top: 8.5rem;
 		padding: 0 0 0 4rem;
 	}
@@ -4806,7 +4810,7 @@ button.button-more:hover,
 		width: 76rem;
 	}
 	.section-26-27-carousel {
-		padding: 0 0 0 8rem !important;
+		padding: 0 0 0 4rem !important;
 		background: url(images/sections/section-27-28-carousel/bg.webp) center -3px / 100% no-repeat;
 	}
 	.section-26-27-carousel h4 {
@@ -4823,11 +4827,11 @@ button.button-more:hover,
 		padding-bottom: 24rem;
 		background: url(images/sections/section-26-27-carousel--2/bg.webp) left 16rem bottom 0 / 160rem no-repeat;
 	}
-	.section-26-27-carousel--2 .carousel {
+	.autoscrolling-images.results {
 		margin: 5rem -8rem 0;
 	}
-	.section-26-27-carousel--2 .m5 {
-		transform: translate3d(-38rem, 0, 0);
+	.autoscrolling-images.results .blaze-track {
+		--slide-gap: 4rem;
 	}
 	.section-26-27-carousel--2 h2 {
 		width: 76rem;
@@ -5199,11 +5203,24 @@ button.button-more:hover,
 .blaze-slider{--slides-to-show:3;--slide-gap:4rem;direction:ltr}.blaze-container{position:relative}.blaze-track-container{overflow:hidden}.blaze-track{will-change:transform;touch-action:pan-y;display:flex;gap:var(--slide-gap);
 	--slide-width: calc((100% - (var(--slides-to-show) - 1) * var(--slide-gap)) / var(--slides-to-show));
 	box-sizing:border-box}.blaze-track>*{box-sizing:border-box;width:var(--slide-width);flex-shrink:0}
-
 .blaze-track {
 	margin-right: -8rem;
 }
-
+#slider--networking-activities .blaze-track {
+	margin-right: -24rem;
+}
+.slider--founders-cirlce .blaze-track {
+	margin-right: -12rem;
+}
+.slider--youtube-links .blaze-track {
+	margin-right: -43.2rem;
+}
+.slider--informal-communication .blaze-track {
+	margin-right: -72rem;
+}
+#slider--networking-activities .blaze-pagination {
+	margin-top: 6rem;
+}
 .blaze-slider {
 	--slides-to-show: 3;
 	--slide-gap: 4rem;
@@ -5213,4 +5230,13 @@ button.button-more:hover,
 		--slides-to-show: 2;
 		--slide-gap: 2rem;
 	}
+}
+.slider--invited-guests {
+	margin-top: 12rem;
+}
+.slider--multiversity-1440--N1 {
+	margin-top: 8rem;
+}
+.slider--multiversity-1440--N2 {
+	margin-top: 5.5rem;
 }
