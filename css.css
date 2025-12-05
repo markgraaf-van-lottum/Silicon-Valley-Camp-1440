@@ -285,13 +285,12 @@ strong {
 	display: flex;
 	justify-content: flex-end;
 	margin-right: 8rem;
-	margin-bottom: 4.5rem;
+	margin-bottom: 5rem;
 }
 .carousel--text .slide h5 {
 	margin-bottom: 5rem;
 	font-size: 4rem;
 	line-height: 1;
-	min-height: 16rem;
 	text-transform: lowercase;
 	display: flex;
 	align-items: flex-end;
@@ -2402,7 +2401,6 @@ button.button-more:hover,
 }
 #slider--networking-activities .slide,
 .section-26-27-carousel .slide {
-	flex-basis: 32rem;
 	user-select: none;
 }
 /* ~~~ */
@@ -3925,6 +3923,15 @@ button.button-more:hover,
 	#slider--networking-activities .blaze-track {
 		width: 68rem;
 	}
+	.slider--pathfinders-program h5.walking {
+		width: 22rem;
+	}
+	.slider--pathfinders-program h5.workshops {
+		font-size: 2.8rem;
+	}
+	.slider--pathfinders-program h5.yoga {
+		width: 30rem;
+	}
 	.slider--invited-guests .blaze-pagination {
 		margin-top: 3.5rem;
 	}
@@ -4810,8 +4817,8 @@ button.button-more:hover,
 		width: 76rem;
 	}
 	.section-26-27-carousel {
-		padding: 0 0 0 4rem !important;
-		background: url(images/sections/section-27-28-carousel/bg.webp) center -3px / 100% no-repeat;
+		padding: 0 0 0 8rem !important;
+		background: url(images/sections/section-27-28-carousel/bg.webp) center -16.6rem / 100% no-repeat;
 	}
 	.section-26-27-carousel h4 {
 		width: 35rem;
@@ -5223,6 +5230,25 @@ button.button-more:hover,
 	}
 	.slider--youtube-links .blaze-track {
 		margin-right: -43.2rem;
+	}
+	.slider--pathfinders-program .carousel_controls {
+		margin-right: 10rem;
+	}
+	.slider--pathfinders-program .blaze-pagination {
+		margin-top: 7rem;
+	}
+	.slider--pathfinders-program .blaze-track {
+		width: 224rem;
+	}
+	.slider--pathfinders-program h5.walking,
+	.slider--pathfinders-program h5.creative {
+		width: 30rem;
+	}
+	.slider--pathfinders-program h5.intellect-games {
+		width: 48rem;
+	}
+	.slider--pathfinders-program h5.yoga {
+		width: 40rem;
 	}
 	.slider--informal-communication .blaze-pagination,
 	.slider--youtube-links .blaze-pagination {
