@@ -785,32 +785,14 @@
 	</figure>
 </section>
 
-<section class="section-22-23-carousel">
-	<div class="carousel autoscrolling-images">
-		<div class="carousel_slides">
-			<div class="blaze-track-container">
-				<div class="blaze-track">
-					<div class="slide">
-						<img alt="" loading="lazy" width="410" height="320" decoding="async" class="" src="images/sections/section-22-23-carousel/1.webp">
-					</div>
-					<div class="slide">
-						<img alt="" loading="lazy" width="410" height="320" decoding="async" class="" src="images/sections/section-22-23-carousel/2.webp">
-					</div>
-					<div class="slide">
-						<img alt="" loading="lazy" width="410" height="320" decoding="async" class="" src="images/sections/section-22-23-carousel/3.webp">
-					</div>
-					<div class="slide">
-						<img alt="" loading="lazy" width="410" height="320" decoding="async" class="" src="images/sections/section-22-23-carousel/4.webp">
-					</div>
-					<div class="slide">
-						<img alt="" loading="lazy" width="410" height="320" decoding="async" class="" src="images/sections/section-22-23-carousel/5.webp">
-					</div>
-					<div class="slide">
-						<img alt="" loading="lazy" width="410" height="320" decoding="async" class="" src="images/sections/section-22-23-carousel/6.webp">
-					</div>
-				</div>
-			</div>
-		</div>
+<section class="section-22__1">
+	<div class="autoscrolling-images networking-activities">
+		<img alt="" loading="lazy" width="410" height="320" decoding="async" class="" src="images/sections/section-22__1/1.webp">
+		<img alt="" loading="lazy" width="410" height="320" decoding="async" class="" src="images/sections/section-22__1/2.webp">
+		<img alt="" loading="lazy" width="410" height="320" decoding="async" class="" src="images/sections/section-22__1/3.webp">
+		<img alt="" loading="lazy" width="410" height="320" decoding="async" class="" src="images/sections/section-22__1/4.webp">
+		<img alt="" loading="lazy" width="410" height="320" decoding="async" class="" src="images/sections/section-22__1/5.webp">
+		<img alt="" loading="lazy" width="410" height="320" decoding="async" class="" src="images/sections/section-22__1/6.webp">
 	</div>
 
 	<div id="slider--networking-activities" class="carousel carousel--text">
@@ -948,7 +930,7 @@
 	</div>
 </section>
 
-<section class="section-26-27-carousel">
+<section class="section-26__1">
 	<h4>как будет проходить программа?</h4>
 	<div class="slider--pathfinders-program carousel carousel--text">
 		<div class="carousel_controls">
@@ -1006,33 +988,19 @@
 	<div class="request__button-hint">Количество мест ограничено. Осталось 71 из 150 мест</div>
 </div>
 
-<section class="section-26-27-carousel--2">
+<section class="section-26__2">
 	<h2>результат для участников</h2>
 
-	<div class="autoscrolling-images results carousel">
-		<div class="blaze-container">
-			<div class="blaze-track-container">
-				<div class="blaze-track">
-					<div class="slide">
-						<img alt="" loading="lazy" width="680" height="320" decoding="async" src="images/sections/section-26-27-carousel--2/1.webp">
-					</div>
-					<div class="slide">
-						<img alt="" loading="lazy" width="360" height="320" decoding="async" src="images/sections/section-26-27-carousel--2/2.webp">
-					</div>
-					<div class="slide">
-						<img alt="" loading="lazy" width="480" height="320" decoding="async" src="images/sections/section-26-27-carousel--2/3.webp">
-					</div>
-					<div class="slide">
-						<img alt="" loading="lazy" width="560" height="320" decoding="async" src="images/sections/section-26-27-carousel--2/4.webp">
-					</div>
-					<div class="slide">
-						<img alt="" loading="lazy" width="400" height="320" decoding="async" src="images/sections/section-26-27-carousel--2/5.webp">
-					</div>
-					<div class="slide">
-						<img alt="" loading="lazy" width="480" height="320" decoding="async" src="images/sections/section-26-27-carousel--2/6.webp">
-					</div>
-				</div>
-			</div>
+	<div class="autoscrolling-images results">
+		<div class="half half--1">
+			<img alt="" loading="lazy" width="680" height="320" decoding="async" src="images/sections/section-26__2/1.webp">
+			<img alt="" loading="lazy" width="360" height="320" decoding="async" src="images/sections/section-26__2/2.webp">
+			<img alt="" loading="lazy" width="480" height="320" decoding="async" src="images/sections/section-26__2/3.webp">
+		</div>
+		<div class="half half--2">
+			<img alt="" loading="lazy" width="560" height="320" decoding="async" src="images/sections/section-26__2/4.webp">
+			<img alt="" loading="lazy" width="400" height="320" decoding="async" src="images/sections/section-26__2/5.webp">
+			<img alt="" loading="lazy" width="480" height="320" decoding="async" src="images/sections/section-26__2/6.webp">
 		</div>
 	</div>
 </section>
@@ -1868,7 +1836,8 @@ const slider2 = new BlazeSlider(document.querySelector('.slider--multiversity-14
 		slideGap: '4rem',
 	},
 	'(max-width: 1024px)': {
-		slidesToShow: 2,
+		slidesToShow: 3,
+		slideGap: '2rem',
 	},
 });
 const slider3 = new BlazeSlider(document.querySelector('.slider--multiversity-1440--N2'), {
@@ -1881,7 +1850,8 @@ const slider3 = new BlazeSlider(document.querySelector('.slider--multiversity-14
 		slideGap: '4rem',
 	},
 	'(max-width: 1024px)': {
-		slidesToShow: 2,
+		slidesToShow: 3,
+		slideGap: '2rem',
 	},
 });
 const slider4 = new BlazeSlider(document.querySelector('#slider--networking-activities'), {
@@ -1951,20 +1921,19 @@ const slider8 = new BlazeSlider(document.querySelector('.slider--informal-commun
 		slideGap: '2rem',
 	},
 });
-const slider9 = new BlazeSlider(document.querySelector('.autoscrolling-images.results'), {
-	all: {
-		enableAutoplay: true,
-		autoplayInterval: 0,
-		transitionDuration: 1212,
-		transitionTimingFunction: 'linear',
-		slidesToShow: 3,
-		slideGap: '8rem',
-	},
-	'(max-width: 1024px)': {
-		slidesToShow: 2,
-		slideGap: '2.5rem',
-	},
-});
+// const slider9 = new BlazeSlider(document.querySelector('.networking-activities'), {
+// 	all: {
+// 		enableAutoplay: true,
+// 		autoplayInterval: 1,
+// 		transitionDuration: 2000,
+// 		transitionTimingFunction: 'linear',
+// 		slidesToShow: 4,
+// 		slideGap: '8rem',
+// 	},
+// 	'(max-width: 1024px)': {
+// 		// slideGap: '2rem',
+// 	},
+// });
 </script>
 
 <script src="http://localhost:35729/livereload.js?snipver=1"></script>

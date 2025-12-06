@@ -2400,8 +2400,22 @@ button.button-more:hover,
 	margin: 4rem 0 8rem;
 }
 #slider--networking-activities .slide,
-.section-26-27-carousel .slide {
+.section-26__1 .slide {
 	user-select: none;
+}
+.autoscrolling-images.results {
+	position: relative;
+}
+.autoscrolling-images.results .half {
+	display: flex;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.autoscrolling-images.networking-activities:hover img ,
+.autoscrolling-images.results:hover img ,
+.autoscrolling-images.results:hover .half {
+	animation-play-state: paused;
 }
 /* ~~~ */
 .section-28 {
@@ -2885,7 +2899,7 @@ button.button-more:hover,
 		margin: 3rem 0;
 	}
 	h4,
-	.section-26-27-carousel--2 h2 {
+	.section-26__2 h2 {
 		font-size: 3rem;
 		line-height: 2rem;
 	}
@@ -3296,22 +3310,48 @@ button.button-more:hover,
 	.headliners figure + figure {
 		margin-top: 4rem;
 	}
-	.section-22-23-carousel {
+	.section-22__1 {
 		padding: 4rem 0 0 !important;
 	}
-	.section-22-23-carousel .slide {
-		padding: 0 calc(var(--carousel-slide-spacing) / 2);
-	}
-	.section-22-23-carousel .autoscrolling-images img {
+	.autoscrolling-images.networking-activities {
+		position: relative;
 		height: 20rem;
+		overflow: hidden;
+	}
+	.autoscrolling-images.networking-activities img {
+		height: 100%;
 		width: auto;
+		position: absolute;
+		top: 0;
 	}
-	.section-22-23-carousel .autoscrolling-images .carousel_slides {
-		--carousel-slide-spacing: 5rem;
-		--carousel-slide-size: 25.6rem;
+	div.autoscrolling-images.networking-activities img {
+		position: absolute;
+		top: 0;
+		left: 44rem;
+		transform: translate3d(0,0,0);
+		--duration_n-a: 10s;
+		animation: networking-activities var(--duration_n-a) linear infinite;
 	}
-	.section-22-23-carousel .autoscrolling-images .m5 {
-		justify-content: flex-end;
+	div.autoscrolling-images.networking-activities img:nth-child(2) {
+		animation-delay: calc(((var(--duration_n-a) * 0.5) / 69.625) * 30.625);
+	}
+	div.autoscrolling-images.networking-activities img:nth-child(3) {
+		animation-delay: calc(((var(--duration_n-a) * 0.5) / 69.625) * 30.625 * 2);
+	}
+	div.autoscrolling-images.networking-activities img:nth-child(4) {
+		animation-delay: calc(((var(--duration_n-a) * 0.5) / 69.625) * 30.625 * 3);
+	}
+	div.autoscrolling-images.networking-activities img:nth-child(5) {
+		animation-delay: calc(((var(--duration_n-a) * 0.5) / 69.625) * 30.625 * 4);
+	}
+	div.autoscrolling-images.networking-activities img:nth-child(6) {
+		animation-delay: calc(((var(--duration_n-a) * 0.5) / 69.625) * 30.625 * 5);
+	}
+	@keyframes networking-activities {
+		50%,
+		100% {
+			transform: translate3d(-69.625rem,0,0);
+		}
 	}
 	#slider--networking-activities {
 		padding-top: 4rem;
@@ -3414,10 +3454,10 @@ button.button-more:hover,
 	.section-26 p.default {
 		width: auto;
 	}
-	.section-26-27-carousel {
+	.section-26__1 {
 		padding-right: 0 !important;
 	}
-	.section-26-27-carousel::before {
+	.section-26__1::before {
 		content: '';
 		position: absolute;
 		top: 4rem;
@@ -3427,35 +3467,59 @@ button.button-more:hover,
 		background: #f6f7f8;
 		z-index: -1;
 	}
-	.section-26-27-carousel .carousel--text {
+	.section-26__1 .carousel--text {
 		padding-top: 6rem;
 	}
-	.section-26-27-carousel h4 {
+	.section-26__1 h4 {
 		width: 18rem;
 	}
-	.section-26-27-carousel--2 {
-		padding: 0 0 4rem !important;
+	.section-26__2 {
+		padding: 0 0 8rem !important;
 	}
-	.section-26-27-carousel--2 .m5 {
-		transform: translate3d(-41rem, 0, 0);
-	}
-	.section-26-27-carousel--2 .carousel_controls {
-		margin-bottom: 4rem;
-	}
-	.section-26-27-carousel--2 h2 {
+	.section-26__2 h2 {
 		width: 22rem;
 		padding-top: 2rem;
 		margin: 0 0 4rem 2rem;
 	}
-	.section-26-27-carousel--2 .carousel_slides {
-		--carousel-slide-spacing: 2.5rem;
+	.autoscrolling-images.results {
+		height: 16rem;
+		display: flex;
+		overflow-x: hidden;
 	}
-	.section-26-27-carousel--2 .slide {
-		flex-basis: auto;
+	@keyframes results--half--2 {
+		0% {
+			transform: translate3d(82rem,0,0);
+		}
+		100% {
+			transform: translate3d(-78rem,0,0);
+		}
 	}
-	.section-26-27-carousel--2 .slide img {
-		height: 20rem;
+	@keyframes results--half--1__first-loop {
+		0% {
+			transform: translate3d(0,0,0);
+		}
+		100% {
+			transform: translate3d(-82rem,0,0);
+		}
+	}
+	@keyframes results--half--1 {
+		0% {
+			transform: translate3d(78rem,0,0);
+		}
+		100% {
+			transform: translate3d(-82rem,0,0);
+		}
+	}
+	.autoscrolling-images.results .half--1 {
+		animation: results--half--1__first-loop 15.375s linear, results--half--1 30s 15.375s linear infinite;
+	}
+	.autoscrolling-images.results .half--2 {
+		animation: results--half--2 30s linear infinite;
+	}
+	.autoscrolling-images.results img {
+		height: 16rem;
 		width: auto;
+		margin-right: 2rem;
 	}
 	.section-27 h2 {
 		position: relative;
@@ -3912,9 +3976,6 @@ button.button-more:hover,
 		width: 104rem;
 		margin-left: -30rem;
 	}
-	.autoscrolling-images.results .blaze-track {
-		margin-left: 0;
-	}
 	.slider--invited-guests .blaze-track,
 	.slider--founders-cirlce .blaze-track {
 		width: 58rem;
@@ -4125,6 +4186,8 @@ button.button-more:hover,
 	}
 	.bg-cosmos {
 		position: absolute;
+		width: 100%;
+		height: auto;
 	}
 	.j0 .b9 {
 		top: 72.5rem;
@@ -4236,8 +4299,23 @@ button.button-more:hover,
 		width: 30rem !important;
 		margin: 4.5rem 0 0 2rem !important;
 	}
-	.w0 h3 + div {
+	.slider--multiversity-1440--N1 {
 		margin-top: 1.4rem !important;
+	}
+	.slider--multiversity-1440--N1 .blaze-track,
+	.slider--multiversity-1440--N2 .blaze-track {
+		width: 58rem;
+	}
+	.slider--multiversity-1440--N1 .blaze-pagination {
+		margin-top: 1.8rem;
+	}
+	.slider--multiversity-1440--N1 img,
+	.slider--multiversity-1440--N2 img {
+		width: 18rem;
+		height: auto;
+	}
+	.slider--multiversity-1440--N2 {
+		margin-top: 6rem;
 	}
 	.w0 .x0 {
 		padding: 2rem;
@@ -4739,14 +4817,38 @@ button.button-more:hover,
 		margin-top: 8.5rem;
 		padding: 0 0 0 4rem;
 	}
-	.section-22-23-carousel {
+	.section-22__1 {
 		padding: 0 !important;
-		background: url(images/sections/section-22-23-carousel/bg.webp) center top 16rem / contain no-repeat;
+		background: url(images/sections/section-22__1/bg.webp) center top 16rem / contain no-repeat;
 	}
-	.section-22-23-carousel .autoscrolling-images .carousel_slides {
-		--carousel-slide-spacing: 8rem;
-		--carousel-slide-size: 41rem;
+	.autoscrolling-images.networking-activities {
+		height: 32rem;
+		position: relative;
 	}
+	div.autoscrolling-images.networking-activities img {
+		animation: networking-activities var(--duration) linear infinite;
+	}
+	div.autoscrolling-images.networking-activities img:nth-child(2) {
+		animation-delay: calc(((var(--duration) * 1) / 294) * 49);
+	}
+	div.autoscrolling-images.networking-activities img:nth-child(3) {
+		animation-delay: calc(((var(--duration) * 1) / 294) * 49 * 2);
+	}
+	div.autoscrolling-images.networking-activities img:nth-child(4) {
+		animation-delay: calc(((var(--duration) * 1) / 294) * 49 * 3);
+	}
+	div.autoscrolling-images.networking-activities img:nth-child(5) {
+		animation-delay: calc(((var(--duration) * 1) / 294) * 49 * 4);
+	}
+	div.autoscrolling-images.networking-activities img:nth-child(6) {
+		animation-delay: calc(((var(--duration) * 1) / 294) * 49 * 5);
+	}
+	@keyframes networking-activities {
+		100% {
+			transform: translate3d(-294rem,0,0);
+		}
+	}
+
 	.section-23 {
 		background: #FECEE7;
 	}
@@ -4757,7 +4859,7 @@ button.button-more:hover,
 	}
 	.section-24 {
 		padding: 14.2rem 8rem 1rem 44rem !important;
-		background: url(images/sections/section-24/mars.webp) right 38rem/25.1rem no-repeat, url(images/sections/section-24/bg-grey.webp) 0 0/100vw no-repeat;
+		background: url(images/sections/section-24/mars.webp) right 38rem / 25.1rem no-repeat, url(images/sections/section-24/bg-grey.webp) 0 0 / 100vw no-repeat;
 	}
 	.section-11 li::before,
 	.section-12 li::before,
@@ -4816,31 +4918,66 @@ button.button-more:hover,
 	.section-26 p.default {
 		width: 76rem;
 	}
-	.section-26-27-carousel {
+	.section-26__1 {
 		padding: 0 0 0 8rem !important;
 		background: url(images/sections/section-27-28-carousel/bg.webp) center -16.6rem / 100% no-repeat;
 	}
-	.section-26-27-carousel h4 {
+	.section-26__1 h4 {
 		width: 35rem;
 		margin-left: 40rem;
 		transform: translateY(-7.8rem);
 	}
-	.section-26-27-carousel .carousel_dots-indicator,
-	.section-26-27-carousel + .request {
+	.section-26__1 .carousel_dots-indicator,
+	.section-26__1 + .request {
 		margin-top: 7.2rem;
 	}
-	.section-26-27-carousel--2 {
+	.section-26__2 {
 		margin-bottom: 16rem;
 		padding-bottom: 24rem;
-		background: url(images/sections/section-26-27-carousel--2/bg.webp) left 16rem bottom 0 / 160rem no-repeat;
+		background: url(images/sections/section-26__2/bg.webp) left 16rem bottom 0 / 160rem no-repeat;
+		overflow: hidden;
 	}
 	.autoscrolling-images.results {
-		margin: 5rem -8rem 0;
+		height: 32rem;
+		margin: 16rem -8rem 0;
+		position: relative;
 	}
-	.autoscrolling-images.results .blaze-track {
-		--slide-gap: 4rem;
+	.autoscrolling-images.results img {
+		position: absolute;
+		top: 0;
+		left: 192rem;
+		transform: translate3d(0,0,0);
+		--duration: 35000ms;
+		animation: results var(--duration) linear infinite;
 	}
-	.section-26-27-carousel--2 h2 {
+	.networking-activities .half--1 img:nth-child(2),
+	.results .half--1 img:nth-child(2) {
+		animation-delay: calc(((var(--duration) * 0.8127) / 260) * 72);
+	}
+	.results .half--1 img:nth-child(3) {
+		animation-delay: calc(((var(--duration) * 0.8127) / 260) * (72 + 40));
+	}
+	.results .half--2 img:nth-child(1) {
+		animation-delay: calc(((var(--duration) * 0.8127) / 260) * (72 + 40 + 52));
+	}
+	.results .half--2 img:nth-child(2) {
+		animation-delay: calc(((var(--duration) * 0.8127) / 260) * (72 + 40 + 52 + 60));
+	}
+	.results .half--2 img:nth-child(3) {
+		animation-delay: calc(((var(--duration) * 0.8127) / 260) * (72 + 40 + 52 + 60 + 44));
+	}
+	@keyframes results {
+		81.27%,
+		100% {
+			transform: translate3d(-260rem,0,0);
+		}
+	}
+	.autoscrolling-images.results img {
+		height: 32rem;
+		width: auto;
+		margin-right: 4rem;
+	}
+	.section-26__2 h2 {
 		width: 76rem;
 	}
 	.section-27 {
@@ -5239,6 +5376,10 @@ button.button-more:hover,
 	}
 	.slider--pathfinders-program .blaze-track {
 		width: 224rem;
+	}
+	.autoscrolling-images.networking-activities .blaze-track {
+		margin-right: 0;
+		/*width: 286rem;*/
 	}
 	.slider--pathfinders-program h5.walking,
 	.slider--pathfinders-program h5.creative {
