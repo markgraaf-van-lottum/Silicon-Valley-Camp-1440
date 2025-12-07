@@ -2412,10 +2412,10 @@ button.button-more:hover,
 	top: 0;
 	left: 0;
 }
-.autoscrolling-images.networking-activities:hover img ,
-.autoscrolling-images.results:hover img ,
+.autoscrolling-images.networking-activities:hover img,
+.autoscrolling-images.results:hover img,
 .autoscrolling-images.results:hover .half {
-	animation-play-state: paused;
+	/*animation-play-state: paused;*/
 }
 /* ~~~ */
 .section-28 {
@@ -3008,8 +3008,8 @@ button.button-more:hover,
 		top: 64rem;
 		right: 2rem;
 		width: 20rem;
-		font-size: 1rem;
-		line-height: 6;
+		font-size: 1.8rem;
+		line-height: 6rem;
 	}
 	.section-11 {
 		padding-bottom: 4rem;
@@ -3327,32 +3327,48 @@ button.button-more:hover,
 	div.autoscrolling-images.networking-activities img {
 		position: absolute;
 		top: 0;
-		left: 44rem;
 		transform: translate3d(0,0,0);
-		--duration_n-a: 10s;
-		animation: networking-activities var(--duration_n-a) linear infinite;
+		animation: 10s linear infinite;
+	}
+	div.autoscrolling-images.networking-activities img:nth-child(1) {
+		left: 44rem;
+		animation-name: networking-activities--1-half;
 	}
 	div.autoscrolling-images.networking-activities img:nth-child(2) {
-		animation-delay: calc(((var(--duration_n-a) * 0.5) / 69.625) * 30.625);
+		left: 74.625rem;
+		animation-name: networking-activities--1-half;
 	}
 	div.autoscrolling-images.networking-activities img:nth-child(3) {
-		animation-delay: calc(((var(--duration_n-a) * 0.5) / 69.625) * 30.625 * 2);
+		left: 105.25rem;
+		animation-name: networking-activities--1-half;
 	}
 	div.autoscrolling-images.networking-activities img:nth-child(4) {
-		animation-delay: calc(((var(--duration_n-a) * 0.5) / 69.625) * 30.625 * 3);
+		left: 44rem;
+		animation-name: networking-activities--2-half;
 	}
 	div.autoscrolling-images.networking-activities img:nth-child(5) {
-		animation-delay: calc(((var(--duration_n-a) * 0.5) / 69.625) * 30.625 * 4);
+		left: 74.625rem;
+		animation-name: networking-activities--2-half;
 	}
 	div.autoscrolling-images.networking-activities img:nth-child(6) {
-		animation-delay: calc(((var(--duration_n-a) * 0.5) / 69.625) * 30.625 * 5);
+		left: 105.25rem;
+		animation-name: networking-activities--2-half;
 	}
-	@keyframes networking-activities {
-		50%,
+	@keyframes networking-activities--1-half {
+		59.66%,
 		100% {
-			transform: translate3d(-69.625rem,0,0);
+			transform: translate3d(-135.875rem,0,0);
 		}
 	}
+	@keyframes networking-activities--2-half {
+		40.34% {
+			transform: translate3d(0,0,0);
+		}
+		100% {
+			transform: translate3d(-135.875rem,0,0);
+		}
+	}
+
 	#slider--networking-activities {
 		padding-top: 4rem;
 	}
@@ -3577,9 +3593,9 @@ button.button-more:hover,
 	}
 	.slider--founders-cirlce .slide figcaption {
 		display: inline-block;
-		padding-bottom: 0.2rem;
+		padding-bottom: 0.4rem;
 		margin-top: 1rem;
-		font-size: 1rem;
+		font-size: 1.4rem;
 		line-height: 1;
 	}
 	.slider--youtube-links .carousel_controls,
@@ -3851,7 +3867,7 @@ button.button-more:hover,
 	}
 	.section-35 ul {
 		width: auto;
-		margin: 8rem 0 10rem;
+		margin: 8rem 0 6rem;
 		margin-left: 6.3rem;
 	}
 	.section-35 li {
@@ -4381,7 +4397,7 @@ button.button-more:hover,
 		width: 20rem;
 	}
 	section.z0 .d1 p {
-		font-size: 1rem !important;
+		font-size: 1.2rem !important;
 		line-height: 1 !important;
 	}
 	section.z0 .d1 p + p {
