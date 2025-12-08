@@ -1800,9 +1800,6 @@ const DATA_modalText = [
 	}});
 
 // MENU-BAR
-	if (document.body.clientWidth < 1025) {
-		main_nav.classList.add('hidden');
-	}
 	window.addEventListener('wheel', function(event) {
 		main_nav.classList.remove('opened');
 		if (!document.querySelector('#modal_Container.opened')) {
