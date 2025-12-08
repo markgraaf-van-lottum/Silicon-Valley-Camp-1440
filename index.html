@@ -1735,9 +1735,8 @@ const DATA_modalText = [
 		'<span class="flag-ukr flag-che">Украина, Швейцария</span>',
 	],
 ];
-
 document.addEventListener('swiped-up', function(e) {
-	alert('swipe');
+	document.querySelector('address').hidden = true;
 });
 document.addEventListener('swiped-down', function(e) {
 	console.log(e.target);
