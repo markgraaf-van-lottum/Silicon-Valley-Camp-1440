@@ -3316,7 +3316,7 @@ button.button-more:hover,
 		position: absolute;
 		top: 0;
 		transform: translate3d(-42rem,0,0);
-		animation: na 30000ms ease-in-out infinite;
+		animation: na 45000ms linear infinite;
 	}
 	div.autoscrolling-images.networking-activities img:nth-child(1) {
 		left: 44rem;
