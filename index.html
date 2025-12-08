@@ -1813,8 +1813,13 @@ const DATA_modalText = [
 		}});
 	// Mobile
 	document.addEventListener('swiped-down', function() {
-		main_nav.classList.remove('hidden');
-	});
+		if (!document.querySelector('#modal_Container.opened')) {
+			main_nav.classList.remove('hidden');
+		}});
+	document.addEventListener('swiped-up', function() {
+		if (!document.querySelector('#modal_Container.opened')) {
+			main_nav.classList.add('hidden');
+		}});
 
 // Карусели
 const slider1 = new BlazeSlider(document.querySelector('.slider--invited-guests'), {
