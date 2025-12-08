@@ -2768,22 +2768,6 @@ button.button-more:hover,
 	align-items: center;
 	padding: 0 8rem;
 }
-.media_slider .blaze-slider-controls::before,
-.media_slider .blaze-slider-controls::after {
-	content: 'добавить переключение слайдов';
-	position: absolute;
-	top: 6rem;
-	left: 0;
-	right: 0;
-	text-align: center;
-	font-size: 5rem;
-	color: limegreen;
-}
-.media_slider .blaze-slider-controls::after {
-	content: 'картинки обновить на улучшенные';
-	top: auto;
-	bottom: 6rem;
-}
 .media_slider .blaze-slider-controls svg {
 	width: 1.1rem;
 	height: 2rem;
@@ -2796,10 +2780,15 @@ button.button-more:hover,
 	top: 0;
 	left: 0;
 	line-height: 0;
-	transition: transform .5s;
+	transition: transform 1s ease-in-out;
 }
 .media_slider #lenta.forbes {
 	transform: translate3d(0, 0, 0);
+}
+.media_slider #lenta.forbes + .blaze-slider-controls .blaze-prev,
+.media_slider #lenta.theamericanreporter + .blaze-slider-controls .blaze-next {
+	pointer-events: none;
+	opacity: 0.2;
 }
 .media_slider #lenta.digital-journal {
 	transform: translate3d(-100vw, 0, 0);
@@ -2827,6 +2816,8 @@ button.button-more:hover,
 	position: relative;
 }
 .media_slider img {
+	border: 0.1rem solid #444;
+	box-sizing: content-box;
 	box-shadow: 0 .4rem .4rem #00000040;
 }
 
@@ -4836,8 +4827,11 @@ button.button-more:hover,
 		background: url(images/sections/section-22__1/bg.webp) center top 16rem / contain no-repeat;
 	}
 	.autoscrolling-images.networking-activities {
-		height: 32rem;
 		position: relative;
+		height: 32rem;
+		display: flex;
+		overflow: hidden;
+		gap: 8rem;
 	}
 	div.autoscrolling-images.networking-activities img {
 		animation: networking-activities var(--duration) linear infinite;

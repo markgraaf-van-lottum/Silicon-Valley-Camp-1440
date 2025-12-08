@@ -1418,29 +1418,17 @@
 	</div>
 
 	<div class="media_slider">
-		<div class="blaze-slider-controls">
-			<button class="blaze-button blaze-prev" type="button">
-				<svg xmlns="http://www.w3.org/2000/svg" width="11" height="20" fill="none" viewBox="0 0 11 20">
-					<path fill="currentColor" d="M10.707 19.707a1 1 0 0 1-1.414 0l-9-9a1 1 0 0 1 0-1.414l9-9a1 1 0 1 1 1.414 1.414L2.414 10l8.293 8.293a1 1 0 0 1 0 1.414"></path>
-				</svg>
-			</button>
-			<button class="blaze-button blaze-next" type="button">
-				<svg xmlns="http://www.w3.org/2000/svg" width="11" height="20" fill="none" viewBox="0 0 11 20">
-					<path fill="currentColor" d="M.293.293a1 1 0 0 1 1.414 0l9 9a1 1 0 0 1 0 1.414l-9 9a1 1 0 1 1-1.414-1.414L8.586 10 .293 1.707a1 1 0 0 1 0-1.414"></path>
-				</svg>
-			</button>
-		</div>
 		<div id="lenta">
 			<div class="screen">
 				<div class="img-container">
 					<button class="close" type="button" aria-label="Закрыть слайд"></button>
-					<img loading="lazy" decoding="async" width="900" height="647" src="images/sections/section-31/screenshot-forbes.webp" alt="Помогает ли анкетирование повысить эффективность сотрудников" />
+					<img loading="lazy" decoding="async" width="760" height="760" src="images/sections/section-31/screenshot-forbes.webp" alt="Помогает ли анкетирование повысить эффективность сотрудников" />
 				</div>
 			</div>
 			<div class="screen">
 				<div class="img-container">
 					<button class="close" type="button" aria-label="Закрыть слайд"></button>
-					<img loading="lazy" decoding="async" width="490" height="647" src="images/sections/section-31/screenshot-digital-journal.webp" alt="The culture of Silicon Valley | Ruslan Gafarov" />
+					<img loading="lazy" decoding="async" width="659" height="760" src="images/sections/section-31/screenshot-digital-journal.webp" alt="The culture of Silicon Valley | Ruslan Gafarov" />
 				</div>
 			</div>
 			<div class="screen">
@@ -1452,21 +1440,33 @@
 			<div class="screen">
 				<div class="img-container">
 					<button class="close" type="button" aria-label="Закрыть слайд"></button>
-					<img loading="lazy" decoding="async" width="520" height="647" src="images/sections/section-31/screenshot-ny-weekly.webp" alt="Silicon Valley and how to get there | Ruslan Gafarov" />
+					<img loading="lazy" decoding="async" width="892" height="760" src="images/sections/section-31/screenshot-ny-weekly.webp" alt="Silicon Valley and how to get there | Ruslan Gafarov" />
 				</div>
 			</div>
 			<div class="screen">
 				<div class="img-container">
 					<button class="close" type="button" aria-label="Закрыть слайд"></button>
-					<img loading="lazy" decoding="async" width="752" height="647" src="images/sections/section-31/screenshot-tech-bullion.webp" alt="Ruslan Gafarov on creating Innovation Hub and evolution of tech" />
+					<img loading="lazy" decoding="async" width="760" height="760" src="images/sections/section-31/screenshot-tech-bullion.webp" alt="Ruslan Gafarov on creating Innovation Hub and evolution of tech" />
 				</div>
 			</div>
 			<div class="screen">
 				<div class="img-container">
 					<button class="close" type="button" aria-label="Закрыть слайд"></button>
-					<img loading="lazy" decoding="async" width="568" height="647" src="images/sections/section-31/screenshot-theamericanreporter.webp" alt="the best way to upgrade your company in Silicon Valley" />
+					<img loading="lazy" decoding="async" width="760" height="760" src="images/sections/section-31/screenshot-theamericanreporter.webp" alt="the best way to upgrade your company in Silicon Valley" />
 				</div>
 			</div>
+		</div>
+		<div class="blaze-slider-controls">
+			<button class="blaze-button blaze-prev" type="button">
+				<svg xmlns="http://www.w3.org/2000/svg" width="11" height="20" fill="none" viewBox="0 0 11 20">
+					<path fill="currentColor" d="M10.707 19.707a1 1 0 0 1-1.414 0l-9-9a1 1 0 0 1 0-1.414l9-9a1 1 0 1 1 1.414 1.414L2.414 10l8.293 8.293a1 1 0 0 1 0 1.414"></path>
+				</svg>
+			</button>
+			<button class="blaze-button blaze-next" type="button">
+				<svg xmlns="http://www.w3.org/2000/svg" width="11" height="20" fill="none" viewBox="0 0 11 20">
+					<path fill="currentColor" d="M.293.293a1 1 0 0 1 1.414 0l9 9a1 1 0 0 1 0 1.414l-9 9a1 1 0 1 1-1.414-1.414L8.586 10 .293 1.707a1 1 0 0 1 0-1.414"></path>
+				</svg>
+			</button>
 		</div>
 	</div>
 </div>
@@ -1741,6 +1741,7 @@ const DATA_modalText = [
 // Открытие
 	document.querySelectorAll('[fullscreenview]').forEach(element => {element.onclick = function() {
 		let ID = this.getAttribute('fullscreenview');
+		// стандартные модалки
 		if (ID >= 0) {
 			modal_content.innerHTML = DATA_modalText[ID].map((elem, index) => {
 				if (index > 0) return `<p>${elem}</p>`;
@@ -1754,9 +1755,14 @@ const DATA_modalText = [
 			} else if (ID >= 24 && ID <= 33) {
 				modal_Container.classList.add('founders-cirlce');
 			}
+		// Слайдер СМИ (Media)
 		} else {
 			modal_Container.classList.add(this.parentNode.className);
+			document.querySelector('.theamericanreporter + div .blaze-prev').onclick = () => lenta.className = 'tech-bullion';
+			document.querySelector('.tech-bullion + div .blaze-prev').onclick = () => lenta.className = 'ny-weekly';
+			document.querySelector('.tech-bullion + div .blaze-next').onclick = () => lenta.className = 'ny-weekly';
 		}
+
 		document.body.style.cssText = 'overflow:hidden;margin-right:' + (window.innerWidth - document.documentElement.clientWidth) + 'px;';
 		modal_Container.classList.add('opened');
 		modal_content.scrollTop = 0;
@@ -1792,6 +1798,9 @@ const DATA_modalText = [
 	document.querySelectorAll('.media img').forEach(element => {element.onmouseover = function() {
 			lenta.className = this.getAttribute('fullscreenview');
 	}});
+
+// Слайдер СМИ (Media)
+	
 
 // НАВИГАЦИЯ
 	nav_button.onclick = () => main_nav.classList.toggle('opened');
