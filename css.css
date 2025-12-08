@@ -3318,54 +3318,52 @@ button.button-more:hover,
 		height: 20rem;
 		overflow: hidden;
 	}
-	.autoscrolling-images.networking-activities img {
+	div.autoscrolling-images.networking-activities img {
+		will-change: transform;
 		height: 100%;
 		width: auto;
 		position: absolute;
 		top: 0;
-	}
-	div.autoscrolling-images.networking-activities img {
-		position: absolute;
-		top: 0;
 		transform: translate3d(0,0,0);
-		animation: 10s linear infinite;
 	}
 	div.autoscrolling-images.networking-activities img:nth-child(1) {
 		left: 44rem;
-		animation-name: networking-activities--1-half;
 	}
 	div.autoscrolling-images.networking-activities img:nth-child(2) {
 		left: 74.625rem;
-		animation-name: networking-activities--1-half;
 	}
 	div.autoscrolling-images.networking-activities img:nth-child(3) {
 		left: 105.25rem;
-		animation-name: networking-activities--1-half;
 	}
 	div.autoscrolling-images.networking-activities img:nth-child(4) {
-		left: 44rem;
-		animation-name: networking-activities--2-half;
+		left: 135.875rem;
 	}
 	div.autoscrolling-images.networking-activities img:nth-child(5) {
-		left: 74.625rem;
-		animation-name: networking-activities--2-half;
+		left: 166.5rem;
 	}
 	div.autoscrolling-images.networking-activities img:nth-child(6) {
-		left: 105.25rem;
-		animation-name: networking-activities--2-half;
+		left: 197.125rem;
 	}
-	@keyframes networking-activities--1-half {
-		59.66%,
+	div.autoscrolling-images.networking-activities img:nth-child(-n+4) {
+		animation: 10000ms networking-activities--1-4 linear infinite;
+	}
+	div.autoscrolling-images.networking-activities img:nth-child(n+5) {
+		animation: 12394ms networking-activities--5-6-first linear, 10000ms 12394ms networking-activities--5-6 linear infinite;
+	}
+	@keyframes networking-activities--1-4 {
+		/*75.54%,*/
 		100% {
-			transform: translate3d(-135.875rem,0,0);
+			transform: translate3d(-183.75rem,0,0);
 		}
 	}
-	@keyframes networking-activities--2-half {
-		40.34% {
-			transform: translate3d(0,0,0);
-		}
+	@keyframes networking-activities--5-6-first {
 		100% {
-			transform: translate3d(-135.875rem,0,0);
+			transform: translate3d(-227.75rem,0,0);
+		}
+	}
+	@keyframes networking-activities--5-6 {
+		100% {
+			transform: translate3d(-183.75rem,0,0);
 		}
 	}
 
