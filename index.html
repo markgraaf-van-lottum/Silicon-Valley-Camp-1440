@@ -1736,13 +1736,6 @@ const DATA_modalText = [
 		'<span class="flag-ukr flag-che">Украина, Швейцария</span>',
 	],
 ];
-document.addEventListener('swiped-up', function(e) {
-	document.querySelector('address').hidden = true;
-});
-document.addEventListener('swiped-down', function(e) {
-	console.log(e.target);
-	console.log(e.detail);
-});
 
 // MODAL
 // Открытие
@@ -1818,6 +1811,10 @@ document.addEventListener('swiped-down', function(e) {
 			else
 				main_nav.classList.add('hidden');
 		}});
+	// Mobile
+	document.addEventListener('swiped-down', function() {
+		main_nav.classList.remove('hidden');
+	});
 
 // Карусели
 const slider1 = new BlazeSlider(document.querySelector('.slider--invited-guests'), {
