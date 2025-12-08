@@ -3315,7 +3315,8 @@ button.button-more:hover,
 		width: auto;
 		position: absolute;
 		top: 0;
-		transform: translate3d(0,0,0);
+		transform: translate3d(-42rem,0,0);
+		animation: na 30000ms ease-in-out infinite;
 	}
 	div.autoscrolling-images.networking-activities img:nth-child(1) {
 		left: 44rem;
@@ -3336,10 +3337,18 @@ button.button-more:hover,
 		left: 197.125rem;
 	}
 	div.autoscrolling-images.networking-activities img:nth-child(-n+4) {
-		animation: 10000ms networking-activities--1-4 linear infinite;
+		/*animation: 10000ms networking-activities--1-4 linear infinite;*/
 	}
 	div.autoscrolling-images.networking-activities img:nth-child(n+5) {
-		animation: 12394ms networking-activities--5-6-first linear, 10000ms 12394ms networking-activities--5-6 linear infinite;
+		/*animation: 12394ms networking-activities--5-6-first linear, 10000ms 12394ms networking-activities--5-6 linear infinite;*/
+	}
+	@keyframes na {
+		50% {
+			transform: translate3d(-183.75rem,0,0);
+		}
+		100% {
+			transform: translate3d(-42rem,0,0);
+		}
 	}
 	@keyframes networking-activities--1-4 {
 		/*75.54%,*/
@@ -4834,26 +4843,30 @@ button.button-more:hover,
 		gap: 8rem;
 	}
 	div.autoscrolling-images.networking-activities img {
-		animation: networking-activities var(--duration) linear infinite;
+		--duration-NA: 30s;
+		animation: networking-activities var(--duration-NA) linear infinite;
 	}
 	div.autoscrolling-images.networking-activities img:nth-child(2) {
-		animation-delay: calc(((var(--duration) * 1) / 294) * 49);
+		/*animation-delay: calc(((var(--duration-NA) * 1) / 294) * 49);*/
 	}
 	div.autoscrolling-images.networking-activities img:nth-child(3) {
-		animation-delay: calc(((var(--duration) * 1) / 294) * 49 * 2);
+		/*animation-delay: calc(((var(--duration-NA) * 1) / 294) * 49 * 2);*/
 	}
 	div.autoscrolling-images.networking-activities img:nth-child(4) {
-		animation-delay: calc(((var(--duration) * 1) / 294) * 49 * 3);
+		/*animation-delay: calc(((var(--duration-NA) * 1) / 294) * 49 * 3);*/
 	}
 	div.autoscrolling-images.networking-activities img:nth-child(5) {
-		animation-delay: calc(((var(--duration) * 1) / 294) * 49 * 4);
+		/*animation-delay: calc(((var(--duration-NA) * 1) / 294) * 49 * 4);*/
 	}
 	div.autoscrolling-images.networking-activities img:nth-child(6) {
-		animation-delay: calc(((var(--duration) * 1) / 294) * 49 * 5);
+		/*animation-delay: calc(((var(--duration-NA) * 1) / 294) * 49 * 5);*/
 	}
 	@keyframes networking-activities {
+		50% {
+			transform: translate3d(-102rem,0,0);
+		}
 		100% {
-			transform: translate3d(-294rem,0,0);
+			transform: translate3d(0,0,0);
 		}
 	}
 
