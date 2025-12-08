@@ -1758,9 +1758,6 @@ const DATA_modalText = [
 		// Слайдер СМИ (Media)
 		} else {
 			modal_Container.classList.add(this.parentNode.className);
-			document.querySelector('.theamericanreporter + div .blaze-prev').onclick = () => lenta.className = 'tech-bullion';
-			document.querySelector('.tech-bullion + div .blaze-prev').onclick = () => lenta.className = 'ny-weekly';
-			document.querySelector('.tech-bullion + div .blaze-next').onclick = () => lenta.className = 'ny-weekly';
 		}
 
 		document.body.style.cssText = 'overflow:hidden;margin-right:' + (window.innerWidth - document.documentElement.clientWidth) + 'px;';
@@ -1768,6 +1765,35 @@ const DATA_modalText = [
 		modal_content.scrollTop = 0;
 		setTimeout(() => modal_Container.classList.add('fade'), 10);
 	}});
+
+			if (document.querySelector('.theamericanreporter')) {
+			document.querySelector('.theamericanreporter + div .blaze-prev').onclick = () => lenta.className = 'tech-bullion';
+			}
+
+			if (document.querySelector('.tech-bullion')) {
+				document.querySelector('.tech-bullion + div .blaze-prev').onclick = () => lenta.className = 'ny-weekly';
+				document.querySelector('.tech-bullion + div .blaze-next').onclick = () => lenta.className = 'theamericanreporter';
+			}
+
+			if (document.querySelector('.ny-weekly')) {
+				document.querySelector('.ny-weekly + div .blaze-prev').onclick = () => lenta.className = 'ted';
+				document.querySelector('.ny-weekly + div .blaze-next').onclick = () => lenta.className = 'tech-bullion';
+			}
+
+			if (document.querySelector('.ted')) {
+				document.querySelector('.ted + div .blaze-prev').onclick = () => lenta.className = 'digital-journal';
+				document.querySelector('.ted + div .blaze-next').onclick = () => lenta.className = 'ny-weekly';
+			}
+
+			if (document.querySelector('.digital-journal')) {
+				document.querySelector('.digital-journal + div .blaze-prev').onclick = () => lenta.className = 'forbes';
+				document.querySelector('.digital-journal + div .blaze-next').onclick = () => lenta.className = 'ted';
+			}
+
+			if (document.querySelector('.forbes')) {
+				document.querySelector('.forbes + div .blaze-next').onclick = () => lenta.className = 'digital-journal';
+			}
+			
 // Закрытие
 	const closeModal = () => {
 			modal_Container.classList.remove('fade');
