@@ -2782,13 +2782,13 @@ button.button-more:hover,
 	line-height: 0;
 	transition: transform 1s ease-in-out;
 }
-.media_slider #lenta.forbes {
-	transform: translate3d(0, 0, 0);
-}
 .media_slider #lenta.forbes + .blaze-slider-controls .blaze-prev,
 .media_slider #lenta.theamericanreporter + .blaze-slider-controls .blaze-next {
 	pointer-events: none;
 	opacity: 0.2;
+}
+.media_slider #lenta.forbes {
+	transform: translate3d(0, 0, 0);
 }
 .media_slider #lenta.digital-journal {
 	transform: translate3d(-100vw, 0, 0);

@@ -1457,12 +1457,12 @@
 			</div>
 		</div>
 		<div class="blaze-slider-controls">
-			<button class="blaze-button blaze-prev" type="button">
+			<button id="prevSlide" class="blaze-button blaze-prev" type="button">
 				<svg xmlns="http://www.w3.org/2000/svg" width="11" height="20" fill="none" viewBox="0 0 11 20">
 					<path fill="currentColor" d="M10.707 19.707a1 1 0 0 1-1.414 0l-9-9a1 1 0 0 1 0-1.414l9-9a1 1 0 1 1 1.414 1.414L2.414 10l8.293 8.293a1 1 0 0 1 0 1.414"></path>
 				</svg>
 			</button>
-			<button class="blaze-button blaze-next" type="button">
+			<button id="nextSlide" class="blaze-button blaze-next" type="button">
 				<svg xmlns="http://www.w3.org/2000/svg" width="11" height="20" fill="none" viewBox="0 0 11 20">
 					<path fill="currentColor" d="M.293.293a1 1 0 0 1 1.414 0l9 9a1 1 0 0 1 0 1.414l-9 9a1 1 0 1 1-1.414-1.414L8.586 10 .293 1.707a1 1 0 0 1 0-1.414"></path>
 				</svg>
@@ -1741,7 +1741,7 @@ const DATA_modalText = [
 // Открытие
 	document.querySelectorAll('[fullscreenview]').forEach(element => {element.onclick = function() {
 		let ID = this.getAttribute('fullscreenview');
-		// стандартные модалки
+	// стандартные модалки
 		if (ID >= 0) {
 			modal_content.innerHTML = DATA_modalText[ID].map((elem, index) => {
 				if (index > 0) return `<p>${elem}</p>`;
@@ -1755,9 +1755,53 @@ const DATA_modalText = [
 			} else if (ID >= 24 && ID <= 33) {
 				modal_Container.classList.add('founders-cirlce');
 			}
-		// Слайдер СМИ (Media)
+	// Слайдер СМИ (Media)
 		} else {
 			modal_Container.classList.add(this.parentNode.className);
+
+			prevSlide.onclick = () => {
+				let slide = lenta.className;
+				switch (slide) {
+					case 'digital-journal':
+						slide = 'forbes';
+						break;
+					case 'ted':
+						slide = 'digital-journal';
+						break;
+					case 'ny-weekly':
+						slide = 'ted';
+						break;
+					case 'tech-bullion':
+						slide = 'ny-weekly';
+						break;
+					case 'theamericanreporter':
+						slide = 'tech-bullion';
+						break;
+				}
+				lenta.className = slide;
+			};
+
+			nextSlide.onclick = () => {
+				let slide = lenta.className;
+				switch (slide) {
+					case 'forbes':
+						slide = 'digital-journal';
+						break;
+					case 'digital-journal':
+						slide = 'ted';
+						break;
+					case 'ted':
+						slide = 'ny-weekly';
+						break;
+					case 'ny-weekly':
+						slide = 'tech-bullion';
+						break;
+					case 'tech-bullion':
+						slide = 'theamericanreporter';
+						break;
+				}
+				lenta.className = slide;
+			};
 		}
 
 		document.body.style.cssText = 'overflow:hidden;margin-right:' + (window.innerWidth - document.documentElement.clientWidth) + 'px;';
@@ -1766,34 +1810,6 @@ const DATA_modalText = [
 		setTimeout(() => modal_Container.classList.add('fade'), 10);
 	}});
 
-			if (document.querySelector('.theamericanreporter')) {
-			document.querySelector('.theamericanreporter + div .blaze-prev').onclick = () => lenta.className = 'tech-bullion';
-			}
-
-			if (document.querySelector('.tech-bullion')) {
-				document.querySelector('.tech-bullion + div .blaze-prev').onclick = () => lenta.className = 'ny-weekly';
-				document.querySelector('.tech-bullion + div .blaze-next').onclick = () => lenta.className = 'theamericanreporter';
-			}
-
-			if (document.querySelector('.ny-weekly')) {
-				document.querySelector('.ny-weekly + div .blaze-prev').onclick = () => lenta.className = 'ted';
-				document.querySelector('.ny-weekly + div .blaze-next').onclick = () => lenta.className = 'tech-bullion';
-			}
-
-			if (document.querySelector('.ted')) {
-				document.querySelector('.ted + div .blaze-prev').onclick = () => lenta.className = 'digital-journal';
-				document.querySelector('.ted + div .blaze-next').onclick = () => lenta.className = 'ny-weekly';
-			}
-
-			if (document.querySelector('.digital-journal')) {
-				document.querySelector('.digital-journal + div .blaze-prev').onclick = () => lenta.className = 'forbes';
-				document.querySelector('.digital-journal + div .blaze-next').onclick = () => lenta.className = 'ted';
-			}
-
-			if (document.querySelector('.forbes')) {
-				document.querySelector('.forbes + div .blaze-next').onclick = () => lenta.className = 'digital-journal';
-			}
-			
 // Закрытие
 	const closeModal = () => {
 			modal_Container.classList.remove('fade');
@@ -1824,9 +1840,6 @@ const DATA_modalText = [
 	document.querySelectorAll('.media img').forEach(element => {element.onmouseover = function() {
 			lenta.className = this.getAttribute('fullscreenview');
 	}});
-
-// Слайдер СМИ (Media)
-	
 
 // НАВИГАЦИЯ
 	nav_button.onclick = () => main_nav.classList.toggle('opened');
