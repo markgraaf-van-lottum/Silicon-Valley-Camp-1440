@@ -2689,11 +2689,11 @@ div.autoscrolling-images.results img:nth-child(6) {
 	margin-bottom: 7rem;
 }
 #modal_content::-webkit-scrollbar {
-	width: 8px;
+	width: .6rem;
 }
 #modal_content::-webkit-scrollbar-thumb {
 	background-color: #ccc;
-	border-radius: 8px;
+	border-radius: .6rem;
 }
 #modal_content p {
 	font-size: 2.8rem;
