@@ -914,8 +914,8 @@ strong {
 .s {
 	display: flex;
 	flex-wrap: nowrap;
-	-moz-column-gap: 4rem;
-	column-gap: 4rem;
+	-moz-column-gap: 8rem;
+	column-gap: 8rem;
 	margin-top: 8rem;
 }
 .t {
@@ -2719,7 +2719,7 @@ div.autoscrolling-images.results img:nth-child(6) {
 #modal_content .flag-che::before {
 	background-image: url(images/sections/section-27-28-carousel/flag-che.webp) !important;
 	position: absolute;
-	top: .62rem;
+	top: .3rem;
 	left: 95%;
 }
 #modal_content .flag-idn::after {
@@ -3977,7 +3977,7 @@ div.autoscrolling-images.results img:nth-child(6) {
 		pointer-events: none;
 		opacity: 0.2;
 	}
-	
+
 	/* Slider */
 	.slider--invited-guests img {
 		width: 18rem;
@@ -4595,7 +4595,6 @@ div.autoscrolling-images.results img:nth-child(6) {
 		display: none !important;
 	}
 	nav ul {
-		display: flex;
 		align-items: center;
 		height: 8rem;
 	}
@@ -4928,7 +4927,6 @@ div.autoscrolling-images.results img:nth-child(6) {
 	}
 	.section-26__1 h4 {
 		width: 35rem;
-		margin-left: 40rem;
 		transform: translateY(-7.8rem);
 	}
 	.section-26__1 .carousel_dots-indicator,
@@ -5362,6 +5360,10 @@ div.autoscrolling-images.results img:nth-child(6) {
 	#slider--networking-activities .blaze-track {
 		margin-right: -24rem;
 	}
+	.slider--founders-cirlce img {
+		width: 64rem;
+		height: auto;
+	}
 	.slider--founders-cirlce .blaze-track {
 		margin-right: -12rem;
 	}
@@ -5377,6 +5379,9 @@ div.autoscrolling-images.results img:nth-child(6) {
 	.slider--pathfinders-program .blaze-track {
 		width: 224rem;
 	}
+	.slider--pathfinders-program .slide h5 {
+		min-height: 2em;
+	}
 	.slider--pathfinders-program h5.walking,
 	.slider--pathfinders-program h5.creative {
 		width: 30rem;
@@ -5390,6 +5395,14 @@ div.autoscrolling-images.results img:nth-child(6) {
 	.slider--informal-communication .blaze-pagination,
 	.slider--youtube-links .blaze-pagination {
 		display: none;
+	}
+	.slider--youtube-links img {
+		width: 54.4rem;
+		height: auto;
+	}
+	.slider--informal-communication img {
+		width: 80rem;
+		height: auto;
 	}
 	.slider--informal-communication .blaze-track {
 		margin-right: -72rem;
