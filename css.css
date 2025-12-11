@@ -2719,9 +2719,15 @@ div.autoscrolling-images.results img:nth-child(6) {
 #modal_content .flag-che::before {
 	background-image: url(images/sections/section-27-28-carousel/flag-che.webp) !important;
 	position: absolute;
-	top: .3rem;
+	top: .65rem;
 	left: 95%;
 }
+@media screen and (max-width: 1024px) {
+	#modal_content .flag-che::before {
+		top: .3rem;
+	}
+}
+
 #modal_content .flag-idn::after {
 	background-image: url(images/sections/section-27-28-carousel/flag-idn.webp) !important;
 }
