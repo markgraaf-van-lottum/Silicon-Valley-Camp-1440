@@ -5224,6 +5224,11 @@ a#button__ScrollToTop svg {
 	.section-33.marie h4 ~ p {
 		width: 68rem;
 	}
+	.section-33.marie .more {
+		font-size: 2.8rem;
+		width: auto;
+		align-self: flex-start;
+	}
 	.section-33 .blot::after {
 		color: #fff;
 		top: auto;
