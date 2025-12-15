@@ -1470,7 +1470,7 @@
 	</div>
 </div>
 
-<a href="#begin" id="button__ScrollToTop">
+<a href="#begin" id="button__ScrollToTop" class="hidden">
 	<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 16"><path d="M1 14.5 14.5 1 28 14.5" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
 </a>
 
@@ -1767,7 +1767,6 @@ const DATA_modalText = [
 	// Слайдер СМИ (Media)
 		} else {
 			modal_Container.classList.add(this.parentNode.className);
-
 			prevSlide.onclick = () => {
 				let slide = lenta.className;
 				if (window.innerWidth >= 1025) {
@@ -1810,7 +1809,6 @@ const DATA_modalText = [
 
 				lenta.className = slide;
 			};
-
 			nextSlide.onclick = () => {
 				let slide = lenta.className;
 				if (window.innerWidth >= 1025) {
@@ -1898,29 +1896,49 @@ const DATA_modalText = [
 		main_nav.classList.toggle('opened');
 	}});
 
-// MENU-BAR
-	button__ScrollToTop.onclick = () => main_nav.classList.remove('hidden');
+// MENU-BAR & SCROLL-to-Top
+	button__ScrollToTop.onclick = () => {
+		main_nav.classList.remove('hidden');
+		button__ScrollToTop.classList.add('hidden');
+	}
 	document.addEventListener('keyup', event => {
 		if (event.key === 'Home' && document.activeElement.tagName == 'BODY') {
 			main_nav.classList.remove('hidden');
+			button__ScrollToTop.classList.add('hidden');
 		}
 	});
 	window.addEventListener('wheel', function(event) {
 		main_nav.classList.remove('opened');
+		setTimeout(() => {
+			if (window.scrollY == 0) {
+				button__ScrollToTop.classList.add('hidden');
+			}
+		}, 20);
 		if (!document.querySelector('#modal_Container.opened')) {
-			if (event.deltaY < 0)
+			if (event.deltaY < 0) {
 				main_nav.classList.remove('hidden');
-			else
+				button__ScrollToTop.classList.remove('hidden');
+			} else {
 				main_nav.classList.add('hidden');
+				button__ScrollToTop.classList.add('hidden');
+			}
 		}});
 	// Mobile
 	document.addEventListener('swiped-down', function() {
 		if (!document.querySelector('#modal_Container.opened')) {
 			main_nav.classList.remove('hidden');
+			button__ScrollToTop.classList.remove('hidden');
+
+			setTimeout(() => {
+				if (window.scrollY == 0) {
+					button__ScrollToTop.classList.add('hidden');
+				}
+			}, 1000);
 		}});
 	document.addEventListener('swiped-up', function() {
 		if (!document.querySelector('#modal_Container.opened')) {
 			main_nav.classList.add('hidden');
+			button__ScrollToTop.classList.add('hidden');
 		}});
 
 // Карусели
