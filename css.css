@@ -756,7 +756,7 @@ strong {
 	font-weight: 400;
 }
 .d7 {
-	font-size: 16rem;
+	font-size: 14rem;
 	line-height: 1;
 }
 @media(max-width:1024px) {
@@ -804,13 +804,13 @@ strong {
 	height: auto;
 }
 .n4 {
-	margin: 8rem 0 2.3rem;
+	margin: 6rem 0 2.5rem;
 	font-size: 2.8rem;
 	line-height: 2rem;
 }
 .c {
 	position: relative;
-	padding: 10rem 0 22rem;
+	padding: 10rem 0 21rem;
 }
 .d {
 	width: 93rem;
@@ -820,7 +820,7 @@ strong {
 	line-height: 1;
 }
 .f {
-	margin-top: 12rem;
+	margin-top: 13rem;
 	font-size: 2.8rem;
 	line-height: 4rem;
 }
@@ -833,7 +833,7 @@ strong {
 	text-align: right;
 }
 .h {
-	margin-top: 16.8rem;
+	margin-top: 11vh;
 }
 .h, .i {
 	display: flex;
@@ -841,7 +841,6 @@ strong {
 }
 .i {
 	margin-left: auto;
-	margin-top: -2rem;
 	-moz-column-gap: 4rem;
 	column-gap: 4rem;
 }
@@ -2457,11 +2456,10 @@ div.autoscrolling-images.results img:nth-child(6) {
 	background: url(images/sections/section-30/bg.svg) 0 48rem/100% no-repeat;
 }
 .section-30 .half-screen-square {
-	width: 96rem;
-	height: 96rem;
+	width: 50%;
 }
 .section-30 .half-screen-square img {
-	width: 96rem;
+	width: 100%;
 	height: auto;
 }
 .section-30 .build-community-since-2010 {
@@ -2608,7 +2606,13 @@ a#button__ScrollToTop {
 	border: 1px solid #000;
 	border-radius: 50%;
 	background: var(--primary-color);
+	opacity: 1;
 	z-index: 99;
+	transition: opacity 1s;
+}
+a#button__ScrollToTop.hidden {
+	opacity: 0;
+	pointer-events: none;
 }
 a#button__ScrollToTop svg {
 	width: 2.7rem;
@@ -2838,8 +2842,13 @@ a#button__ScrollToTop svg {
 /* ADAPTIVE */
 @media screen and (max-width: 1024px) {
 	a#button__ScrollToTop {
+		width: 4rem;
+		height: 4rem;
 		right: 2rem;
 		bottom: 2rem;
+	}
+	a#button__ScrollToTop svg {
+		width: 1.5rem;
 	}
 	nav {
 		background: rgba(255,255,255,0.5);
@@ -4537,12 +4546,12 @@ a#button__ScrollToTop svg {
 
 /* Верстка Володи */
 	.k {
-		background: url(images/sections/section-01/bg-1.svg) -0.6rem 3rem / auto no-repeat, url(images/sections/section-01/bg-2.webp) 0 100% / 100% auto no-repeat;
+		background: url(images/sections/section-01/bg-1.svg) -0.6rem -7rem / auto no-repeat, url(images/sections/section-01/bg-2.webp) 0 100% / 100% auto no-repeat;
 		animation: k 1200ms 100ms ease-out forwards;
 	}
 	@keyframes k {
 		100% {
-			background-position-y: 8rem, 100%;
+			background-position-y: -2rem, 100%;
 		}
 	}
 	.w0 .l5 {
