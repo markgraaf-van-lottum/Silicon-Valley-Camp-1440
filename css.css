@@ -4563,11 +4563,8 @@ a#button__ScrollToTop svg {
 /* Верстка Володи */
 	.k {
 		background: url(images/sections/section-01/bg-1.svg) -0.6rem -7rem / auto no-repeat, url(images/sections/section-01/bg-2.webp) 0 100% / 100% auto no-repeat;
-		animation: k 1200ms 100ms ease-out forwards;
+		animation: k 1200ms 1300ms ease-out forwards;
 	}
-/*	.k::before {
-
-	}*/
 	@keyframes k {
 		100% {
 			background-position-y: -2rem, 100%;
@@ -5518,20 +5515,12 @@ a#button__ScrollToTop svg {
 }
 .section-11 li,
 .section-11 h2,
-.y0 figure > *,
+.y0 figure,
 .y0 h3 span,
 .i0 h2 span,
-.o0 h2 span,
-.request__text,
-.request__divider {
+.o0 h2 span {
 	will-change: opacity, transform;
 	opacity: 0;
-}
-.request__text {
-	transform: translate3d(6rem, 0, 0);
-}
-.request__divider {
-	transform: translate3d(4rem, 0, 0);
 }
 .section-11 h2,
 .y0 h3 span,
@@ -5540,40 +5529,35 @@ a#button__ScrollToTop svg {
 	transform: translate3d(0, -6rem, 0);
 }
 .section-11 li,
-.y0 figure > * {
+.y0 figure {
 	transform: translate3d(0, 6rem, 0);
 }
 .section-11 li.anime,
 .section-11 h2.anime,
-.y0 figure.anime > *,
+.y0 figure.anime,
 .y0 h3.anime span,
 .i0 h2.anime span,
-.o0 h2.anime span,
-.anime .request__text,
-.anime .request__divider {
-	/*animation: anime 1s 0.1s ease-in-out forwards;*/
-	animation: anime 1s 0.1s ease-out forwards;
-}
 .o0 h2.anime span {
-	animation-duration: .5s;
+	animation: anime 1s 0.1s ease-out forwards;
 }
 .section-11 li.anime:nth-child(1) {
 	animation-delay: .6s;
 }
-.y0 h3.anime span:nth-child(2) {
-	animation-delay: .8s;
-}
-
-.anime .request__divider,
-.y0 figure > *:nth-child(2),
+.y0 h3.anime span:nth-child(2),
 .i0 h2.anime span:nth-child(2),
 .o0 h2.anime span:nth-child(2) {
 	animation-delay: .5s;
 }
-.y0 figure > *:nth-child(3),
 .o0 h2.anime span:nth-child(3) {
 	animation-delay: 1s;
 }
+@media (max-width: 1024px) {
+	.section-11 li,
+	.y0 figure.anime {
+		animation: none;
+	}
+}
+
 
 @keyframes anime {
 	100% {
