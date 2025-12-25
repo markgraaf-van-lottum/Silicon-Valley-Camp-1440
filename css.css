@@ -5551,6 +5551,7 @@ a#button__ScrollToTop svg {
 .o0 h2.anime span,
 .anime .request__text,
 .anime .request__divider {
+	/*animation: anime 1.1s 0.2s ease-in-out forwards;*/
 	animation: anime 1.1s 0.2s ease-out forwards;
 }
 .anime .request__divider,
