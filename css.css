@@ -4563,7 +4563,7 @@ a#button__ScrollToTop svg {
 /* Верстка Володи */
 	.k {
 		background: url(images/sections/section-01/bg-1.svg) -0.6rem -7rem / auto no-repeat, url(images/sections/section-01/bg-2.webp) 0 100% / 100% auto no-repeat;
-		animation: k 1200ms 1300ms ease-out forwards;
+		animation: k 900ms 900ms ease-out forwards;
 	}
 	@keyframes k {
 		100% {
