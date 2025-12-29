@@ -856,6 +856,16 @@ strong {
 .k {
 	position: relative;
 }
+#parallax_bg_1 {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 25vw;
+	background: url(images/sections/section-01/bg-2.webp) left bottom / auto no-repeat;
+	z-index: -1;
+}
 .l {
 	position: absolute;
 	top: 8rem;
@@ -1398,9 +1408,8 @@ strong {
 	padding-top: 8.3rem;
 	flex-direction: column;
 }
-.y0 h3 span,
-.i0 h2 span,
-.o0 h2 span {
+h3 span,
+h2 span {
 	display: block;
 }
 .p0 {
@@ -3041,6 +3050,9 @@ a#button__ScrollToTop svg {
 		font-size: 1.8rem;
 		line-height: 6rem;
 	}
+	#parallax_bg_1 {
+		height: 20rem;
+	}
 	.section-11 {
 		padding-bottom: 4rem;
 	}
@@ -3481,7 +3493,6 @@ a#button__ScrollToTop svg {
 		padding: 0 0 8rem !important;
 	}
 	.section-26__2 h2 {
-		width: 22rem;
 		padding-top: 2rem;
 		margin: 0 0 4rem 2rem;
 	}
@@ -3503,7 +3514,6 @@ a#button__ScrollToTop svg {
 	}
 	.section-27 h2 {
 		position: relative;
-		width: 24rem;
 		margin: 11.5rem 0 4.4rem;
 	}
 	.section-27 h2::before {
@@ -3573,7 +3583,6 @@ a#button__ScrollToTop svg {
 		margin-top: 0 !important;
 	}
 	.section-28 h2 {
-		width: 28rem;
 		font-size: 6rem;
 	}
 	.section-28 .content figure {
@@ -3622,7 +3631,6 @@ a#button__ScrollToTop svg {
 		width: 100vw;
 	}
 	.section-30 .half-screen-square h2 {
-		width: 20rem;
 		padding-bottom: 2rem;
 		font-size: 3rem;
 		line-height: 2.5rem;
@@ -3689,7 +3697,6 @@ a#button__ScrollToTop svg {
 		display: none;
 	}
 	.section-31 h2 {
-		width: 25rem;
 		position: relative;
 		top: -2rem;
 	}
@@ -4031,6 +4038,10 @@ a#button__ScrollToTop svg {
 	}
 	.slider--invited-guests .blaze-pagination {
 		margin-top: 3.5rem;
+	}
+	.blaze-slider {
+		--slides-to-show: 2;
+		--slide-gap: 2rem;
 	}
 
 /* Верстка Володи */
@@ -4569,7 +4580,7 @@ a#button__ScrollToTop svg {
 
 /* Верстка Володи */
 	.k {
-		background: url(images/sections/section-01/bg-1.svg) -0.6rem -7rem / auto no-repeat, url(images/sections/section-01/bg-2.webp) 0 100% / 100% auto no-repeat;
+		background: url(images/sections/section-01/bg-1.svg) -0.6rem -7rem / auto no-repeat;
 		animation: k 2000ms 100ms ease-out forwards;
 	}
 	@keyframes k {
@@ -4732,8 +4743,6 @@ a#button__ScrollToTop svg {
 		background: url(images/sections/section-17/bg.webp) 0/cover;
 	}
 	.section-17 h2 {
-		width: 70rem;
-		/*margin-left: 36rem;*/
 		margin-left: 44rem;
 	}
 	.section-17 .text-content {
@@ -4985,10 +4994,14 @@ a#button__ScrollToTop svg {
 	}
 	.section-26__1 .carousel_dots-indicator,
 	.section-26__1 + .request {
-		margin-top: 7.2rem;
+		margin-top: 7.5rem;
+	}
+	.section-26__1 + .request {
+		margin-bottom: 10rem;
 	}
 	.section-26__2 {
 		margin-bottom: 16rem;
+		padding-top: 6rem;
 		padding-bottom: 24rem;
 		background: url(images/sections/section-26__2/bg.webp) left 16rem bottom 0 / 160rem no-repeat;
 		overflow: hidden;
@@ -5008,9 +5021,6 @@ a#button__ScrollToTop svg {
 		100% {
 			transform: translate3d(-260rem,0,0);
 		}
-	}
-	.section-26__2 h2 {
-		width: 76rem;
 	}
 	.section-27 {
 		margin-bottom: 8.5rem;
@@ -5044,7 +5054,6 @@ a#button__ScrollToTop svg {
 		background: url(images/sections/section-27/planet-2x.webp) 0 0/contain no-repeat;
 	}
 	.section-27 h2 {
-		width: 46rem;
 		margin: 14rem 0 18rem;
 	}
 	.section-27 h2 + p {
@@ -5081,8 +5090,7 @@ a#button__ScrollToTop svg {
 		margin-left: 72rem;
 	}
 	.section-28 h2 {
-		width: 50rem;
-		top: -10.1rem;
+		top: -11.1rem;
 		position: relative;
 	}
 	.section-28 .content img[width="360"] {
@@ -5094,9 +5102,10 @@ a#button__ScrollToTop svg {
 		background: url(images/sections/section-29/arrow.svg) 52rem 27rem/68.7rem no-repeat, url(images/sections/section-29/icon-deer.svg) left 8rem bottom 8rem/8rem no-repeat, url(images/sections/section-29/bg.webp) 0 0/192rem no-repeat;
 	}
 	.section-29 h2 {
-		width: 85rem;
-		padding: 24rem 0 48rem;
-		margin-right: 38rem;
+		margin: 24rem 38rem 48rem 0;
+	}
+	h2 span span {
+		display: inline;
 	}
 	.section-29 ul {
 		width: 55rem;
@@ -5127,9 +5136,6 @@ a#button__ScrollToTop svg {
 		padding: 8rem;
 		margin: 0 -8rem;
 		background: url(images/sections/section-31/bg.webp) 0 0/contain no-repeat;
-	}
-	.section-31 h2 {
-		width: 88rem;
 	}
 	.section-31 .event-name {
 		color: #000;
@@ -5296,7 +5302,6 @@ a#button__ScrollToTop svg {
 		padding-left: 44rem !important;
 	}
 	.section-34 h2 {
-		width: 72rem;
 		margin-bottom: 13rem;
 	}
 	.section-35 {
@@ -5487,14 +5492,21 @@ a#button__ScrollToTop svg {
 	--slide-width: calc((100% - (var(--slides-to-show) - 1) * var(--slide-gap)) / var(--slides-to-show));
 	box-sizing:border-box}.blaze-track>*{box-sizing:border-box;width:var(--slide-width);flex-shrink:0}
 
-@media (max-width: 1024px) {
-	.blaze-slider {
-		--slides-to-show: 2;
-		--slide-gap: 2rem;
+/* ANIME */
+@keyframes anime {
+	10% {
+		opacity: 0;
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
 	}
 }
 
-/* ANIME */
+/* Первый экран */
 .l4,
 .l4 > div {
 	will-change: opacity, transform;
@@ -5520,40 +5532,62 @@ a#button__ScrollToTop svg {
 .l4:nth-child(3) > div {
 	animation-delay: .2s;
 }
+
+/* Заголовки */
 .section-11 h2,
+.section-12 h2,
+.section-17 h2 span,
+.section-26__2 h2 span,
+.section-27 h2 span,
+.section-28 h2 span,
+.section-29 h2 span,
+.section-30 h2 span,
+.section-31 h2 span,
+.section-34 h2 span,
 .y0 h3 span,
 .i0 h2 span,
 .o0 h2 span {
 	will-change: opacity, transform;
 	opacity: 0;
-}
-.section-11 h2,
-.y0 h3 span,
-.i0 h2 span,
-.o0 h2 span {
 	transform: translate3d(0, -6rem, 0);
 }
 .section-11 h2.anime,
-.y0 h3.anime span,
-.i0 h2.anime span,
-.o0 h2.anime span {
+.section-12 h2.anime,
+h3.anime span,
+h2.anime span {
 	animation: anime 1s 0.1s ease-out forwards;
 }
-.y0 h3.anime span:nth-child(2),
-.i0 h2.anime span:nth-child(2),
-.o0 h2.anime span:nth-child(2) {
-	animation-delay: .5s;
+h3.anime span:nth-child(2),
+.section-29 h2.anime span:nth-child(2),
+.section-31 h2.anime span:nth-child(2),
+h2.anime span:nth-child(2) {
+	animation-delay: .65s;
 }
-.o0 h2.anime span:nth-child(3) {
-	animation-delay: 1s;
-}
-@media (max-width: 1024px) {
+.section-29 h2.anime span:nth-child(3),
+h2.anime span:nth-child(3) {
+	animation-delay: 1.3s;
 }
 
-
-@keyframes anime {
-	100% {
+@media screen and (max-width: 1024px) {
+	.section-26__2 h2 span,
+	.section-30 h2 span {
+		transform: translate3d(0, -3rem, 0);
+	}
+	h2.anime span span {
+		animation-delay: .65s;
+	}
+	.section-31 h2.anime span:nth-child(2),
+	.section-29 h2.anime span:nth-child(2) {
+		animation-delay: 1.3s;
+	}
+	.section-29 h2.anime span:nth-child(3) {
+		animation-delay: 1.95s;
+	}
+}
+@media screen and (min-width: 1025px) {
+	h2.anime span span {
+		animation: none;
 		opacity: 1;
-		transform: translate3d(0, 0, 0);
+		transform: none;
 	}
 }
